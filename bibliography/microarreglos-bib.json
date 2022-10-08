@@ -1,0 +1,4 @@
+[
+  {"id":"Chiaretti2005","author":[{"family":"Chiaretti","given":"S."}],"citation-key":"Chiaretti2005","container-title":"Clinical Cancer Research","DOI":"10.1158/1078-0432.ccr-04-2165","ISSN":"1557-3265","issue":"20","issued":{"date-parts":[[2005,10]]},"page":"7209–7219","publisher":"American Association for Cancer Research (AACR)","title":"Gene expression profiles of B-lineage adult acute lymphocytic leukemia reveal genetic patterns that identify lineage derivation and distinct mechanisms of transformation","type":"article-journal","URL":"http://dx.doi.org/10.1158/1078-0432.CCR-04-2165","volume":"11"},
+  {"id":"Nygaard2011","author":[{"family":"Nygraard","given":"Strale"}],"citation-key":"Nygaard2011","issued":{"date-parts":[[2011]]},"title":"Microarray data lab.","type":"document","URL":"http://friveroll.github.io/pdfs/R-lab-sn.pdf"}
+]

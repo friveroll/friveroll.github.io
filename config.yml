@@ -1,0 +1,32 @@
+baseURL: ""
+languageCode: es
+title: Felipe Riveroll Aguirre
+theme: 
+  - PaperMod
+  - hugo-cite
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+#googleAnalytics: UA-79218613-1
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archivo
+      url: /archives/
+      weight: 30

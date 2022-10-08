@@ -1,0 +1,6 @@
+[
+  {"id":"abcamwb","author":[{"literal":"Abcam"}],"citation-key":"abcamwb","title":"Definitive guide to western blot.","type":"document","URL":"http://friveroll.github.io/pdfs/wb-beginner.pdf"},
+  {"id":"eltit","author":[{"family":"Bjerrum","given":"Ole J"},{"family":"Heegaard","given":"Niels HH"}],"citation-key":"eltit","container-title":"eLS","DOI":"10.1002/9780470015902.a0000995.pub2","ISBN":"978-0-470-01590-2","issued":{"date-parts":[[2001]]},"publisher":"John Wiley & Sons, Ltd","title":"Western blotting: Immunoblotting","type":"chapter","URL":"http://dx.doi.org/10.1002/9780470015902.a0000995.pub2"},
+  {"id":"Hames1998","author":[{"family":"Hames","given":"B. D."}],"citation-key":"Hames1998","collection-title":"Practical approach series","ISBN":"978-0-19-963640-2","issued":{"date-parts":[[1998]]},"publisher":"Oxford University Press","title":"Gel electrophoresis of proteins: a practical approach","type":"book","URL":"https://books.google.com.mx/books?id=jtNqAAAAMAAJ"},
+  {"id":"Twyman2013","author":[{"family":"Twyman","given":"R.M."}],"citation-key":"Twyman2013","ISBN":"978-1-317-75302-5","issued":{"date-parts":[[2013]]},"publisher":"Taylor & Francis Group","title":"Principles of proteomics","type":"book","URL":"https://books.google.com.mx/books?id=fTMmAgAAQBAJ"}
+]
