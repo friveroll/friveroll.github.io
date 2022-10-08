@@ -1,6 +1,7 @@
 baseURL: "https://friveroll.github.io"
 languageCode: es
 title: Felipe Riveroll Aguirre
+paginate: 5
 theme: 
   - PaperMod
   - hugo-cite
