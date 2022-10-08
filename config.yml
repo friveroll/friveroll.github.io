@@ -8,7 +8,7 @@ theme:
 params:
     homeInfoParams:
         Title: Hola soy Felipe
-        Content: Bienvenido a mi blog
+        Content: Este blog tiene archivados algunos archivos históricos de bioinformática, donde las herramientas mencionadas ya no estan disponibles actualmente
 
     socialIcons: # optional
         - name: email
