@@ -12,7 +12,8 @@ params:
         Content: Este blog tiene archivados algunos archivos históricos de bioinformática, donde las herramientas mencionadas ya no estan disponibles actualmente
     defaultTheme: auto
     GoogleAnalyticsID: G-0K27KDV8RY
-    ShareButtons: ["linkedin", "twitter", "facebook"] 
+    ShowShareButtons: true
+    ShowReadingTime: true 
     socialIcons: # optional
         - name: email
           url: "mailto:friveroll@gmail.com"
