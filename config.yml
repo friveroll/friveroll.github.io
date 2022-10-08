@@ -9,7 +9,7 @@ params:
     homeInfoParams:
         Title: Hola soy Felipe
         Content: Este blog tiene archivados algunos archivos históricos de bioinformática, donde las herramientas mencionadas ya no estan disponibles actualmente
-
+    GoogleAnalyticsID: G-0K27KDV8RY
     socialIcons: # optional
         - name: email
           url: "mailto:friveroll@gmail.com"
@@ -31,7 +31,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-GoogleAnalyticsID: "G-0K27KDV8RY"
+
 
 minify:
   disableXML: true

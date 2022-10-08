@@ -1,5 +1,7 @@
 {{ if or .Params.math .Site.Params.math }}
 {{ partial "math.html" . }}
 {{ end }}
+{{ if and (hugo.IsProduction) (.Site.Params.googleAnalyticsID) }}
 {{ partial "analytics-gtag.html" . }}
+{{ end }}
 
