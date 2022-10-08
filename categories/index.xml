@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Felipe Riveroll Aguirre</title>
+    <link>https://friveroll.github.io/categories/</link>
+    <description>Recent content in Categories on Felipe Riveroll Aguirre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 06 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bioquímica</title>
+      <link>https://friveroll.github.io/categories/bioqu%C3%ADmica/</link>
+      <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/categories/bioqu%C3%ADmica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>laboratorio</title>
+      <link>https://friveroll.github.io/categories/laboratorio/</link>
+      <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/categories/laboratorio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>farmacología</title>
+      <link>https://friveroll.github.io/categories/farmacolog%C3%ADa/</link>
+      <pubDate>Mon, 23 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/categories/farmacolog%C3%ADa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>física</title>
+      <link>https://friveroll.github.io/categories/f%C3%ADsica/</link>
+      <pubDate>Mon, 06 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/categories/f%C3%ADsica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bioinformática</title>
+      <link>https://friveroll.github.io/categories/bioinform%C3%A1tica/</link>
+      <pubDate>Sun, 20 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/categories/bioinform%C3%A1tica/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

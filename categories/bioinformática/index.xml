@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>bioinformática on Felipe Riveroll Aguirre</title>
+    <link>https://friveroll.github.io/categories/bioinform%C3%A1tica/</link>
+    <description>Recent content in bioinformática on Felipe Riveroll Aguirre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sun, 20 May 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/categories/bioinform%C3%A1tica/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducción al análisis de microarreglos</title>
+      <link>https://friveroll.github.io/posts/introduccion-al-analisis-de-microarreglos/</link>
+      <pubDate>Sun, 20 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/introduccion-al-analisis-de-microarreglos/</guid>
+      <description>Los datos que utilizaremos vienen de un estudio de Chiaretti et al. sobre la leucemia linfoblastica aguda (ALL), la cual fue conducida con chips de microarreglos HG-U95Av2 de Aymetrix. El paquete de datos ALL contiene los datos de expresion del experimento, normalizados con rma (las intensidades estan en escala log2), junto con las anotaciones de las muestras.
+Para ello utilizaremos R /Bioconductor Si no has instalado Bioconductor previemente necesitas correr las siguientes líneas</description>
+    </item>
+    
+    <item>
+      <title>Comparación estructural de proteínas</title>
+      <link>https://friveroll.github.io/posts/comparacion-estructural-de-proteinas/</link>
+      <pubDate>Sat, 23 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/comparacion-estructural-de-proteinas/</guid>
+      <description>Las proteinas se componen de un juego de 20 aminoácidos distintos, unidos en cualquier orden lineal. La secuencia de aminoácidos se denomina, secuencia primaria, ésta última, forma estructuras secundarias a través de interacciones intermoleculares, que a su vez forman estructuras terciarias.
+La estructura tridimensional de las proteínas, en la mayoría de los casos, da luz a los mecanismos catalíticos e interacciones potenciales entre otras moléculas, ambos aspectos ayudan a inferir la función molecular de una proteína.</description>
+    </item>
+    
+    <item>
+      <title>Búsqueda de motivos en proteínas</title>
+      <link>https://friveroll.github.io/posts/busqueda-de-motivos-en-proteinas/</link>
+      <pubDate>Wed, 08 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/busqueda-de-motivos-en-proteinas/</guid>
+      <description>Para descubrir las funciones de una proteína, que no corresponde a ninguna de las secuencias en las bases de datos. Lo cual ocurre frecuentemente, para las proteínas predichas de un genoma recién completado, que no tiene homólogos identificables.
+Aún si no se conocen homólogos, una proteína puede tener características tales como, dominios transmembranales, sitios potenciales de fosforilación o estructura secundaria predicha. Estos rasgos dan pistas de la estructura y/o función de una proteína.</description>
+    </item>
+    
+    <item>
+      <title>Visualizando resultados para Blast en Mobyle@Pasteur</title>
+      <link>https://friveroll.github.io/posts/visualizando-resultados-para-blast-en-mobyle-pasteur/</link>
+      <pubDate>Mon, 30 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/visualizando-resultados-para-blast-en-mobyle-pasteur/</guid>
+      <description>Nota: Actualmente ya no existe el servicio de Mobyle@pasteur, se ha cambiado por un servidor de Galaxy, el siguiente artículo muestra el procedimiento para mandar los resultados de blast a mview un programa que puede dar formato como alineamiento listo para ser presentado en una publicación. (Actualizado el 8 de septiembre de 2022)
+Brevemente, BLAST (Basic Local Alignment Search Tool) es un método de búsqueda por homología, en el cuál se reta a la base de datos con una secuencia problema (query), para que encuentre secuencias relacionadas a nuestra secuencia problema.</description>
+    </item>
+    
+    <item>
+      <title>Maartens Retrieval System (MRS)</title>
+      <link>https://friveroll.github.io/posts/maartens-retrieval-system/</link>
+      <pubDate>Thu, 28 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/maartens-retrieval-system/</guid>
+      <description>Maartens Retrieval System (MRS) es un metabuscador de bases de datos biológicas múy útil, algo así como un google para la minería de datos, el pasado 22 de marzo de 2011 hubo un curso en el CCG-UNAM impartido por George Magklaras sobre como combinar el uso de EMBOSS y MRS.
+Desde mi punto de vista, la documentación del proyecto es algo pobre, pero su interfase web es muy intuitiva.
+Su verdadero poder, está en la línea de comandos, sin embargo para poder usarla, se necesita tener acceso por SSH a una servidor con MRS instalado, para poder programar un &amp;ldquo;pipline or workflow&amp;rdquo; y hacer una minería de datos, si se tiene por ejemplo una lista de genes resultado de un microarreglo.</description>
+    </item>
+    
+  </channel>
+</rss>

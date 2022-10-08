@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>motivos on Felipe Riveroll Aguirre</title>
+    <link>https://friveroll.github.io/tags/motivos/</link>
+    <description>Recent content in motivos on Felipe Riveroll Aguirre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Wed, 08 Jun 2011 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/tags/motivos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Búsqueda de motivos en proteínas</title>
+      <link>https://friveroll.github.io/posts/busqueda-de-motivos-en-proteinas/</link>
+      <pubDate>Wed, 08 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/busqueda-de-motivos-en-proteinas/</guid>
+      <description>Para descubrir las funciones de una proteína, que no corresponde a ninguna de las secuencias en las bases de datos. Lo cual ocurre frecuentemente, para las proteínas predichas de un genoma recién completado, que no tiene homólogos identificables.
+Aún si no se conocen homólogos, una proteína puede tener características tales como, dominios transmembranales, sitios potenciales de fosforilación o estructura secundaria predicha. Estos rasgos dan pistas de la estructura y/o función de una proteína.</description>
+    </item>
+    
+  </channel>
+</rss>

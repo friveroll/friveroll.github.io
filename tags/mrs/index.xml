@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>mrs on Felipe Riveroll Aguirre</title>
+    <link>https://friveroll.github.io/tags/mrs/</link>
+    <description>Recent content in mrs on Felipe Riveroll Aguirre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 28 Apr 2011 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/tags/mrs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maartens Retrieval System (MRS)</title>
+      <link>https://friveroll.github.io/posts/maartens-retrieval-system/</link>
+      <pubDate>Thu, 28 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/maartens-retrieval-system/</guid>
+      <description>Maartens Retrieval System (MRS) es un metabuscador de bases de datos biológicas múy útil, algo así como un google para la minería de datos, el pasado 22 de marzo de 2011 hubo un curso en el CCG-UNAM impartido por George Magklaras sobre como combinar el uso de EMBOSS y MRS.
+Desde mi punto de vista, la documentación del proyecto es algo pobre, pero su interfase web es muy intuitiva.
+Su verdadero poder, está en la línea de comandos, sin embargo para poder usarla, se necesita tener acceso por SSH a una servidor con MRS instalado, para poder programar un &amp;ldquo;pipline or workflow&amp;rdquo; y hacer una minería de datos, si se tiene por ejemplo una lista de genes resultado de un microarreglo.</description>
+    </item>
+    
+  </channel>
+</rss>

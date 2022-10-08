@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>vernier on Felipe Riveroll Aguirre</title>
+    <link>https://friveroll.github.io/tags/vernier/</link>
+    <description>Recent content in vernier on Felipe Riveroll Aguirre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 06 Jan 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/tags/vernier/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Física con Análisis de Video Utilizando Logger Pro</title>
+      <link>https://friveroll.github.io/posts/fisica-con-analisis-de-video-utilizando-logger-pro/</link>
+      <pubDate>Mon, 06 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/fisica-con-analisis-de-video-utilizando-logger-pro/</guid>
+      <description>La tecnología de análisis de video permite a los estudiantes hacer mediciones precisas de la posición de un objeto en el transcurso del tiempo durante su movimiento. Los Maestros de Física y docentes de todos los niveles, encontrarán que esta tecnología hace posible un análisis detallado de situaciones físicas que normalmente no sería posible analizar debido a las dificultades de medición, tiempo, costo y/o consideraciones de seguridad. Los Maestros de matemáticas también podrán descubrir que el análisis de video es un método económico y útil para estudiar ejemplos de fenómenos del mundo real que pueden ser descritos por gráficas y relaciones lineales, cuadráticas, hiperbólicas y sinusoidales.</description>
+    </item>
+    
+  </channel>
+</rss>

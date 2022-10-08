@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>blast on Felipe Riveroll Aguirre</title>
+    <link>https://friveroll.github.io/tags/blast/</link>
+    <description>Recent content in blast on Felipe Riveroll Aguirre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 30 May 2011 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/tags/blast/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visualizando resultados para Blast en Mobyle@Pasteur</title>
+      <link>https://friveroll.github.io/posts/visualizando-resultados-para-blast-en-mobyle-pasteur/</link>
+      <pubDate>Mon, 30 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/visualizando-resultados-para-blast-en-mobyle-pasteur/</guid>
+      <description>Nota: Actualmente ya no existe el servicio de Mobyle@pasteur, se ha cambiado por un servidor de Galaxy, el siguiente artículo muestra el procedimiento para mandar los resultados de blast a mview un programa que puede dar formato como alineamiento listo para ser presentado en una publicación. (Actualizado el 8 de septiembre de 2022)
+Brevemente, BLAST (Basic Local Alignment Search Tool) es un método de búsqueda por homología, en el cuál se reta a la base de datos con una secuencia problema (query), para que encuentre secuencias relacionadas a nuestra secuencia problema.</description>
+    </item>
+    
+  </channel>
+</rss>

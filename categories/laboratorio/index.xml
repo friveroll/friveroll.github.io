@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>laboratorio on Felipe Riveroll Aguirre</title>
+    <link>https://friveroll.github.io/categories/laboratorio/</link>
+    <description>Recent content in laboratorio on Felipe Riveroll Aguirre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 06 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/categories/laboratorio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Western Blotting Parte II: Blotting</title>
+      <link>https://friveroll.github.io/posts/western-blotting-parte-ii-blotting/</link>
+      <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/western-blotting-parte-ii-blotting/</guid>
+      <description>La transferencia de proteínas o ácidos nucléicos a una membrana inmovilizante, es referida como &amp;ldquo;blotting&amp;rdquo;, la transferencia puede ser realizada por difusión molecular, por un flujo de buffer inducido por la succión (microfiltración) o acción capilar, el método utilizado de manera más frecuente es la electrotransferencia.
+La difusión es un método simple pero muy ineficiente para aplicar a la mayoría de las transferencias, exepto para las transferencias de geles de agarosa.</description>
+    </item>
+    
+    <item>
+      <title>Western Blotting Parte I: Electroforesis</title>
+      <link>https://friveroll.github.io/posts/western-blotting-parte-i-electroforesis/</link>
+      <pubDate>Mon, 02 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/western-blotting-parte-i-electroforesis/</guid>
+      <description>El western blott o inmunoblott es un inmunoensayo en el cuál anticuerpos específicos son utilizados como sondas marcadas. Esta técnica permite comparar la abundancia de las proteínas separadas por electroforesis en gel, utilizando carriles distintos para cada una de las muestras.
+La técnica puede dividirse en 5 pasos
+Electroforesis Blotting Inmunodetección Imagen Análisis (Cuantificación) Electroforesis Cualquier molécula cargada en solución, migrará en un campo eléctrico aplicado, un fenómeno conocido como electroforesis.</description>
+    </item>
+    
+    <item>
+      <title>Modelos animales de estrés en farmacología</title>
+      <link>https://friveroll.github.io/posts/modelos-animales-de-estres-en-farmacologia/</link>
+      <pubDate>Mon, 23 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/modelos-animales-de-estres-en-farmacologia/</guid>
+      <description>Los modelos animales, ofrecen la mejor aproximación, para entender los procesos de estrés en organismos biopsicosociales. En el laboratorio, se utilizan estresores psicológicos y físicos. Ejemplos de los últimos, son la restricción corporal y la exposición a un ambiente frío. Los procedimientos de estrés psicológico usualmente implican un proceso de aprendizaje, que requiere de más de una condición de tratamiento experimental, de manera que los componentes psicológicos, puedan ser extraídos puramente del estresor físico.</description>
+    </item>
+    
+  </channel>
+</rss>

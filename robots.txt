@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://friveroll.github.io/sitemap.xml

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>cinética enzimática on Felipe Riveroll Aguirre</title>
+    <link>https://friveroll.github.io/tags/cin%C3%A9tica-enzim%C3%A1tica/</link>
+    <description>Recent content in cinética enzimática on Felipe Riveroll Aguirre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Wed, 23 May 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/tags/cin%C3%A9tica-enzim%C3%A1tica/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Utilizando R para analizar datos de cinética</title>
+      <link>https://friveroll.github.io/posts/utilizando-r-para-analizar-datos-de-cinetica/</link>
+      <pubDate>Wed, 23 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/utilizando-r-para-analizar-datos-de-cinetica/</guid>
+      <description>R es un lenguaje de programación estadístico y gráfico, que através del proyecto bioconductor puede ser usado para analisis bioinformáticos, en esta ocasión lo utilizaremos para graficar y analizar datos cinéticos.
+El siguiente tutorial, está basado en el problema 1 del capítulo 4 del libro Biochemical Calculations de Irwin H Segel, y se mostrará como obtener $V_{max}$ y $Km$ a partir del análisis de los datos cinéticos por la gráfica de Lineweaver-Burk.</description>
+    </item>
+    
+  </channel>
+</rss>

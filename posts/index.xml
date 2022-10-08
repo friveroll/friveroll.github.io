@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Felipe Riveroll Aguirre</title>
+    <link>https://friveroll.github.io/posts/</link>
+    <description>Recent content in Posts on Felipe Riveroll Aguirre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 06 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Western Blotting Parte II: Blotting</title>
+      <link>https://friveroll.github.io/posts/western-blotting-parte-ii-blotting/</link>
+      <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/western-blotting-parte-ii-blotting/</guid>
+      <description>La transferencia de proteínas o ácidos nucléicos a una membrana inmovilizante, es referida como &amp;ldquo;blotting&amp;rdquo;, la transferencia puede ser realizada por difusión molecular, por un flujo de buffer inducido por la succión (microfiltración) o acción capilar, el método utilizado de manera más frecuente es la electrotransferencia.
+La difusión es un método simple pero muy ineficiente para aplicar a la mayoría de las transferencias, exepto para las transferencias de geles de agarosa.</description>
+    </item>
+    
+    <item>
+      <title>Western Blotting Parte I: Electroforesis</title>
+      <link>https://friveroll.github.io/posts/western-blotting-parte-i-electroforesis/</link>
+      <pubDate>Mon, 02 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/western-blotting-parte-i-electroforesis/</guid>
+      <description>El western blott o inmunoblott es un inmunoensayo en el cuál anticuerpos específicos son utilizados como sondas marcadas. Esta técnica permite comparar la abundancia de las proteínas separadas por electroforesis en gel, utilizando carriles distintos para cada una de las muestras.
+La técnica puede dividirse en 5 pasos
+Electroforesis Blotting Inmunodetección Imagen Análisis (Cuantificación) Electroforesis Cualquier molécula cargada en solución, migrará en un campo eléctrico aplicado, un fenómeno conocido como electroforesis.</description>
+    </item>
+    
+    <item>
+      <title>Modelos animales de estrés en farmacología</title>
+      <link>https://friveroll.github.io/posts/modelos-animales-de-estres-en-farmacologia/</link>
+      <pubDate>Mon, 23 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/modelos-animales-de-estres-en-farmacologia/</guid>
+      <description>Los modelos animales, ofrecen la mejor aproximación, para entender los procesos de estrés en organismos biopsicosociales. En el laboratorio, se utilizan estresores psicológicos y físicos. Ejemplos de los últimos, son la restricción corporal y la exposición a un ambiente frío. Los procedimientos de estrés psicológico usualmente implican un proceso de aprendizaje, que requiere de más de una condición de tratamiento experimental, de manera que los componentes psicológicos, puedan ser extraídos puramente del estresor físico.</description>
+    </item>
+    
+    <item>
+      <title>Física con Análisis de Video Utilizando Logger Pro</title>
+      <link>https://friveroll.github.io/posts/fisica-con-analisis-de-video-utilizando-logger-pro/</link>
+      <pubDate>Mon, 06 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/fisica-con-analisis-de-video-utilizando-logger-pro/</guid>
+      <description>La tecnología de análisis de video permite a los estudiantes hacer mediciones precisas de la posición de un objeto en el transcurso del tiempo durante su movimiento. Los Maestros de Física y docentes de todos los niveles, encontrarán que esta tecnología hace posible un análisis detallado de situaciones físicas que normalmente no sería posible analizar debido a las dificultades de medición, tiempo, costo y/o consideraciones de seguridad. Los Maestros de matemáticas también podrán descubrir que el análisis de video es un método económico y útil para estudiar ejemplos de fenómenos del mundo real que pueden ser descritos por gráficas y relaciones lineales, cuadráticas, hiperbólicas y sinusoidales.</description>
+    </item>
+    
+    <item>
+      <title>Utilizando R para analizar datos de cinética</title>
+      <link>https://friveroll.github.io/posts/utilizando-r-para-analizar-datos-de-cinetica/</link>
+      <pubDate>Wed, 23 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/utilizando-r-para-analizar-datos-de-cinetica/</guid>
+      <description>R es un lenguaje de programación estadístico y gráfico, que através del proyecto bioconductor puede ser usado para analisis bioinformáticos, en esta ocasión lo utilizaremos para graficar y analizar datos cinéticos.
+El siguiente tutorial, está basado en el problema 1 del capítulo 4 del libro Biochemical Calculations de Irwin H Segel, y se mostrará como obtener $V_{max}$ y $Km$ a partir del análisis de los datos cinéticos por la gráfica de Lineweaver-Burk.</description>
+    </item>
+    
+    <item>
+      <title>Introducción al análisis de microarreglos</title>
+      <link>https://friveroll.github.io/posts/introduccion-al-analisis-de-microarreglos/</link>
+      <pubDate>Sun, 20 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/introduccion-al-analisis-de-microarreglos/</guid>
+      <description>Los datos que utilizaremos vienen de un estudio de Chiaretti et al. sobre la leucemia linfoblastica aguda (ALL), la cual fue conducida con chips de microarreglos HG-U95Av2 de Aymetrix. El paquete de datos ALL contiene los datos de expresion del experimento, normalizados con rma (las intensidades estan en escala log2), junto con las anotaciones de las muestras.
+Para ello utilizaremos R /Bioconductor Si no has instalado Bioconductor previemente necesitas correr las siguientes líneas</description>
+    </item>
+    
+    <item>
+      <title>Comparación estructural de proteínas</title>
+      <link>https://friveroll.github.io/posts/comparacion-estructural-de-proteinas/</link>
+      <pubDate>Sat, 23 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/comparacion-estructural-de-proteinas/</guid>
+      <description>Las proteinas se componen de un juego de 20 aminoácidos distintos, unidos en cualquier orden lineal. La secuencia de aminoácidos se denomina, secuencia primaria, ésta última, forma estructuras secundarias a través de interacciones intermoleculares, que a su vez forman estructuras terciarias.
+La estructura tridimensional de las proteínas, en la mayoría de los casos, da luz a los mecanismos catalíticos e interacciones potenciales entre otras moléculas, ambos aspectos ayudan a inferir la función molecular de una proteína.</description>
+    </item>
+    
+    <item>
+      <title>Búsqueda de motivos en proteínas</title>
+      <link>https://friveroll.github.io/posts/busqueda-de-motivos-en-proteinas/</link>
+      <pubDate>Wed, 08 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/busqueda-de-motivos-en-proteinas/</guid>
+      <description>Para descubrir las funciones de una proteína, que no corresponde a ninguna de las secuencias en las bases de datos. Lo cual ocurre frecuentemente, para las proteínas predichas de un genoma recién completado, que no tiene homólogos identificables.
+Aún si no se conocen homólogos, una proteína puede tener características tales como, dominios transmembranales, sitios potenciales de fosforilación o estructura secundaria predicha. Estos rasgos dan pistas de la estructura y/o función de una proteína.</description>
+    </item>
+    
+    <item>
+      <title>Visualizando resultados para Blast en Mobyle@Pasteur</title>
+      <link>https://friveroll.github.io/posts/visualizando-resultados-para-blast-en-mobyle-pasteur/</link>
+      <pubDate>Mon, 30 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/visualizando-resultados-para-blast-en-mobyle-pasteur/</guid>
+      <description>Nota: Actualmente ya no existe el servicio de Mobyle@pasteur, se ha cambiado por un servidor de Galaxy, el siguiente artículo muestra el procedimiento para mandar los resultados de blast a mview un programa que puede dar formato como alineamiento listo para ser presentado en una publicación. (Actualizado el 8 de septiembre de 2022)
+Brevemente, BLAST (Basic Local Alignment Search Tool) es un método de búsqueda por homología, en el cuál se reta a la base de datos con una secuencia problema (query), para que encuentre secuencias relacionadas a nuestra secuencia problema.</description>
+    </item>
+    
+    <item>
+      <title>Maartens Retrieval System (MRS)</title>
+      <link>https://friveroll.github.io/posts/maartens-retrieval-system/</link>
+      <pubDate>Thu, 28 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/maartens-retrieval-system/</guid>
+      <description>Maartens Retrieval System (MRS) es un metabuscador de bases de datos biológicas múy útil, algo así como un google para la minería de datos, el pasado 22 de marzo de 2011 hubo un curso en el CCG-UNAM impartido por George Magklaras sobre como combinar el uso de EMBOSS y MRS.
+Desde mi punto de vista, la documentación del proyecto es algo pobre, pero su interfase web es muy intuitiva.
+Su verdadero poder, está en la línea de comandos, sin embargo para poder usarla, se necesita tener acceso por SSH a una servidor con MRS instalado, para poder programar un &amp;ldquo;pipline or workflow&amp;rdquo; y hacer una minería de datos, si se tiene por ejemplo una lista de genes resultado de un microarreglo.</description>
+    </item>
+    
+  </channel>
+</rss>
