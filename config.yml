@@ -31,7 +31,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-GoogleAnalyticsID: "G-336541427"
+GoogleAnalyticsID: "G-0K27KDV8RY"
 
 minify:
   disableXML: true
