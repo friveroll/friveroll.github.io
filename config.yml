@@ -10,6 +10,7 @@ params:
     homeInfoParams:
         Title: Hola soy Felipe
         Content: Este blog tiene archivados algunos archivos históricos de bioinformática, donde las herramientas mencionadas ya no estan disponibles actualmente
+    defaultTheme: auto
     GoogleAnalyticsID: G-0K27KDV8RY
     socialIcons: # optional
         - name: email
@@ -71,3 +72,27 @@ menu:
       name: Búsqueda
       url: /search/
       weight: 40
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
