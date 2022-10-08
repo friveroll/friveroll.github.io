@@ -118,4 +118,4 @@ El manual de análisis de Video para física se encuentra en la siguiente direcc
 [3]: http://livephoto.rit.edu/
 [4]: http://www.vernier.com/products/books/pva/
 
-{{< bibliography "bibliography\analisis_video-bib.json" >}}
+{{< bibliography "bibliography/analisis_video-bib.json" >}}

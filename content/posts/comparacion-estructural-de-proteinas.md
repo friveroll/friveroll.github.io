@@ -45,6 +45,6 @@ A continuaci√≥n se listan algunos de los recursos en internet para la comparaci√
 - [ALADYN](http://aladyn.escience-lab.org/)
 - [Smolign](http://sacan.biomed.drexel.edu/Smolign/)
 
-{{< bibliography "bibliography\alineamiento_estructural-bib.json" >}}
+{{< bibliography "bibliography/alineamiento_estructural-bib.json" >}}
 
 

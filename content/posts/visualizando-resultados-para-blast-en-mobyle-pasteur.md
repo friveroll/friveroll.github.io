@@ -56,4 +56,4 @@ Para hacer este análisis pueden seguirse los siguientes pasos:
 - Para obtener el siguiente resultado:
 ![Resultado alineamiento](/img/blast_16.png#center)
 
-{{< bibliography "bibliography\Blast_mobyle-bib.json" >}}
+{{< bibliography "bibliography/Blast_mobyle-bib.json" >}}

@@ -26,5 +26,5 @@ Algunas de las herramientas en línea para buscar motivos en proteínas son las 
 
 - [NetPhos 2.0 Server](http://www.cbs.dtu.dk/services/NetPhos/) Predice por redes neuronales, sitios de fosforilación en serina, treonina y tirosina para proteínas de eucariotes.
 
-{{< bibliography "bibliography\motivos_en_proteinas-bib.json" >}}
+{{< bibliography "bibliography/motivos_en_proteinas-bib.json" >}}
 

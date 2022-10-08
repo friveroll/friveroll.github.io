@@ -449,4 +449,4 @@ Código Completo:
 
 {{< gist friveroll 2691965 >}}
 
-{{< bibliography "bibliography\microarreglos-bib.json" >}}
+{{< bibliography "bibliography/microarreglos-bib.json" >}}

@@ -33,4 +33,4 @@ La frecuencia de un estresor (definido como el número de sesiones por día o se
 La duración, refiere a la longitud de la exposición al estrés en cada sesión, el incremento de la duración no necesariamente implica un incremento de la experiencia de estrés.
 La intensidad es la magnitud de inmovilización o restricción al que el roedor es sujeto. La variación de la intensidad en los tipos de restricción empleada, puede sugerir un cambio en la experiencia del roedor al estrés psicológico. La restricción física causa a un animal a sentir incrementada la sensación de peligro, provocando la necesidad de escapar, o si esto es dibido a una restricción física, el animal es capaz de discriminar que está previniendo su movimiento y puede entonces intentar contrarrestarlo. Los investigadores han especulado que los animales que están restringidos físicamente, pueden adaptarse mejor, debido a que pueden aprender la causa de la restricción, distinto de aquellos que se les administra un fármaco que les impide moverse
 
-{{< bibliography "bibliography\modelos_animales-bib.json" >}}
+{{< bibliography "bibliography/modelos_animales-bib.json" >}}

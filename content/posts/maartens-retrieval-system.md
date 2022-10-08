@@ -21,4 +21,4 @@ Su verdadero poder, está en la línea de comandos, sin embargo para poder usarl
 - [The bioinformatics sysadmin craftmanship: Installing the MRS v5 platform: Part 2](http://epistolatory.blogspot.mx/2012/01/bioinformatics-sysadmin-craftmanship.html)
 - La dirección para acceder a MRS es: [http://mrs.cmbi.ru.nl](http://mrs.cmbi.ru.nl)
 
-{{< bibliography "bibliography\secuencias_mrs-bib.json" >}}
+{{< bibliography "bibliography/secuencias_mrs-bib.json" >}}

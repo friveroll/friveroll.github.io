@@ -40,4 +40,4 @@ Regla de oro: Mientras más pequeña sea la proteína de interés, deberá ser m
 
 *Nota*: La acrilamida es una potente neurotoxina acumulativa: utilize guantes todo el tiempo. Coloque los geles en el tanque de electroforesis como lo indica el fabricante bañado en buffer.
 
-{{< bibliography "bibliography\western_0-bib.json" >}}
+{{< bibliography "bibliography/western_0-bib.json" >}}

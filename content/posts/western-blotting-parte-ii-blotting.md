@@ -68,4 +68,4 @@ Se utilizan dos tipos de membranas, las de nitrocelulosa, con tamaño de poro de
 Una vez que las proteínas se han transferido a la membarana, son más accesibles para varios ligandos que cuando estaban en el gel. En el blot ( la matriz inmovilizante que contiene las proteínas transferidas) se hace reaccionar con distintas sondas, tales como anticuerpos para la identificación del antígeno correspondiente. El blot generalmente requiere una cantidad pequeña de reactivos, las proteínas transferidas en las membranas pueden almacenarse por varias semanas después de su uso y también pueden ser utilizadas para análisis sucesivos.
 
 
-{{< bibliography "bibliography\western_1-bib.json" >}}
+{{< bibliography "bibliography/western_1-bib.json" >}}
