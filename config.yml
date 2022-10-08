@@ -5,6 +5,27 @@ theme:
   - PaperMod
   - hugo-cite
 
+params:
+    homeInfoParams:
+        Title: Hola soy Felipe
+        Content: Bienvenido a mi blog
+
+    socialIcons: # optional
+        - name: email
+          url: "mailto:friveroll@gmail.com"
+        - name: twitter
+          url: "https://twitter.com/FelipeRiveroll"
+        - name: facebook
+          url: "https://www.facebook.com/friveroll"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/felipe-riveroll-aguirre-804b26a0/"
+        - name: youtube
+          url: "https://www.youtube.com/channel/UCz0NpQzam-KEAjXpogj08EQ"
+        - name: github
+          url: "https://github.com/friveroll"
+        - name: gitlab
+          url: "https://gitlab.com/friveroll"  
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -16,17 +37,36 @@ minify:
   disableXML: true
   minifyOutput: true
 
+fuseOpts:
+  isCaseSensitive: false
+  shouldSort: true
+  location: 0
+  distance: 1000
+  threshold: 0.4
+  minMatchCharLength: 0
+  keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
 menu:
   main:
     - identifier: categories
-      name: categories
+      name: Categorias
       url: /categories/
       weight: 10
     - identifier: tags
-      name: tags
+      name: Etiquetas
       url: /tags/
       weight: 20
     - identifier: archives
       name: Archivo
       url: /archives/
       weight: 30
+    - identifier: search
+      name: Búsqueda
+      url: /search/
+      weight: 40
