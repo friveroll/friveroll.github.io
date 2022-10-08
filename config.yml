@@ -19,7 +19,9 @@ params:
         - name: twitter
           url: "https://twitter.com/FelipeRiveroll"
         - name: telegram
-          url:  https://t.me/friveroll 
+          url:  https://t.me/friveroll
+        - name: whatsapp
+          url: https://wa.me/522227864815   
         - name: facebook
           url: "https://www.facebook.com/friveroll"
         - name: linkedin
