@@ -1,6 +1,5 @@
 {{ if or .Params.math .Site.Params.math }}
 {{ partial "math.html" . }}
 {{ end }}
-{{ if .Site.Params.GoogleAnalyticsID }}
 {{ partial "analytics-gtag.html" . }}
-{{ end }}
+
