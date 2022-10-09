@@ -13,7 +13,8 @@ params:
     defaultTheme: auto
     GoogleAnalyticsID: G-0K27KDV8RY
     ShowShareButtons: true
-    ShowReadingTime: true 
+    ShowReadingTime: true
+    ShowBreadCrumbs: true 
     socialIcons: # optional
         - name: email
           url: "mailto:friveroll@gmail.com"
