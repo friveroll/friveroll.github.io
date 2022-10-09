@@ -6,7 +6,17 @@
     <description>Recent content in bioinformática on Felipe Riveroll Aguirre</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Sun, 20 May 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/categories/bioinform%C3%A1tica/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Oct 2022 20:04:43 -0500</lastBuildDate><atom:link href="https://friveroll.github.io/categories/bioinform%C3%A1tica/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Diseño De Primers Para PCR</title>
+      <link>https://friveroll.github.io/posts/dise%C3%B1o-de-primers-para-pcr/</link>
+      <pubDate>Sat, 08 Oct 2022 20:04:43 -0500</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/dise%C3%B1o-de-primers-para-pcr/</guid>
+      <description>¿Qué es un primer? Los primers son secuencias cortas de moléculas de ácidos nucléicos (entre 18 a 24 pares de bases) que son utilizados para la amplificación de un gen o un fragmento de ADN de interés, mediante la Reacción en Cadena de la Polimerasa (PCR).
+De tal forma que los cebadores o primers, son uno de los principales ingredientes para una reacción de PCR, y de ellos depende la especificidad, porque al unirse complementariamente a las dos cadenas de ADN de la secuencia molde, fijan por así decirlo las coordenadas donde se llevará acabo la reacción.</description>
+    </item>
+    
     <item>
       <title>Introducción al análisis de microarreglos</title>
       <link>https://friveroll.github.io/posts/introduccion-al-analisis-de-microarreglos/</link>
