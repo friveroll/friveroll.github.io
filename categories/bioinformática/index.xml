@@ -18,6 +18,16 @@ De tal forma que los cebadores o primers, son uno de los principales ingrediente
     </item>
     
     <item>
+      <title>Estabilidad interna de primers con python</title>
+      <link>https://friveroll.github.io/posts/estabilidad-interna-de-primers-con-python/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/estabilidad-interna-de-primers-con-python/</guid>
+      <description>Para evitar los sitios de union falsos del primer a la secuencia blanco (mispriming) hay que evitar que el extremo 3&amp;rsquo; sea muy pegajoso (o estable), una forma de obtener un extremo pegajoso es si éste contiene un alto contenido de GC. El centro del primer y el extremo 5&amp;rsquo; deberán de ser más pegajosos, para una mejor estabilidad.
+En otras palabras buscamos que el primer sea estable en el extremo 5&amp;rsquo; y un poco inestable para el extremo 3&#39;.</description>
+    </item>
+    
+    <item>
       <title>Introducción al análisis de microarreglos</title>
       <link>https://friveroll.github.io/posts/introduccion-al-analisis-de-microarreglos/</link>
       <pubDate>Sun, 20 May 2012 00:00:00 +0000</pubDate>
