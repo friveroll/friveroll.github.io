@@ -14,7 +14,8 @@ params:
     GoogleAnalyticsID: G-0K27KDV8RY
     ShowShareButtons: true
     ShowReadingTime: true
-    ShowBreadCrumbs: true 
+    ShowBreadCrumbs: true
+    ShowPostNavLinks: true 
     socialIcons: # optional
         - name: email
           url: "mailto:friveroll@gmail.com"
