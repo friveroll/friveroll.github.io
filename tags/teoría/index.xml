@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>teoría on Felipe Riveroll Aguirre</title>
+    <link>https://friveroll.github.io/tags/teor%C3%ADa/</link>
+    <description>Recent content in teoría on Felipe Riveroll Aguirre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Wed, 19 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/tags/teor%C3%ADa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Qué es la Bioinformática?</title>
+      <link>https://friveroll.github.io/posts/que-es-la-bioinformatica/</link>
+      <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/que-es-la-bioinformatica/</guid>
+      <description>El término bioinformática conceptualiza la biología en términos de moléculas (proteínas, ácidos nucléicos) y la aplicación de técnicas informáticas para entender y organizar este tipo de información biológica.
+Así que su meta principal tiene que ver con poder encontrar información guardada dentro de los organizamos vivos y depende de conceptos y aplicaciones de la biología, las ciencias de la computación y el análisis de datos.
+La bioinformática es predictiva Para poder encontrar el sentido de los datos biológicos debemos hacer predicciones acerca de lo que ya conocemos, es decir obtener conocimiento biológico por comparación con lo que se conoce.</description>
+    </item>
+    
+  </channel>
+</rss>
