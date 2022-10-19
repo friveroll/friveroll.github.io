@@ -29,13 +29,13 @@ En sus inicios la bioinformática tenía un enfoque de solo tratar con un gen o 
 Hoy en día, la tecnología permite obtener grandes cantidades de datos, lo que requiere un cinetífico de datos para:
 - Transformar los datos en un entendimiento predictivo.
 - Poder utilizar datos aunque estén incompletos.
-- Explorar los datos para generar hipótesis que puedan ser probasas experimentalmente.
+- Explorar los datos para generar hipótesis que puedan ser probadas experimentalmente.
 
 ## Escalabilidad
 
 Cuando hablamos de grandes cantidades de datos nos referimos a genomas completos, obtenidos por nuevas tecnologías de secuenciación (NGS).
 
-Por ejemplo estos son algunos de los recursos computacionales necesarios para grandes cantidades de datos.
+Por ejemplo, estos son algunos de los recursos computacionales necesarios para grandes cantidades de datos.
 - Genoma Humano - 8 GB
 - Árbol de la Vida - 1 TB
 - Datos crudos de un experimento de NGS - 1 TB
@@ -63,7 +63,7 @@ también tiene otras aplicaciones que pueden caer en 4 categorías
 
 ## ¿Qué características tiene un proyecto bioinformático?
 
-La mayoría de los proyectos pueden comenzar con un plan estándar, sin embargo el plán no está escrito seobre la roca, puede cambiar dependiendo de las funciones, características de las observaciones y resultados de análisis, que puden derivar en tareas adicionales del plan original para considerar las variaciones en los datos
+La mayoría de los proyectos pueden comenzar con un plan estándar, sin embargo el plán no está escrito sobre la roca, puede cambiar dependiendo de las funciones, características de las observaciones y resultados de análisis, que puden derivar en tareas adicionales del plan original para considerar las variaciones en los datos
 
 ## ¿Qué tipo de software bioinformático existe?
 
