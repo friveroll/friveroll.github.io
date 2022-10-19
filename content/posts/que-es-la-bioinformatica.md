@@ -68,12 +68,12 @@ La mayoría de los proyectos pueden comenzar con un plan estándar, sin embargo 
 ## ¿Qué tipo de software bioinformático existe?
 
 - Más básico: Uso de herramientas basadas en aplicaciones web [NCBI, blast]
-  - Solo se necesitan conocimientos de biología
+    - Solo se necesitan conocimientos de biología
 - Más profesional: Uso de herramientas independientes
-  - Herramientas con GUI (Interfase gráfica de usuario)
-  – Herramientas sin GUI (basadas en terminal)
-    - Además de los conocimientos en biología se necesita la habilidad para utilizar Unix, y escribir scripts.
-    - High-throughput data: Algunas veces se necesita el entendimiento del almacenamacenamiento de datos y la escalabilidad
+    - Herramientas con GUI (Interfase gráfica de usuario)
+    – Herramientas sin GUI (basadas en terminal)
+        - Además de los conocimientos en biología se necesita la habilidad para utilizar Unix, y escribir scripts.
+        - High-throughput data: Algunas veces se necesita el entendimiento del almacenamacenamiento de datos y la escalabilidad
 - Más avanzado: Desarrollo de algoritmos
     - Enfocado en ciencias de la computación, usualmente asociado con biólogos
 - Hacer públicos los datos/métodos
