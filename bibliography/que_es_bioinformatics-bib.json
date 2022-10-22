@@ -1,0 +1,4 @@
+[
+  {"id":"albert2016biostar","author":[{"family":"Albert","given":"Istvan"}],"citation-key":"albert2016biostar","container-title":"The biostar handbook","ISBN":"978-0-578-80435-4","issued":{"date-parts":[[2022]]},"page":"53-60","title":"Chapter 4 -  What is Bioinformatics?","type":"chapter","URL":"https://www.biostarhandbook.com/"},
+  {"id":"choudhuri2014chapter","author":[{"family":"Choudhuri","given":"Supratim"}],"citation-key":"choudhuri2014chapter","container-title":"Bioinformatics for Beginners: Genes, Genomes, Molecular Evolution, Databases and Analytical Tools","ISBN":"978-0-12-410471-6","issued":{"date-parts":[[2014]]},"page":"73–76","publisher":"Academic Press","title":"Chapter 4—The beginning of bioinformatics","type":"chapter","URL":"https://doi.org/10.1016/B978-0-12-410471-6.00004-9"}
+]
