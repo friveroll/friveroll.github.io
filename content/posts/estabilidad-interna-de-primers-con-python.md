@@ -226,7 +226,7 @@ def get_delta_g(sequence):
 
   Usage examples:
   >>> get_delta_g('ACTTG')
-  -6.700000000000001
+  -6.7
   """
   near_pairs_delta_g = {'AA': -1.9, 'AC': -1.3, 'AG': -1.6, 'AT': -1.5,
                         'CA': -1.9, 'CC': -3.1, 'CG': -3.6, 'CT': -1.6,
@@ -260,10 +260,8 @@ def get_delta_g_pentamers(sequence):
   [-7.0, -6.7]
 
   get_delta_g_pentamers("ACTTGGGATTGGGCT")
-  [-6.700000000000001, -8.5, -10.0, -9.7, -9.3, -8.1, -6.9, -8.4, -10.0, -11.2, -10.9]
+  [-6.7, -8.5, -10.0, -9.7, -9.3, -8.1, -6.9, -8.4, -10.0, -11.2, -10.9]
 
-  get_delta_g_pentamers("TAATACGACTCACTATAGGG")
-  [-5.4, -5.7, -7.4, -7.5, -7.8, -8.1, -6.1, -6.4, -6.3999999999999995, -6.4, -5.800000000000001, -5.4, -5.1, -5.1, -7.199999999999999, -8.8]
   """
   if not isinstance(sequence,str):
     raise TypeError("sequence  must be a string for an oligonucleotide")
