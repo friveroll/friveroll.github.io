@@ -6,7 +6,17 @@
     <description>Recent content on Felipe Riveroll Aguirre</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Wed, 19 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Estabilidad interna de primers con python</title>
+      <link>https://friveroll.github.io/posts/estabilidad-interna-de-primers-con-python/</link>
+      <pubDate>Wed, 02 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://friveroll.github.io/posts/estabilidad-interna-de-primers-con-python/</guid>
+      <description>Estabilidad interna de oligos El contenido de este post puede ser abierto de forma interactiva en Google Colab Rychlik (1993) publicó una guía sobre la selección de primers para la Reacción en Cadena de la polimerasa (PCR) donde menciona una gráfica de estabilidad interna para los oligos, la cual puede obtenerse utilizando Oligo 7.
+Esta gráfica puede ayudarnos a evitar el mispriming (sitios falsos de unión a la secuencia blanco) a partir del valor de $\Delta G$ de los pentámeros del oligo.</description>
+    </item>
+    
     <item>
       <title>¿Qué es la Bioinformática?</title>
       <link>https://friveroll.github.io/posts/que-es-la-bioinformatica/</link>
@@ -26,16 +36,6 @@ La bioinformática es predictiva Para poder encontrar el sentido de los datos bi
       <guid>https://friveroll.github.io/posts/dise%C3%B1o-de-primers-para-pcr/</guid>
       <description>¿Qué es un primer? Los primers son secuencias cortas de moléculas de ácidos nucléicos (entre 18 a 24 pares de bases) que son utilizados para la amplificación de un gen o un fragmento de ADN de interés, mediante la Reacción en Cadena de la Polimerasa (PCR).
 De tal forma que los cebadores o primers, son uno de los principales ingredientes para una reacción de PCR, y de ellos depende la especificidad, porque al unirse complementariamente a las dos cadenas de ADN de la secuencia molde, fijan por así decirlo las coordenadas donde se llevará acabo la reacción.</description>
-    </item>
-    
-    <item>
-      <title>Estabilidad interna de primers con python</title>
-      <link>https://friveroll.github.io/posts/estabilidad-interna-de-primers-con-python/</link>
-      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://friveroll.github.io/posts/estabilidad-interna-de-primers-con-python/</guid>
-      <description>Para evitar los sitios de union falsos del primer a la secuencia blanco (mispriming) hay que evitar que el extremo 3&amp;rsquo; sea muy pegajoso (o estable), una forma de obtener un extremo pegajoso es si éste contiene un alto contenido de GC. El centro del primer y el extremo 5&amp;rsquo; deberán de ser más pegajosos, para una mejor estabilidad.
-En otras palabras buscamos que el primer sea estable en el extremo 5&amp;rsquo; y un poco inestable para el extremo 3&#39;.</description>
     </item>
     
     <item>
