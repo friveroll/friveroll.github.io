@@ -7,8 +7,6 @@ categories: [bioinformática]
 math: true
 ---
 
-# Estabilidad interna de oligos
-
 El contenido de este post puede ser abierto de forma interactiva en Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/friveroll/oligo-internal-stability-graph/blob/main/Estabilidad_Interna.ipynb)
 
 Rychlik (1993) publicó una guía sobre la selección de primers para la Reacción en Cadena de la polimerasa (PCR) donde menciona una gráfica de estabilidad interna para los oligos, la cual puede obtenerse utilizando Oligo 7.
@@ -322,10 +320,10 @@ get_stability_graph("ACTTGGGATTGGGCT")
 
 
     
-![png](img/grafica-estabilidad-interna.png)
+![Gráfica de estabilidad interna](/img/grafica-estabilidad-interna.png#center)
     
 
-Aí podemos reproducir la gráfica de Rychlik (1993), en esta gráfica la secuencia del primer tiene una pobre estabilidad interna con un extremo 5’ con baja estabilidad y el extremo 3’ con una alta estabilidad, caso contrario a lo que se busca, esto podría hacer que este primer pueda dar varios productos de distinto tamaño debido al mispriming.
+Así podemos reproducir la gráfica de Rychlik (1993), en esta gráfica la secuencia del primer tiene una pobre estabilidad interna con un extremo 5’ con baja estabilidad y el extremo 3’ con una alta estabilidad, caso contrario a lo que se busca, esto podría hacer que este primer pueda dar varios productos de distinto tamaño debido al mispriming.
 
 
 El código del script completo está en se puede obtener en https://github.com/friveroll/oligo-internal-stability-graph
