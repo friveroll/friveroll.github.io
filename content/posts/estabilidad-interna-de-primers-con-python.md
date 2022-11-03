@@ -17,7 +17,7 @@ Rychlik (1993) publicó una guía sobre la selección de primers para la Reacci�
 
 Esta gráfica puede ayudarnos a evitar el _mispriming_ (sitios falsos de unión a la secuencia blanco) a partir del valor de $\Delta G$ de los pentámeros del oligo.
 
-al analizar la estabilidad interna. Bucamos que el primer sea estable en el extremo 5' y un poco inestable para el extremo 3'.
+Al analizar la estabilidad interna. Bucamos que el primer sea estable en el extremo 5' y un poco inestable para el extremo 3'.
 
 - Los primers con in extremo 5' estable son los que tienen un mejor desempeño al reducir los sitios de _mispriming_
 
@@ -173,7 +173,7 @@ delta_g
 
 Podemos ver aquí un problema
 
-$\Delta G = -(1.3 + 1.6 + 1.9 + 1.9) = 6.7 $ 
+$\Delta G = -(1.3 + 1.6 + 1.9 + 1.9) = - 6.7 $ 
 
 Python nos arroja otro resultado `-6.700000000000001` esto pasa casi en todos los lenguajes de programación porque los numeros decimales o `float` no pueden ser representados de forma precisa en lenguaje binario. 
 
