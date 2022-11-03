@@ -322,7 +322,7 @@ get_stability_graph("ACTTGGGATTGGGCT")
 
 
     
-![png](Estabilidad_Interna_files/Estabilidad_Interna_21_0.png)
+![png](img/grafica-estabilidad-interna.png)
     
 
 Aí podemos reproducir la gráfica de Rychlik (1993), en esta gráfica la secuencia del primer tiene una pobre estabilidad interna con un extremo 5’ con baja estabilidad y el extremo 3’ con una alta estabilidad, caso contrario a lo que se busca, esto podría hacer que este primer pueda dar varios productos de distinto tamaño debido al mispriming.
