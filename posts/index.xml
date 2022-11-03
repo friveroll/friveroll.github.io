@@ -13,7 +13,7 @@
       <pubDate>Wed, 02 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://friveroll.github.io/posts/estabilidad-interna-de-primers-con-python/</guid>
-      <description>Estabilidad interna de oligos El contenido de este post puede ser abierto de forma interactiva en Google Colab Rychlik (1993) publicó una guía sobre la selección de primers para la Reacción en Cadena de la polimerasa (PCR) donde menciona una gráfica de estabilidad interna para los oligos, la cual puede obtenerse utilizando Oligo 7.
+      <description>El contenido de este post puede ser abierto de forma interactiva en Google Colab Rychlik (1993) publicó una guía sobre la selección de primers para la Reacción en Cadena de la polimerasa (PCR) donde menciona una gráfica de estabilidad interna para los oligos, la cual puede obtenerse utilizando Oligo 7.
 Esta gráfica puede ayudarnos a evitar el mispriming (sitios falsos de unión a la secuencia blanco) a partir del valor de $\Delta G$ de los pentámeros del oligo.</description>
     </item>
     
