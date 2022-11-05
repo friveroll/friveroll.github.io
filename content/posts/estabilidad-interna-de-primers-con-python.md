@@ -7,7 +7,7 @@ categories: [bioinformática]
 math: true
 ---
 
-El contenido de este post puede ser abierto de forma interactiva en Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/friveroll/oligo-internal-stability-graph/blob/main/Estabilidad_Interna.ipynb)
+El contenido de este post puede ser abierto de forma interactiva en Google Colab {{< google-colab href=github/friveroll/oligo-internal-stability-graph/blob/main/Estabilidad_Interna.ipynb >}}
 
 Rychlik (1993) publicó una guía sobre la selección de primers para la Reacción en Cadena de la polimerasa (PCR) donde menciona una gráfica de estabilidad interna para los oligos, la cual puede obtenerse utilizando Oligo 7.
 

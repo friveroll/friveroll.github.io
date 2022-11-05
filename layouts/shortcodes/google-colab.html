@@ -1,0 +1,5 @@
+{{ if .IsNamedParams }}
+<a href="https://colab.research.google.com/{{.Get "href"}}" target="_blank"> <img class="notebook-badge-image" src="/img/colab-badge.svg" alt="Open In Colab"></a>
+{{ else }}
+<a href="https://colab.research.google.com/{{.Get 0}}" target="_blank"> <img class="notebook-badge-image" src="/img/colab-badge.svg" alt="Open In Colab"></a>
+{{ end }}

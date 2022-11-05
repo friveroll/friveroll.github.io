@@ -2,46 +2,45 @@ baseURL: "https://friveroll.github.io"
 languageCode: es
 title: Felipe Riveroll Aguirre
 paginate: 5
-theme: 
+theme:
   - PaperMod
   - hugo-cite
 
 params:
-    homeInfoParams:
-        Title: Hola soy Felipe
-        Content: Este blog tiene archivados algunos archivos históricos de bioinformática, donde las herramientas mencionadas ya no estan disponibles actualmente
-    defaultTheme: auto
-    GoogleAnalyticsID: G-0K27KDV8RY
-    ShowShareButtons: true
-    ShowReadingTime: true
-    ShowBreadCrumbs: true
-    ShowPostNavLinks: true 
-    socialIcons: # optional
-        - name: email
-          url: "mailto:friveroll@gmail.com"
-        - name: twitter
-          url: "https://twitter.com/FelipeRiveroll"
-        - name: telegram
-          url:  https://t.me/friveroll
-        - name: whatsapp
-          url: https://wa.me/522227864815   
-        - name: facebook
-          url: "https://www.facebook.com/friveroll"
-        - name: linkedin
-          url: "https://www.linkedin.com/in/felipe-riveroll-aguirre-804b26a0/"
-        - name: youtube
-          url: "https://www.youtube.com/channel/UCz0NpQzam-KEAjXpogj08EQ"
-        - name: github
-          url: "https://github.com/friveroll"
-        - name: gitlab
-          url: "https://gitlab.com/friveroll"  
+  homeInfoParams:
+    Title: Hola soy Felipe
+    Content: Este blog tiene archivados algunos archivos históricos de bioinformática, donde las herramientas mencionadas ya no estan disponibles actualmente
+  defaultTheme: auto
+  GoogleAnalyticsID: G-0K27KDV8RY
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  socialIcons: # optional
+    - name: email
+      url: "mailto:friveroll@gmail.com"
+    - name: twitter
+      url: "https://twitter.com/FelipeRiveroll"
+    - name: telegram
+      url: https://t.me/friveroll
+    - name: whatsapp
+      url: https://wa.me/522227864815
+    - name: facebook
+      url: "https://www.facebook.com/friveroll"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/felipe-riveroll-aguirre-804b26a0/"
+    - name: youtube
+      url: "https://www.youtube.com/channel/UCz0NpQzam-KEAjXpogj08EQ"
+    - name: github
+      url: "https://github.com/friveroll"
+    - name: gitlab
+      url: "https://gitlab.com/friveroll"
 
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
-
 
 minify:
   disableXML: true
@@ -82,25 +81,25 @@ menu:
       weight: 40
 
 privacy:
-    vimeo:
-        disabled: false
-        simple: true
+  vimeo:
+    disabled: false
+    simple: true
 
-    twitter:
-        disabled: false
-        enableDNT: true
-        simple: true
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
 
-    instagram:
-        disabled: false
-        simple: true
+  instagram:
+    disabled: false
+    simple: true
 
-    youtube:
-        disabled: false
-        privacyEnhanced: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
 
 services:
-    instagram:
-        disableInlineCSS: true
-    twitter:
-        disableInlineCSS: true
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
