@@ -1,0 +1,11 @@
+{{/*
+  Gist shortcode removed in Hugo 0.156.
+  This override outputs a link to the gist instead.
+*/}}
+{{- $url := .Get 0 -}}
+{{- $file := .Get 1 -}}
+{{- if $file -}}
+<a href="{{ $url }}/{{ $file }}">View gist on GitHub</a>
+{{- else -}}
+<a href="{{ $url }}">View gist on GitHub</a>
+{{- end -}}
