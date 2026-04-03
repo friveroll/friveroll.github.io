@@ -6,136 +6,191 @@
     <description>Recent content in Posts on Felipe Riveroll Aguirre</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Wed, 02 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Western Blotting Parte III: Inmunodetección</title>
+      <link>https://friveroll.github.io/posts/western-blotting-parte-iii-inmunodeteccion/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://friveroll.github.io/posts/western-blotting-parte-iii-inmunodeteccion/</guid>
+      <description>&lt;p&gt;Tras separar las proteínas por SDS-PAGE y transferirlas a una membrana de nitrocelulosa o PVDF, el siguiente paso del western blot es la inmunodetección. En esta etapa, anticuerpos específicos reconocen la proteína inmovilizada, formando complejos antígeno–anticuerpo que posteriormente se hacen visibles mediante un sistema de detección quimioluminiscente, fluorescente o colorimétrico 
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;span class=&#34;hugo-cite-group&#34;&gt;
+
+          &lt;a href=&#34;#kurien2015western&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Biji T.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kurien&lt;/span&gt;&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;R. Hal&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Scofield&lt;/span&gt;&lt;/span&gt;,&amp;#32;&lt;span itemprop=&#34;datePublished&#34;&gt;2015&lt;/span&gt;&lt;/a&gt;&lt;span class=&#34;hugo-cite-citation&#34;&gt; 
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope 
+      itemtype=&#34;https://schema.org/Chapter&#34;
+      data-type=&#34;chapter&#34;&gt;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kurien&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Biji T.&#34; /&gt;
+    B.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Scofield&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;R. Hal&#34; /&gt;
+    R.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2015&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Western blotting: An introduction&lt;/span&gt;.&amp;#32;In&lt;span itemprop=&#34;about&#34;&gt;
+    &lt;i&gt;Methods in Molecular Biology&lt;/i&gt;&lt;/span&gt;.&amp;#32;(&lt;span&gt;pp.&amp;#32;381–391&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;publisher&#34;
+               itemtype=&#34;http://schema.org/Organization&#34;
+               itemscope=&#34;&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Humana Press&lt;/span&gt;&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1007/978-1-4939-2694-7_38&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1007/978-1-4939-2694-7_38&lt;/a&gt;&lt;/span&gt;
+
+
+
+
+&lt;/span&gt;&lt;/span&gt;)&lt;/span&gt;
+.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Estabilidad interna de primers con python</title>
       <link>https://friveroll.github.io/posts/estabilidad-interna-de-primers-con-python/</link>
       <pubDate>Wed, 02 Nov 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/estabilidad-interna-de-primers-con-python/</guid>
-      <description>El contenido de este post puede ser abierto de forma interactiva en Google Colab Rychlik (1993) publicó una guía sobre la selección de primers para la Reacción en Cadena de la polimerasa (PCR) donde menciona una gráfica de estabilidad interna para los oligos, la cual puede obtenerse utilizando Oligo 7.
-Esta gráfica puede ayudarnos a evitar el mispriming (sitios falsos de unión a la secuencia blanco) a partir del valor de $\Delta G$ de los pentámeros del oligo.</description>
+      <description>&lt;p&gt;El contenido de este post puede ser abierto de forma interactiva en Google Colab 
+&lt;a href=&#34;https://colab.research.google.com/github/friveroll/oligo-internal-stability-graph/blob/main/Estabilidad_Interna.ipynb&#34; target=&#34;_blank&#34;&gt; &lt;img class=&#34;notebook-badge-image&#34; src=&#34;https://friveroll.github.io/img/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;&gt;&lt;/a&gt;
+
+&lt;/p&gt;
+&lt;p&gt;Rychlik (1993) publicó una guía sobre la selección de primers para la Reacción en Cadena de la polimerasa (PCR) donde menciona una gráfica de estabilidad interna para los oligos, la cual puede obtenerse utilizando Oligo 7.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://media.springernature.com/lw685/springer-static/image/chp%3A10.1385%2F0-89603-244-2%3A31/MediaObjects/978-1-59259-502-0_2_Fig2_HTML.jpg#center&#34; alt=&#34;Stability graph&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Esta gráfica puede ayudarnos a evitar el &lt;em&gt;mispriming&lt;/em&gt; (sitios falsos de unión a la secuencia blanco) a partir del valor de $\Delta G$ de los pentámeros del oligo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>¿Qué es la Bioinformática?</title>
       <link>https://friveroll.github.io/posts/que-es-la-bioinformatica/</link>
       <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/que-es-la-bioinformatica/</guid>
-      <description>El término bioinformática conceptualiza la biología en términos de moléculas (proteínas, ácidos nucléicos) y la aplicación de técnicas informáticas para entender y organizar este tipo de información biológica.
-Así que su meta principal tiene que ver con poder encontrar información guardada dentro de los organizamos vivos y depende de conceptos y aplicaciones de la biología, las ciencias de la computación y el análisis de datos.
-La bioinformática es predictiva Para poder encontrar el sentido de los datos biológicos debemos hacer predicciones acerca de lo que ya conocemos, es decir obtener conocimiento biológico por comparación con lo que se conoce.</description>
+      <description>&lt;p&gt;El término bioinformática conceptualiza la biología en términos de moléculas (proteínas, ácidos nucléicos) y la aplicación de técnicas informáticas para entender y organizar este tipo de información biológica.&lt;/p&gt;
+&lt;p&gt;Así que su meta principal tiene que ver con poder encontrar información guardada dentro de los organizamos vivos y depende de conceptos y aplicaciones de la biología, las ciencias de la computación y el análisis de datos.&lt;/p&gt;
+&lt;h2 id=&#34;la-bioinformática-es-predictiva&#34;&gt;La bioinformática es predictiva&lt;/h2&gt;
+&lt;p&gt;Para poder encontrar el sentido de los datos biológicos debemos hacer predicciones acerca de lo que ya conocemos, es decir obtener conocimiento biológico por comparación con lo que se conoce.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Diseño De Primers Para PCR</title>
       <link>https://friveroll.github.io/posts/dise%C3%B1o-de-primers-para-pcr/</link>
       <pubDate>Sat, 08 Oct 2022 20:04:43 -0500</pubDate>
-      
       <guid>https://friveroll.github.io/posts/dise%C3%B1o-de-primers-para-pcr/</guid>
-      <description>¿Qué es un primer? Los primers son secuencias cortas de moléculas de ácidos nucléicos (entre 18 a 24 pares de bases) que son utilizados para la amplificación de un gen o un fragmento de ADN de interés, mediante la Reacción en Cadena de la Polimerasa (PCR).
-De tal forma que los cebadores o primers, son uno de los principales ingredientes para una reacción de PCR, y de ellos depende la especificidad, porque al unirse complementariamente a las dos cadenas de ADN de la secuencia molde, fijan por así decirlo las coordenadas donde se llevará acabo la reacción.</description>
+      <description>&lt;h1 id=&#34;qué-es-un-primer&#34;&gt;¿Qué es un primer?&lt;/h1&gt;
+&lt;p&gt;Los primers son secuencias cortas de moléculas de ácidos nucléicos (entre 18 a 24 pares de bases) que son utilizados para la amplificación de un gen o un fragmento de ADN de interés, mediante la Reacción en Cadena de la Polimerasa (PCR).&lt;/p&gt;
+&lt;p&gt;De tal forma que los cebadores o primers, son uno de los principales ingredientes para una reacción de PCR, y de ellos depende la especificidad, porque al unirse complementariamente a las dos cadenas de ADN de la secuencia molde, fijan por así decirlo las coordenadas donde se llevará acabo la reacción.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Western Blotting Parte II: Blotting</title>
       <link>https://friveroll.github.io/posts/western-blotting-parte-ii-blotting/</link>
       <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/western-blotting-parte-ii-blotting/</guid>
-      <description>La transferencia de proteínas o ácidos nucléicos a una membrana inmovilizante, es referida como &amp;ldquo;blotting&amp;rdquo;, la transferencia puede ser realizada por difusión molecular, por un flujo de buffer inducido por la succión (microfiltración) o acción capilar, el método utilizado de manera más frecuente es la electrotransferencia.
-La difusión es un método simple pero muy ineficiente para aplicar a la mayoría de las transferencias, exepto para las transferencias de geles de agarosa.</description>
+      <description>&lt;p&gt;La transferencia de proteínas o ácidos nucléicos a una membrana inmovilizante, es referida como &amp;ldquo;&lt;em&gt;blotting&lt;/em&gt;&amp;rdquo;, la transferencia puede ser realizada por difusión molecular, por un flujo de buffer inducido por la succión (microfiltración) o acción capilar, el método utilizado de manera más frecuente es la electrotransferencia.&lt;/p&gt;
+&lt;p&gt;La &lt;em&gt;difusión&lt;/em&gt; es un método simple pero muy ineficiente para aplicar a la mayoría de las transferencias, exepto para las transferencias de geles de agarosa. Generalmente las proteínas separadas en geles de poliacrlilamida se procesan por electroblotting, que utiliza la furza motriz de un campo eléctrico para que las proteínas eluyan desde el gel para inmovilizarlos en una matriz. Este método es rápido, eficiente y mantiene una alta resolución del patrón de bandas de las proteínas separadas por electroforesis.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Western Blotting Parte I: Electroforesis</title>
       <link>https://friveroll.github.io/posts/western-blotting-parte-i-electroforesis/</link>
       <pubDate>Mon, 02 Mar 2015 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/western-blotting-parte-i-electroforesis/</guid>
-      <description>El western blott o inmunoblott es un inmunoensayo en el cuál anticuerpos específicos son utilizados como sondas marcadas. Esta técnica permite comparar la abundancia de las proteínas separadas por electroforesis en gel, utilizando carriles distintos para cada una de las muestras.
-La técnica puede dividirse en 5 pasos
-Electroforesis Blotting Inmunodetección Imagen Análisis (Cuantificación) Electroforesis Cualquier molécula cargada en solución, migrará en un campo eléctrico aplicado, un fenómeno conocido como electroforesis.</description>
+      <description>&lt;p&gt;El western blott o inmunoblott es un inmunoensayo en el cuál anticuerpos específicos son utilizados como sondas marcadas. Esta técnica permite comparar la abundancia de las proteínas separadas por electroforesis en gel, utilizando carriles distintos para cada una de las muestras.&lt;/p&gt;
+&lt;p&gt;La técnica puede dividirse en 5 pasos&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Electroforesis&lt;/li&gt;
+&lt;li&gt;Blotting&lt;/li&gt;
+&lt;li&gt;Inmunodetección&lt;/li&gt;
+&lt;li&gt;Imagen&lt;/li&gt;
+&lt;li&gt;Análisis (Cuantificación)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;electroforesis&#34;&gt;Electroforesis&lt;/h2&gt;
+&lt;p&gt;Cualquier molécula cargada en solución, migrará en un campo eléctrico aplicado, un fenómeno conocido como electroforesis. La velocidad de migración dependerá del campo eléctrico y de la densidad de carga de la molécula, esto es, la relación de masa/carga. Debido a que las proteínas disueltas tienen una carga neta, una solución que contiene una mezcla de proteínas, puede en teoría ser resuelta por una electroforesis, dado que las proteínas distintas con densidades de carga diferentes, migran hacia los electrodos apropiados a diferentes velocidades, sin embargo una separación efectiva nunca se alcanza dado que todas las proteínas están inicialmente distribuídas en la solución. La respuesta a este problema, es cargar la solución de proteínas en un amortiguador (buffer), permitiendo que las proteínas con densidades de carga distintas migren a zonas discretas.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Modelos animales de estrés en farmacología</title>
       <link>https://friveroll.github.io/posts/modelos-animales-de-estres-en-farmacologia/</link>
       <pubDate>Mon, 23 Jun 2014 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/modelos-animales-de-estres-en-farmacologia/</guid>
-      <description>Los modelos animales, ofrecen la mejor aproximación, para entender los procesos de estrés en organismos biopsicosociales. En el laboratorio, se utilizan estresores psicológicos y físicos. Ejemplos de los últimos, son la restricción corporal y la exposición a un ambiente frío. Los procedimientos de estrés psicológico usualmente implican un proceso de aprendizaje, que requiere de más de una condición de tratamiento experimental, de manera que los componentes psicológicos, puedan ser extraídos puramente del estresor físico.</description>
+      <description>&lt;p&gt;Los modelos animales, ofrecen la mejor aproximación, para entender los procesos de estrés en organismos biopsicosociales.
+En el laboratorio, se utilizan estresores psicológicos y físicos. Ejemplos de los últimos, son la restricción corporal y la exposición a un ambiente frío. Los procedimientos de estrés psicológico usualmente implican un proceso de aprendizaje, que requiere de más de una condición de tratamiento experimental, de manera que los componentes psicológicos, puedan ser extraídos puramente del estresor físico.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Física con Análisis de Video Utilizando Logger Pro</title>
       <link>https://friveroll.github.io/posts/fisica-con-analisis-de-video-utilizando-logger-pro/</link>
       <pubDate>Mon, 06 Jan 2014 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/fisica-con-analisis-de-video-utilizando-logger-pro/</guid>
-      <description>La tecnología de análisis de video permite a los estudiantes hacer mediciones precisas de la posición de un objeto en el transcurso del tiempo durante su movimiento. Los Maestros de Física y docentes de todos los niveles, encontrarán que esta tecnología hace posible un análisis detallado de situaciones físicas que normalmente no sería posible analizar debido a las dificultades de medición, tiempo, costo y/o consideraciones de seguridad. Los Maestros de matemáticas también podrán descubrir que el análisis de video es un método económico y útil para estudiar ejemplos de fenómenos del mundo real que pueden ser descritos por gráficas y relaciones lineales, cuadráticas, hiperbólicas y sinusoidales.</description>
+      <description>&lt;p&gt;La tecnología de análisis de video permite a los estudiantes hacer mediciones precisas de la posición de un objeto en el transcurso del tiempo durante su movimiento. Los Maestros de Física y docentes de todos los niveles, encontrarán que esta tecnología hace posible un análisis detallado de situaciones físicas que normalmente no sería posible analizar debido a las dificultades de medición, tiempo, costo y/o consideraciones de seguridad. Los Maestros de matemáticas también podrán descubrir que el análisis de video es un método económico y útil para estudiar ejemplos de fenómenos del mundo real que pueden ser descritos por gráficas y relaciones lineales, cuadráticas, hiperbólicas y sinusoidales.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Utilizando R para analizar datos de cinética</title>
       <link>https://friveroll.github.io/posts/utilizando-r-para-analizar-datos-de-cinetica/</link>
       <pubDate>Wed, 23 May 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/utilizando-r-para-analizar-datos-de-cinetica/</guid>
-      <description>R es un lenguaje de programación estadístico y gráfico, que através del proyecto bioconductor puede ser usado para analisis bioinformáticos, en esta ocasión lo utilizaremos para graficar y analizar datos cinéticos.
-El siguiente tutorial, está basado en el problema 1 del capítulo 4 del libro Biochemical Calculations de Irwin H Segel, y se mostrará como obtener $V_{max}$ y $Km$ a partir del análisis de los datos cinéticos por la gráfica de Lineweaver-Burk.</description>
+      <description>&lt;p&gt;R es un lenguaje de programación estadístico y gráfico, que através del proyecto bioconductor puede ser usado para analisis bioinformáticos, en esta ocasión lo utilizaremos para graficar y analizar datos cinéticos.&lt;/p&gt;
+&lt;p&gt;El siguiente tutorial, está basado en el problema 1 del capítulo 4 del libro &lt;em&gt;Biochemical Calculations&lt;/em&gt; de &lt;em&gt;Irwin H Segel&lt;/em&gt;,  y se mostrará como obtener $V_{max}$ y $Km$ a partir del análisis de los datos cinéticos por la gráfica de Lineweaver-Burk.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Introducción al análisis de microarreglos</title>
       <link>https://friveroll.github.io/posts/introduccion-al-analisis-de-microarreglos/</link>
       <pubDate>Sun, 20 May 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/introduccion-al-analisis-de-microarreglos/</guid>
-      <description>Los datos que utilizaremos vienen de un estudio de Chiaretti et al. sobre la leucemia linfoblastica aguda (ALL), la cual fue conducida con chips de microarreglos HG-U95Av2 de Aymetrix. El paquete de datos ALL contiene los datos de expresion del experimento, normalizados con rma (las intensidades estan en escala log2), junto con las anotaciones de las muestras.
-Para ello utilizaremos R /Bioconductor Si no has instalado Bioconductor previemente necesitas correr las siguientes líneas</description>
+      <description>&lt;p&gt;Los datos que utilizaremos vienen de un estudio de Chiaretti et al.  sobre la leucemia linfoblastica aguda (ALL), la cual fue conducida con chips de microarreglos HG-U95Av2 de Aymetrix. El paquete de datos ALL contiene los datos de expresion del experimento, normalizados con rma (las intensidades estan en escala log2), junto con las anotaciones de las muestras.&lt;/p&gt;
+&lt;p&gt;Para ello utilizaremos R /Bioconductor Si no has instalado Bioconductor previemente necesitas correr las siguientes líneas&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Comparación estructural de proteínas</title>
       <link>https://friveroll.github.io/posts/comparacion-estructural-de-proteinas/</link>
       <pubDate>Sat, 23 Jul 2011 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/comparacion-estructural-de-proteinas/</guid>
-      <description>Las proteinas se componen de un juego de 20 aminoácidos distintos, unidos en cualquier orden lineal. La secuencia de aminoácidos se denomina, secuencia primaria, ésta última, forma estructuras secundarias a través de interacciones intermoleculares, que a su vez forman estructuras terciarias.
-La estructura tridimensional de las proteínas, en la mayoría de los casos, da luz a los mecanismos catalíticos e interacciones potenciales entre otras moléculas, ambos aspectos ayudan a inferir la función molecular de una proteína.</description>
+      <description>&lt;p&gt;Las proteinas se componen de un juego de 20 aminoácidos distintos, unidos en cualquier orden lineal. La secuencia de aminoácidos se denomina, secuencia primaria, ésta última, forma estructuras secundarias a través de interacciones intermoleculares, que a su vez forman estructuras terciarias.&lt;/p&gt;
+&lt;p&gt;La estructura tridimensional de las proteínas, en la mayoría de los casos, da luz a los mecanismos catalíticos e interacciones potenciales entre otras moléculas, ambos aspectos ayudan a inferir la función molecular de una proteína.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Búsqueda de motivos en proteínas</title>
       <link>https://friveroll.github.io/posts/busqueda-de-motivos-en-proteinas/</link>
       <pubDate>Wed, 08 Jun 2011 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/busqueda-de-motivos-en-proteinas/</guid>
-      <description>Para descubrir las funciones de una proteína, que no corresponde a ninguna de las secuencias en las bases de datos. Lo cual ocurre frecuentemente, para las proteínas predichas de un genoma recién completado, que no tiene homólogos identificables.
-Aún si no se conocen homólogos, una proteína puede tener características tales como, dominios transmembranales, sitios potenciales de fosforilación o estructura secundaria predicha. Estos rasgos dan pistas de la estructura y/o función de una proteína.</description>
+      <description>&lt;p&gt;Para descubrir las funciones de una proteína,  que no corresponde a ninguna de las secuencias en las bases de datos. Lo cual ocurre frecuentemente, para las proteínas predichas de un genoma recién completado, que no tiene homólogos identificables.&lt;/p&gt;
+&lt;p&gt;Aún si no se conocen homólogos, una proteína puede tener características tales como, dominios transmembranales, sitios potenciales de fosforilación o estructura secundaria predicha. Estos rasgos dan pistas de la estructura y/o función de una proteína.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Visualizando resultados para Blast en Mobyle@Pasteur</title>
       <link>https://friveroll.github.io/posts/visualizando-resultados-para-blast-en-mobyle-pasteur/</link>
       <pubDate>Mon, 30 May 2011 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/visualizando-resultados-para-blast-en-mobyle-pasteur/</guid>
-      <description>Nota: Actualmente ya no existe el servicio de Mobyle@pasteur, se ha cambiado por un servidor de Galaxy, el siguiente artículo muestra el procedimiento para mandar los resultados de blast a mview un programa que puede dar formato como alineamiento listo para ser presentado en una publicación. (Actualizado el 8 de septiembre de 2022)
-Brevemente, BLAST (Basic Local Alignment Search Tool) es un método de búsqueda por homología, en el cuál se reta a la base de datos con una secuencia problema (query), para que encuentre secuencias relacionadas a nuestra secuencia problema.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Actualmente ya no existe el servicio de Mobyle@pasteur, se ha cambiado por un servidor de Galaxy, el siguiente artículo muestra el procedimiento para mandar los resultados de blast a mview un programa que puede dar formato como alineamiento listo para ser presentado en una publicación. (Actualizado el 8 de septiembre de 2022)&lt;/p&gt;
+&lt;p&gt;Brevemente, BLAST (&lt;strong&gt;B&lt;/strong&gt;asic &lt;strong&gt;L&lt;/strong&gt;ocal &lt;strong&gt;A&lt;/strong&gt;lignment &lt;strong&gt;S&lt;/strong&gt;earch &lt;strong&gt;T&lt;/strong&gt;ool) es un método de búsqueda por homología, en el cuál se reta a la base de datos con una secuencia problema (query), para que encuentre secuencias relacionadas a nuestra secuencia problema.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Maartens Retrieval System (MRS)</title>
       <link>https://friveroll.github.io/posts/maartens-retrieval-system/</link>
       <pubDate>Thu, 28 Apr 2011 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/maartens-retrieval-system/</guid>
-      <description>Maartens Retrieval System (MRS) es un metabuscador de bases de datos biológicas múy útil, algo así como un google para la minería de datos, el pasado 22 de marzo de 2011 hubo un curso en el CCG-UNAM impartido por George Magklaras sobre como combinar el uso de EMBOSS y MRS.
-Desde mi punto de vista, la documentación del proyecto es algo pobre, pero su interfase web es muy intuitiva.
-Su verdadero poder, está en la línea de comandos, sin embargo para poder usarla, se necesita tener acceso por SSH a una servidor con MRS instalado, para poder programar un &amp;ldquo;pipline or workflow&amp;rdquo; y hacer una minería de datos, si se tiene por ejemplo una lista de genes resultado de un microarreglo.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://mrs.cmbi.ru.nl&#34;&gt;Maartens Retrieval System (MRS)&lt;/a&gt;  es un metabuscador de bases de datos biológicas múy útil, algo así como un google para la minería de datos, el pasado 22 de marzo de 2011 hubo un curso en el &lt;a href=&#34;http://www.ccg.unam.mx&#34;&gt;CCG-UNAM&lt;/a&gt; impartido por &lt;a href=&#34;https://about.me/georgemagklaras&#34;&gt;George Magklaras&lt;/a&gt; sobre como combinar el uso de &lt;a href=&#34;http://emboss.sourceforge.net/what&#34;&gt;EMBOSS&lt;/a&gt; y &lt;a href=&#34;http://mrs.cmbi.ru.nl&#34;&gt;MRS&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Desde mi punto de vista, la documentación del proyecto es algo pobre, pero su interfase web es muy intuitiva.&lt;/p&gt;
+&lt;p&gt;Su verdadero poder, está en la línea de comandos, sin embargo para poder usarla, se necesita tener acceso por SSH a una servidor con MRS instalado, para poder programar un &amp;ldquo;pipline or workflow&amp;rdquo; y hacer una minería de datos, si se tiene por ejemplo una lista de genes resultado de un microarreglo.&lt;/p&gt;</description>
     </item>
     
   </channel>

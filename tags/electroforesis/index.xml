@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>electroforesis on Felipe Riveroll Aguirre</title>
+    <title>Electroforesis on Felipe Riveroll Aguirre</title>
     <link>https://friveroll.github.io/tags/electroforesis/</link>
-    <description>Recent content in electroforesis on Felipe Riveroll Aguirre</description>
+    <description>Recent content in Electroforesis on Felipe Riveroll Aguirre</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <lastBuildDate>Mon, 06 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/tags/electroforesis/index.xml" rel="self" type="application/rss+xml" />
@@ -11,21 +11,27 @@
       <title>Western Blotting Parte II: Blotting</title>
       <link>https://friveroll.github.io/posts/western-blotting-parte-ii-blotting/</link>
       <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/western-blotting-parte-ii-blotting/</guid>
-      <description>La transferencia de proteínas o ácidos nucléicos a una membrana inmovilizante, es referida como &amp;ldquo;blotting&amp;rdquo;, la transferencia puede ser realizada por difusión molecular, por un flujo de buffer inducido por la succión (microfiltración) o acción capilar, el método utilizado de manera más frecuente es la electrotransferencia.
-La difusión es un método simple pero muy ineficiente para aplicar a la mayoría de las transferencias, exepto para las transferencias de geles de agarosa.</description>
+      <description>&lt;p&gt;La transferencia de proteínas o ácidos nucléicos a una membrana inmovilizante, es referida como &amp;ldquo;&lt;em&gt;blotting&lt;/em&gt;&amp;rdquo;, la transferencia puede ser realizada por difusión molecular, por un flujo de buffer inducido por la succión (microfiltración) o acción capilar, el método utilizado de manera más frecuente es la electrotransferencia.&lt;/p&gt;
+&lt;p&gt;La &lt;em&gt;difusión&lt;/em&gt; es un método simple pero muy ineficiente para aplicar a la mayoría de las transferencias, exepto para las transferencias de geles de agarosa. Generalmente las proteínas separadas en geles de poliacrlilamida se procesan por electroblotting, que utiliza la furza motriz de un campo eléctrico para que las proteínas eluyan desde el gel para inmovilizarlos en una matriz. Este método es rápido, eficiente y mantiene una alta resolución del patrón de bandas de las proteínas separadas por electroforesis.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Western Blotting Parte I: Electroforesis</title>
       <link>https://friveroll.github.io/posts/western-blotting-parte-i-electroforesis/</link>
       <pubDate>Mon, 02 Mar 2015 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/western-blotting-parte-i-electroforesis/</guid>
-      <description>El western blott o inmunoblott es un inmunoensayo en el cuál anticuerpos específicos son utilizados como sondas marcadas. Esta técnica permite comparar la abundancia de las proteínas separadas por electroforesis en gel, utilizando carriles distintos para cada una de las muestras.
-La técnica puede dividirse en 5 pasos
-Electroforesis Blotting Inmunodetección Imagen Análisis (Cuantificación) Electroforesis Cualquier molécula cargada en solución, migrará en un campo eléctrico aplicado, un fenómeno conocido como electroforesis.</description>
+      <description>&lt;p&gt;El western blott o inmunoblott es un inmunoensayo en el cuál anticuerpos específicos son utilizados como sondas marcadas. Esta técnica permite comparar la abundancia de las proteínas separadas por electroforesis en gel, utilizando carriles distintos para cada una de las muestras.&lt;/p&gt;
+&lt;p&gt;La técnica puede dividirse en 5 pasos&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Electroforesis&lt;/li&gt;
+&lt;li&gt;Blotting&lt;/li&gt;
+&lt;li&gt;Inmunodetección&lt;/li&gt;
+&lt;li&gt;Imagen&lt;/li&gt;
+&lt;li&gt;Análisis (Cuantificación)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;electroforesis&#34;&gt;Electroforesis&lt;/h2&gt;
+&lt;p&gt;Cualquier molécula cargada en solución, migrará en un campo eléctrico aplicado, un fenómeno conocido como electroforesis. La velocidad de migración dependerá del campo eléctrico y de la densidad de carga de la molécula, esto es, la relación de masa/carga. Debido a que las proteínas disueltas tienen una carga neta, una solución que contiene una mezcla de proteínas, puede en teoría ser resuelta por una electroforesis, dado que las proteínas distintas con densidades de carga diferentes, migran hacia los electrodos apropiados a diferentes velocidades, sin embargo una separación efectiva nunca se alcanza dado que todas las proteínas están inicialmente distribuídas en la solución. La respuesta a este problema, es cargar la solución de proteínas en un amortiguador (buffer), permitiendo que las proteínas con densidades de carga distintas migren a zonas discretas.&lt;/p&gt;</description>
     </item>
     
   </channel>

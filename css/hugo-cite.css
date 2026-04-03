@@ -1,0 +1,37 @@
+/* Hugo-Cite Custom CSS - overrides for proper APA7 inline citations */
+
+.hugo-cite-intext .hugo-cite-group {
+  display: inline-block;
+  vertical-align: baseline;
+  position: relative;
+  font-size: 1em;
+}
+
+.hugo-cite-intext .hugo-cite-group > .hugo-cite-citation {
+  display: none; /* Hide full citation by default - use display instead of visibility */
+  background-color: #ffffff;
+  color: inherit;
+  border: 1px solid currentColor;
+  padding: 0.75rem;
+  position: absolute;
+  width: 350px;
+  max-width: 100vw;
+  z-index: 100;
+  bottom: 140%;
+  left: 0;
+  margin-left: -50px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.hugo-cite-intext .hugo-cite-group:hover > .hugo-cite-citation {
+  display: block;
+}
+
+/* Visually Hidden utility class */
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}

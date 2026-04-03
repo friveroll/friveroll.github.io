@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>bioinformática on Felipe Riveroll Aguirre</title>
+    <title>Bioinformática on Felipe Riveroll Aguirre</title>
     <link>https://friveroll.github.io/categories/bioinform%C3%A1tica/</link>
-    <description>Recent content in bioinformática on Felipe Riveroll Aguirre</description>
+    <description>Recent content in Bioinformática on Felipe Riveroll Aguirre</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <lastBuildDate>Wed, 02 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/categories/bioinform%C3%A1tica/index.xml" rel="self" type="application/rss+xml" />
@@ -11,82 +11,82 @@
       <title>Estabilidad interna de primers con python</title>
       <link>https://friveroll.github.io/posts/estabilidad-interna-de-primers-con-python/</link>
       <pubDate>Wed, 02 Nov 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/estabilidad-interna-de-primers-con-python/</guid>
-      <description>El contenido de este post puede ser abierto de forma interactiva en Google Colab Rychlik (1993) publicó una guía sobre la selección de primers para la Reacción en Cadena de la polimerasa (PCR) donde menciona una gráfica de estabilidad interna para los oligos, la cual puede obtenerse utilizando Oligo 7.
-Esta gráfica puede ayudarnos a evitar el mispriming (sitios falsos de unión a la secuencia blanco) a partir del valor de $\Delta G$ de los pentámeros del oligo.</description>
+      <description>&lt;p&gt;El contenido de este post puede ser abierto de forma interactiva en Google Colab 
+&lt;a href=&#34;https://colab.research.google.com/github/friveroll/oligo-internal-stability-graph/blob/main/Estabilidad_Interna.ipynb&#34; target=&#34;_blank&#34;&gt; &lt;img class=&#34;notebook-badge-image&#34; src=&#34;https://friveroll.github.io/img/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;&gt;&lt;/a&gt;
+
+&lt;/p&gt;
+&lt;p&gt;Rychlik (1993) publicó una guía sobre la selección de primers para la Reacción en Cadena de la polimerasa (PCR) donde menciona una gráfica de estabilidad interna para los oligos, la cual puede obtenerse utilizando Oligo 7.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://media.springernature.com/lw685/springer-static/image/chp%3A10.1385%2F0-89603-244-2%3A31/MediaObjects/978-1-59259-502-0_2_Fig2_HTML.jpg#center&#34; alt=&#34;Stability graph&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Esta gráfica puede ayudarnos a evitar el &lt;em&gt;mispriming&lt;/em&gt; (sitios falsos de unión a la secuencia blanco) a partir del valor de $\Delta G$ de los pentámeros del oligo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>¿Qué es la Bioinformática?</title>
       <link>https://friveroll.github.io/posts/que-es-la-bioinformatica/</link>
       <pubDate>Wed, 19 Oct 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/que-es-la-bioinformatica/</guid>
-      <description>El término bioinformática conceptualiza la biología en términos de moléculas (proteínas, ácidos nucléicos) y la aplicación de técnicas informáticas para entender y organizar este tipo de información biológica.
-Así que su meta principal tiene que ver con poder encontrar información guardada dentro de los organizamos vivos y depende de conceptos y aplicaciones de la biología, las ciencias de la computación y el análisis de datos.
-La bioinformática es predictiva Para poder encontrar el sentido de los datos biológicos debemos hacer predicciones acerca de lo que ya conocemos, es decir obtener conocimiento biológico por comparación con lo que se conoce.</description>
+      <description>&lt;p&gt;El término bioinformática conceptualiza la biología en términos de moléculas (proteínas, ácidos nucléicos) y la aplicación de técnicas informáticas para entender y organizar este tipo de información biológica.&lt;/p&gt;
+&lt;p&gt;Así que su meta principal tiene que ver con poder encontrar información guardada dentro de los organizamos vivos y depende de conceptos y aplicaciones de la biología, las ciencias de la computación y el análisis de datos.&lt;/p&gt;
+&lt;h2 id=&#34;la-bioinformática-es-predictiva&#34;&gt;La bioinformática es predictiva&lt;/h2&gt;
+&lt;p&gt;Para poder encontrar el sentido de los datos biológicos debemos hacer predicciones acerca de lo que ya conocemos, es decir obtener conocimiento biológico por comparación con lo que se conoce.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Diseño De Primers Para PCR</title>
       <link>https://friveroll.github.io/posts/dise%C3%B1o-de-primers-para-pcr/</link>
       <pubDate>Sat, 08 Oct 2022 20:04:43 -0500</pubDate>
-      
       <guid>https://friveroll.github.io/posts/dise%C3%B1o-de-primers-para-pcr/</guid>
-      <description>¿Qué es un primer? Los primers son secuencias cortas de moléculas de ácidos nucléicos (entre 18 a 24 pares de bases) que son utilizados para la amplificación de un gen o un fragmento de ADN de interés, mediante la Reacción en Cadena de la Polimerasa (PCR).
-De tal forma que los cebadores o primers, son uno de los principales ingredientes para una reacción de PCR, y de ellos depende la especificidad, porque al unirse complementariamente a las dos cadenas de ADN de la secuencia molde, fijan por así decirlo las coordenadas donde se llevará acabo la reacción.</description>
+      <description>&lt;h1 id=&#34;qué-es-un-primer&#34;&gt;¿Qué es un primer?&lt;/h1&gt;
+&lt;p&gt;Los primers son secuencias cortas de moléculas de ácidos nucléicos (entre 18 a 24 pares de bases) que son utilizados para la amplificación de un gen o un fragmento de ADN de interés, mediante la Reacción en Cadena de la Polimerasa (PCR).&lt;/p&gt;
+&lt;p&gt;De tal forma que los cebadores o primers, son uno de los principales ingredientes para una reacción de PCR, y de ellos depende la especificidad, porque al unirse complementariamente a las dos cadenas de ADN de la secuencia molde, fijan por así decirlo las coordenadas donde se llevará acabo la reacción.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Introducción al análisis de microarreglos</title>
       <link>https://friveroll.github.io/posts/introduccion-al-analisis-de-microarreglos/</link>
       <pubDate>Sun, 20 May 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/introduccion-al-analisis-de-microarreglos/</guid>
-      <description>Los datos que utilizaremos vienen de un estudio de Chiaretti et al. sobre la leucemia linfoblastica aguda (ALL), la cual fue conducida con chips de microarreglos HG-U95Av2 de Aymetrix. El paquete de datos ALL contiene los datos de expresion del experimento, normalizados con rma (las intensidades estan en escala log2), junto con las anotaciones de las muestras.
-Para ello utilizaremos R /Bioconductor Si no has instalado Bioconductor previemente necesitas correr las siguientes líneas</description>
+      <description>&lt;p&gt;Los datos que utilizaremos vienen de un estudio de Chiaretti et al.  sobre la leucemia linfoblastica aguda (ALL), la cual fue conducida con chips de microarreglos HG-U95Av2 de Aymetrix. El paquete de datos ALL contiene los datos de expresion del experimento, normalizados con rma (las intensidades estan en escala log2), junto con las anotaciones de las muestras.&lt;/p&gt;
+&lt;p&gt;Para ello utilizaremos R /Bioconductor Si no has instalado Bioconductor previemente necesitas correr las siguientes líneas&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Comparación estructural de proteínas</title>
       <link>https://friveroll.github.io/posts/comparacion-estructural-de-proteinas/</link>
       <pubDate>Sat, 23 Jul 2011 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/comparacion-estructural-de-proteinas/</guid>
-      <description>Las proteinas se componen de un juego de 20 aminoácidos distintos, unidos en cualquier orden lineal. La secuencia de aminoácidos se denomina, secuencia primaria, ésta última, forma estructuras secundarias a través de interacciones intermoleculares, que a su vez forman estructuras terciarias.
-La estructura tridimensional de las proteínas, en la mayoría de los casos, da luz a los mecanismos catalíticos e interacciones potenciales entre otras moléculas, ambos aspectos ayudan a inferir la función molecular de una proteína.</description>
+      <description>&lt;p&gt;Las proteinas se componen de un juego de 20 aminoácidos distintos, unidos en cualquier orden lineal. La secuencia de aminoácidos se denomina, secuencia primaria, ésta última, forma estructuras secundarias a través de interacciones intermoleculares, que a su vez forman estructuras terciarias.&lt;/p&gt;
+&lt;p&gt;La estructura tridimensional de las proteínas, en la mayoría de los casos, da luz a los mecanismos catalíticos e interacciones potenciales entre otras moléculas, ambos aspectos ayudan a inferir la función molecular de una proteína.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Búsqueda de motivos en proteínas</title>
       <link>https://friveroll.github.io/posts/busqueda-de-motivos-en-proteinas/</link>
       <pubDate>Wed, 08 Jun 2011 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/busqueda-de-motivos-en-proteinas/</guid>
-      <description>Para descubrir las funciones de una proteína, que no corresponde a ninguna de las secuencias en las bases de datos. Lo cual ocurre frecuentemente, para las proteínas predichas de un genoma recién completado, que no tiene homólogos identificables.
-Aún si no se conocen homólogos, una proteína puede tener características tales como, dominios transmembranales, sitios potenciales de fosforilación o estructura secundaria predicha. Estos rasgos dan pistas de la estructura y/o función de una proteína.</description>
+      <description>&lt;p&gt;Para descubrir las funciones de una proteína,  que no corresponde a ninguna de las secuencias en las bases de datos. Lo cual ocurre frecuentemente, para las proteínas predichas de un genoma recién completado, que no tiene homólogos identificables.&lt;/p&gt;
+&lt;p&gt;Aún si no se conocen homólogos, una proteína puede tener características tales como, dominios transmembranales, sitios potenciales de fosforilación o estructura secundaria predicha. Estos rasgos dan pistas de la estructura y/o función de una proteína.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Visualizando resultados para Blast en Mobyle@Pasteur</title>
       <link>https://friveroll.github.io/posts/visualizando-resultados-para-blast-en-mobyle-pasteur/</link>
       <pubDate>Mon, 30 May 2011 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/visualizando-resultados-para-blast-en-mobyle-pasteur/</guid>
-      <description>Nota: Actualmente ya no existe el servicio de Mobyle@pasteur, se ha cambiado por un servidor de Galaxy, el siguiente artículo muestra el procedimiento para mandar los resultados de blast a mview un programa que puede dar formato como alineamiento listo para ser presentado en una publicación. (Actualizado el 8 de septiembre de 2022)
-Brevemente, BLAST (Basic Local Alignment Search Tool) es un método de búsqueda por homología, en el cuál se reta a la base de datos con una secuencia problema (query), para que encuentre secuencias relacionadas a nuestra secuencia problema.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Actualmente ya no existe el servicio de Mobyle@pasteur, se ha cambiado por un servidor de Galaxy, el siguiente artículo muestra el procedimiento para mandar los resultados de blast a mview un programa que puede dar formato como alineamiento listo para ser presentado en una publicación. (Actualizado el 8 de septiembre de 2022)&lt;/p&gt;
+&lt;p&gt;Brevemente, BLAST (&lt;strong&gt;B&lt;/strong&gt;asic &lt;strong&gt;L&lt;/strong&gt;ocal &lt;strong&gt;A&lt;/strong&gt;lignment &lt;strong&gt;S&lt;/strong&gt;earch &lt;strong&gt;T&lt;/strong&gt;ool) es un método de búsqueda por homología, en el cuál se reta a la base de datos con una secuencia problema (query), para que encuentre secuencias relacionadas a nuestra secuencia problema.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Maartens Retrieval System (MRS)</title>
       <link>https://friveroll.github.io/posts/maartens-retrieval-system/</link>
       <pubDate>Thu, 28 Apr 2011 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/maartens-retrieval-system/</guid>
-      <description>Maartens Retrieval System (MRS) es un metabuscador de bases de datos biológicas múy útil, algo así como un google para la minería de datos, el pasado 22 de marzo de 2011 hubo un curso en el CCG-UNAM impartido por George Magklaras sobre como combinar el uso de EMBOSS y MRS.
-Desde mi punto de vista, la documentación del proyecto es algo pobre, pero su interfase web es muy intuitiva.
-Su verdadero poder, está en la línea de comandos, sin embargo para poder usarla, se necesita tener acceso por SSH a una servidor con MRS instalado, para poder programar un &amp;ldquo;pipline or workflow&amp;rdquo; y hacer una minería de datos, si se tiene por ejemplo una lista de genes resultado de un microarreglo.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://mrs.cmbi.ru.nl&#34;&gt;Maartens Retrieval System (MRS)&lt;/a&gt;  es un metabuscador de bases de datos biológicas múy útil, algo así como un google para la minería de datos, el pasado 22 de marzo de 2011 hubo un curso en el &lt;a href=&#34;http://www.ccg.unam.mx&#34;&gt;CCG-UNAM&lt;/a&gt; impartido por &lt;a href=&#34;https://about.me/georgemagklaras&#34;&gt;George Magklaras&lt;/a&gt; sobre como combinar el uso de &lt;a href=&#34;http://emboss.sourceforge.net/what&#34;&gt;EMBOSS&lt;/a&gt; y &lt;a href=&#34;http://mrs.cmbi.ru.nl&#34;&gt;MRS&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Desde mi punto de vista, la documentación del proyecto es algo pobre, pero su interfase web es muy intuitiva.&lt;/p&gt;
+&lt;p&gt;Su verdadero poder, está en la línea de comandos, sin embargo para poder usarla, se necesita tener acceso por SSH a una servidor con MRS instalado, para poder programar un &amp;ldquo;pipline or workflow&amp;rdquo; y hacer una minería de datos, si se tiene por ejemplo una lista de genes resultado de un microarreglo.&lt;/p&gt;</description>
     </item>
     
   </channel>

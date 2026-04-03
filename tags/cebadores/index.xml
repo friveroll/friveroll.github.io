@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>cebadores on Felipe Riveroll Aguirre</title>
+    <title>Cebadores on Felipe Riveroll Aguirre</title>
     <link>https://friveroll.github.io/tags/cebadores/</link>
-    <description>Recent content in cebadores on Felipe Riveroll Aguirre</description>
+    <description>Recent content in Cebadores on Felipe Riveroll Aguirre</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <lastBuildDate>Wed, 02 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/tags/cebadores/index.xml" rel="self" type="application/rss+xml" />
@@ -11,20 +11,25 @@
       <title>Estabilidad interna de primers con python</title>
       <link>https://friveroll.github.io/posts/estabilidad-interna-de-primers-con-python/</link>
       <pubDate>Wed, 02 Nov 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/estabilidad-interna-de-primers-con-python/</guid>
-      <description>El contenido de este post puede ser abierto de forma interactiva en Google Colab Rychlik (1993) publicó una guía sobre la selección de primers para la Reacción en Cadena de la polimerasa (PCR) donde menciona una gráfica de estabilidad interna para los oligos, la cual puede obtenerse utilizando Oligo 7.
-Esta gráfica puede ayudarnos a evitar el mispriming (sitios falsos de unión a la secuencia blanco) a partir del valor de $\Delta G$ de los pentámeros del oligo.</description>
+      <description>&lt;p&gt;El contenido de este post puede ser abierto de forma interactiva en Google Colab 
+&lt;a href=&#34;https://colab.research.google.com/github/friveroll/oligo-internal-stability-graph/blob/main/Estabilidad_Interna.ipynb&#34; target=&#34;_blank&#34;&gt; &lt;img class=&#34;notebook-badge-image&#34; src=&#34;https://friveroll.github.io/img/colab-badge.svg&#34; alt=&#34;Open In Colab&#34;&gt;&lt;/a&gt;
+
+&lt;/p&gt;
+&lt;p&gt;Rychlik (1993) publicó una guía sobre la selección de primers para la Reacción en Cadena de la polimerasa (PCR) donde menciona una gráfica de estabilidad interna para los oligos, la cual puede obtenerse utilizando Oligo 7.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://media.springernature.com/lw685/springer-static/image/chp%3A10.1385%2F0-89603-244-2%3A31/MediaObjects/978-1-59259-502-0_2_Fig2_HTML.jpg#center&#34; alt=&#34;Stability graph&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Esta gráfica puede ayudarnos a evitar el &lt;em&gt;mispriming&lt;/em&gt; (sitios falsos de unión a la secuencia blanco) a partir del valor de $\Delta G$ de los pentámeros del oligo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Diseño De Primers Para PCR</title>
       <link>https://friveroll.github.io/posts/dise%C3%B1o-de-primers-para-pcr/</link>
       <pubDate>Sat, 08 Oct 2022 20:04:43 -0500</pubDate>
-      
       <guid>https://friveroll.github.io/posts/dise%C3%B1o-de-primers-para-pcr/</guid>
-      <description>¿Qué es un primer? Los primers son secuencias cortas de moléculas de ácidos nucléicos (entre 18 a 24 pares de bases) que son utilizados para la amplificación de un gen o un fragmento de ADN de interés, mediante la Reacción en Cadena de la Polimerasa (PCR).
-De tal forma que los cebadores o primers, son uno de los principales ingredientes para una reacción de PCR, y de ellos depende la especificidad, porque al unirse complementariamente a las dos cadenas de ADN de la secuencia molde, fijan por así decirlo las coordenadas donde se llevará acabo la reacción.</description>
+      <description>&lt;h1 id=&#34;qué-es-un-primer&#34;&gt;¿Qué es un primer?&lt;/h1&gt;
+&lt;p&gt;Los primers son secuencias cortas de moléculas de ácidos nucléicos (entre 18 a 24 pares de bases) que son utilizados para la amplificación de un gen o un fragmento de ADN de interés, mediante la Reacción en Cadena de la Polimerasa (PCR).&lt;/p&gt;
+&lt;p&gt;De tal forma que los cebadores o primers, son uno de los principales ingredientes para una reacción de PCR, y de ellos depende la especificidad, porque al unirse complementariamente a las dos cadenas de ADN de la secuencia molde, fijan por así decirlo las coordenadas donde se llevará acabo la reacción.&lt;/p&gt;</description>
     </item>
     
   </channel>

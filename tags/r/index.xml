@@ -11,20 +11,18 @@
       <title>Utilizando R para analizar datos de cinética</title>
       <link>https://friveroll.github.io/posts/utilizando-r-para-analizar-datos-de-cinetica/</link>
       <pubDate>Wed, 23 May 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/utilizando-r-para-analizar-datos-de-cinetica/</guid>
-      <description>R es un lenguaje de programación estadístico y gráfico, que através del proyecto bioconductor puede ser usado para analisis bioinformáticos, en esta ocasión lo utilizaremos para graficar y analizar datos cinéticos.
-El siguiente tutorial, está basado en el problema 1 del capítulo 4 del libro Biochemical Calculations de Irwin H Segel, y se mostrará como obtener $V_{max}$ y $Km$ a partir del análisis de los datos cinéticos por la gráfica de Lineweaver-Burk.</description>
+      <description>&lt;p&gt;R es un lenguaje de programación estadístico y gráfico, que através del proyecto bioconductor puede ser usado para analisis bioinformáticos, en esta ocasión lo utilizaremos para graficar y analizar datos cinéticos.&lt;/p&gt;
+&lt;p&gt;El siguiente tutorial, está basado en el problema 1 del capítulo 4 del libro &lt;em&gt;Biochemical Calculations&lt;/em&gt; de &lt;em&gt;Irwin H Segel&lt;/em&gt;,  y se mostrará como obtener $V_{max}$ y $Km$ a partir del análisis de los datos cinéticos por la gráfica de Lineweaver-Burk.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Introducción al análisis de microarreglos</title>
       <link>https://friveroll.github.io/posts/introduccion-al-analisis-de-microarreglos/</link>
       <pubDate>Sun, 20 May 2012 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/introduccion-al-analisis-de-microarreglos/</guid>
-      <description>Los datos que utilizaremos vienen de un estudio de Chiaretti et al. sobre la leucemia linfoblastica aguda (ALL), la cual fue conducida con chips de microarreglos HG-U95Av2 de Aymetrix. El paquete de datos ALL contiene los datos de expresion del experimento, normalizados con rma (las intensidades estan en escala log2), junto con las anotaciones de las muestras.
-Para ello utilizaremos R /Bioconductor Si no has instalado Bioconductor previemente necesitas correr las siguientes líneas</description>
+      <description>&lt;p&gt;Los datos que utilizaremos vienen de un estudio de Chiaretti et al.  sobre la leucemia linfoblastica aguda (ALL), la cual fue conducida con chips de microarreglos HG-U95Av2 de Aymetrix. El paquete de datos ALL contiene los datos de expresion del experimento, normalizados con rma (las intensidades estan en escala log2), junto con las anotaciones de las muestras.&lt;/p&gt;
+&lt;p&gt;Para ello utilizaremos R /Bioconductor Si no has instalado Bioconductor previemente necesitas correr las siguientes líneas&lt;/p&gt;</description>
     </item>
     
   </channel>

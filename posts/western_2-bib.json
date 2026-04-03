@@ -1,0 +1,217 @@
+[
+  {
+    "id": "kurien2015western",
+    "author": [
+      {"family": "Kurien", "given": "Biji T."},
+      {"family": "Scofield", "given": "R. Hal"}
+    ],
+    "citation-key": "kurien2015western",
+    "container-title": "Methods in Molecular Biology",
+    "DOI": "10.1007/978-1-4939-2694-7_38",
+    "ISBN": "978-1-4939-2694-7",
+    "issued": {"date-parts": [[2015]]},
+    "page": "381-391",
+    "publisher": "Humana Press",
+    "title": "Western blotting: An introduction",
+    "type": "chapter",
+    "URL": "https://doi.org/10.1007/978-1-4939-2694-7_38"
+  },
+  {
+    "id": "tie2020brief",
+    "author": [
+      {"family": "Tie", "given": "Lu"},
+      {"family": "Xiao", "given": "Han"},
+      {"family": "Wu", "given": "Da-lei"},
+      {"family": "Yang", "given": "Ye"},
+      {"family": "Wang", "given": "Pei"}
+    ],
+    "citation-key": "tie2020brief",
+    "container-title": "Acta Pharmacologica Sinica",
+    "DOI": "10.1038/s41401-020-00539-7",
+    "ISSN": "1745-7254",
+    "issue": "7",
+    "issued": {"date-parts": [[2020, 10, 21]]},
+    "page": "1015-1017",
+    "publisher": "Nature Publishing Group",
+    "title": "A brief guide to good practices in pharmacological experiments: Western blotting",
+    "type": "article-journal",
+    "URL": "https://www.nature.com/articles/s41401-020-00539-7",
+    "volume": "42"
+  },
+  {
+    "id": "mendez2023quantitative",
+    "author": [
+      {"family": "Mendez", "given": "E."}
+    ],
+    "citation-key": "mendez2023quantitative",
+    "container-title": "BioTechniques",
+    "DOI": "10.2144/btn-2023-0012",
+    "ISSN": "1940-9818",
+    "issue": "3",
+    "issued": {"date-parts": [[2023]]},
+    "page": "89-95",
+    "publisher": "Future Science Ltd",
+    "title": "A systematic approach to quantitative Western blot analysis",
+    "type": "article-journal",
+    "URL": "https://www.future-science.com/doi/10.2144/btn-2023-0012",
+    "volume": "74"
+  },
+  {
+    "id": "abcam2024blocking",
+    "author": [{"literal": "Abcam"}],
+    "citation-key": "abcam2024blocking",
+    "issued": {"date-parts": [[2024]]},
+    "publisher": "Abcam plc",
+    "title": "Western blot blocking methods and best practices",
+    "type": "webpage",
+    "URL": "https://www.abcam.com/en-us/knowledge-center/western-blot/western-blot-blocking-methods"
+  },
+  {
+    "id": "johnson1984improved",
+    "author": [
+      {"family": "Johnson", "given": "D. A."},
+      {"family": "Gautsch", "given": "J. W."},
+      {"family": "Sportsman", "given": "J. R."},
+      {"family": "Elder", "given": "J. H."}
+    ],
+    "citation-key": "johnson1984improved",
+    "container-title": "Gene Analysis Techniques",
+    "DOI": "10.1016/0735-0651(84)90020-2",
+    "ISSN": "0735-0651",
+    "issue": "1",
+    "issued": {"date-parts": [[1984]]},
+    "page": "3-8",
+    "publisher": "Elsevier",
+    "title": "Improved technique utilizing nonfat dry milk for analysis of proteins and nucleic acids transferred to nitrocellulose",
+    "type": "article-journal",
+    "URL": "https://www.sciencedirect.com/science/article/pii/0735065184900202",
+    "volume": "1"
+  },
+  {
+    "id": "cui2020optimization",
+    "author": [
+      {"family": "Cui", "given": "Yan"}
+    ],
+    "citation-key": "cui2020optimization",
+    "container-title": "Analytical Biochemistry",
+    "DOI": "10.1016/j.ab.2020.113598",
+    "ISSN": "0003-2697",
+    "issued": {"date-parts": [[2020, 3, 15]]},
+    "page": "113598",
+    "publisher": "Academic Press",
+    "title": "Optimization of blocking conditions for fluorescent Western blot",
+    "type": "article-journal",
+    "URL": "https://www.sciencedirect.com/science/article/pii/S0003269720300394",
+    "volume": "593"
+  },
+  {
+    "id": "licor2023optimization",
+    "author": [{"literal": "LI-COR Biosciences"}],
+    "citation-key": "licor2023optimization",
+    "issued": {"date-parts": [[2023]]},
+    "publisher": "LI-COR Biosciences",
+    "title": "Odyssey Western Blot Blocker Optimization for Near-Infrared Detection",
+    "type": "document",
+    "URL": "https://www.licorbio.com/support/contents/applications/western-blots/fluorescent-western-blot-detection-protocol.html"
+  },
+  {
+    "id": "ghosh2014validating",
+    "author": [
+      {"family": "Ghosh", "given": "R."},
+      {"family": "Gilda", "given": "J. E."},
+      {"family": "Gomes", "given": "A. V."}
+    ],
+    "citation-key": "ghosh2014validating",
+    "container-title": "Journal of Biological Chemistry",
+    "DOI": "10.1074/jbc.R114.560045",
+    "ISSN": "0021-9258",
+    "issue": "18",
+    "issued": {"date-parts": [[2014]]},
+    "page": "12793-12803",
+    "publisher": "American Society for Biochemistry and Molecular Biology",
+    "title": "The necessity of and strategies for improving confidence in the accuracy of western blots",
+    "type": "article-journal",
+    "URL": "https://www.jbc.org/article/S0021-9258(20)39663-4/fulltext",
+    "volume": "289"
+  },
+  {
+    "id": "jackson2024western",
+    "author": [{"literal": "Jackson ImmunoResearch Laboratories"}],
+    "citation-key": "jackson2024western",
+    "issued": {"date-parts": [[2024]]},
+    "publisher": "Jackson ImmunoResearch Laboratories, Inc.",
+    "title": "Western blotting guide: Part 5 - Antibody incubation",
+    "type": "webpage",
+    "URL": "https://www.jacksonimmuno.com/secondary-antibody-resource/immuno-techniques/western-blotting-guide-part-5/"
+  },
+  {
+    "id": "nordic2023tips",
+    "author": [{"literal": "Nordic Biosite"}],
+    "citation-key": "nordic2023tips",
+    "issued": {"date-parts": [[2023]]},
+    "publisher": "Nordic Biosite AB",
+    "title": "5 tips for reducing non-specific signal on Western blots",
+    "type": "webpage",
+    "URL": "https://nordicbiosite.com/news/5-tips-for-reducing-non-specific-signal-on-western-blots"
+  },
+  {
+    "id": "abcam2024quantification",
+    "author": [{"literal": "Abcam"}],
+    "citation-key": "abcam2024quantification",
+    "issued": {"date-parts": [[2024]]},
+    "publisher": "Abcam plc",
+    "title": "Western blot quantification guide",
+    "type": "webpage",
+    "URL": "https://www.abcam.com/en-us/knowledge-center/western-blot/western-blot-quantification"
+  },
+  {
+    "id": "azure2021handbook",
+    "author": [{"literal": "Azure Biosystems"}],
+    "citation-key": "azure2021handbook",
+    "issued": {"date-parts": [[2021]]},
+    "publisher": "Azure Biosystems, Inc.",
+    "title": "Azure Quantitative Western Blotting Handbook",
+    "type": "document",
+    "URL": "https://azurebiosystems.com/wp-content/uploads/2021/03/Azure-Quantitative-WB-handbook_3-compressed.pdf"
+  },
+  {
+    "id": "cytiva2025protocols",
+    "author": [{"literal": "Cytiva"}],
+    "citation-key": "cytiva2025protocols",
+    "issued": {"date-parts": [[2025]]},
+    "publisher": "Cytiva Life Sciences",
+    "title": "Protein immunoblotting protocols and troubleshooting",
+    "type": "webpage",
+    "URL": "https://www.cytivalifesciences.com/en/us/insights/protein-immunoblotting-overview"
+  },
+  {
+    "id": "fredhutch2024odyssey",
+    "author": [{"literal": "Fred Hutchinson Cancer Center"}],
+    "citation-key": "fredhutch2024odyssey",
+    "issued": {"date-parts": [[2024]]},
+    "publisher": "Fred Hutchinson Cancer Center",
+    "title": "Odyssey Western Blot Protocol",
+    "type": "document",
+    "URL": "https://research.fredhutch.org/content/dam/research/hahn/methods/odyssey_manual.pdf"
+  },
+  {
+    "id": "abcam2024protocol",
+    "author": [{"literal": "Abcam"}],
+    "citation-key": "abcam2024protocol",
+    "issued": {"date-parts": [[2024]]},
+    "publisher": "Abcam plc",
+    "title": "Western blot protocol and troubleshooting",
+    "type": "webpage",
+    "URL": "https://www.abcam.com/en-us/technical-resources/protocols/western-blot"
+  },
+  {
+    "id": "merck2024western",
+    "author": [{"literal": "Merck"}],
+    "citation-key": "merck2024western",
+    "issued": {"date-parts": [[2024]]},
+    "publisher": "Merck KGaA",
+    "title": "Western blotting protocols and applications",
+    "type": "webpage",
+    "URL": "https://www.merckmillipore.com/MX/es/life-science-research/protein-detection-quantification/western-blotting"
+  }
+]

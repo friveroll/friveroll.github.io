@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Inmunodetección on Felipe Riveroll Aguirre</title>
+    <link>https://friveroll.github.io/tags/inmunodetecci%C3%B3n/</link>
+    <description>Recent content in Inmunodetección on Felipe Riveroll Aguirre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/tags/inmunodetecci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Western Blotting Parte III: Inmunodetección</title>
+      <link>https://friveroll.github.io/posts/western-blotting-parte-iii-inmunodeteccion/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://friveroll.github.io/posts/western-blotting-parte-iii-inmunodeteccion/</guid>
+      <description>&lt;p&gt;Tras separar las proteínas por SDS-PAGE y transferirlas a una membrana de nitrocelulosa o PVDF, el siguiente paso del western blot es la inmunodetección. En esta etapa, anticuerpos específicos reconocen la proteína inmovilizada, formando complejos antígeno–anticuerpo que posteriormente se hacen visibles mediante un sistema de detección quimioluminiscente, fluorescente o colorimétrico 
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;span class=&#34;hugo-cite-group&#34;&gt;
+
+          &lt;a href=&#34;#kurien2015western&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Biji T.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kurien&lt;/span&gt;&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;R. Hal&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Scofield&lt;/span&gt;&lt;/span&gt;,&amp;#32;&lt;span itemprop=&#34;datePublished&#34;&gt;2015&lt;/span&gt;&lt;/a&gt;&lt;span class=&#34;hugo-cite-citation&#34;&gt; 
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope 
+      itemtype=&#34;https://schema.org/Chapter&#34;
+      data-type=&#34;chapter&#34;&gt;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kurien&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Biji T.&#34; /&gt;
+    B.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Scofield&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;R. Hal&#34; /&gt;
+    R.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2015&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Western blotting: An introduction&lt;/span&gt;.&amp;#32;In&lt;span itemprop=&#34;about&#34;&gt;
+    &lt;i&gt;Methods in Molecular Biology&lt;/i&gt;&lt;/span&gt;.&amp;#32;(&lt;span&gt;pp.&amp;#32;381–391&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;publisher&#34;
+               itemtype=&#34;http://schema.org/Organization&#34;
+               itemscope=&#34;&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Humana Press&lt;/span&gt;&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1007/978-1-4939-2694-7_38&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1007/978-1-4939-2694-7_38&lt;/a&gt;&lt;/span&gt;
+
+
+
+
+&lt;/span&gt;&lt;/span&gt;)&lt;/span&gt;
+.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

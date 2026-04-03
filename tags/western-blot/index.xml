@@ -1,31 +1,88 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>western blot on Felipe Riveroll Aguirre</title>
+    <title>Western Blot on Felipe Riveroll Aguirre</title>
     <link>https://friveroll.github.io/tags/western-blot/</link>
-    <description>Recent content in western blot on Felipe Riveroll Aguirre</description>
+    <description>Recent content in Western Blot on Felipe Riveroll Aguirre</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 06 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/tags/western-blot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/tags/western-blot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Western Blotting Parte III: Inmunodetección</title>
+      <link>https://friveroll.github.io/posts/western-blotting-parte-iii-inmunodeteccion/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://friveroll.github.io/posts/western-blotting-parte-iii-inmunodeteccion/</guid>
+      <description>&lt;p&gt;Tras separar las proteínas por SDS-PAGE y transferirlas a una membrana de nitrocelulosa o PVDF, el siguiente paso del western blot es la inmunodetección. En esta etapa, anticuerpos específicos reconocen la proteína inmovilizada, formando complejos antígeno–anticuerpo que posteriormente se hacen visibles mediante un sistema de detección quimioluminiscente, fluorescente o colorimétrico 
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;span class=&#34;hugo-cite-group&#34;&gt;
+
+          &lt;a href=&#34;#kurien2015western&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Biji T.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kurien&lt;/span&gt;&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;R. Hal&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Scofield&lt;/span&gt;&lt;/span&gt;,&amp;#32;&lt;span itemprop=&#34;datePublished&#34;&gt;2015&lt;/span&gt;&lt;/a&gt;&lt;span class=&#34;hugo-cite-citation&#34;&gt; 
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope 
+      itemtype=&#34;https://schema.org/Chapter&#34;
+      data-type=&#34;chapter&#34;&gt;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Kurien&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Biji T.&#34; /&gt;
+    B.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Scofield&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;R. Hal&#34; /&gt;
+    R.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2015&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;Western blotting: An introduction&lt;/span&gt;.&amp;#32;In&lt;span itemprop=&#34;about&#34;&gt;
+    &lt;i&gt;Methods in Molecular Biology&lt;/i&gt;&lt;/span&gt;.&amp;#32;(&lt;span&gt;pp.&amp;#32;381–391&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;publisher&#34;
+               itemtype=&#34;http://schema.org/Organization&#34;
+               itemscope=&#34;&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Humana Press&lt;/span&gt;&lt;/span&gt;.
+  &lt;a href=&#34;https://doi.org/10.1007/978-1-4939-2694-7_38&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://doi.org/10.1007/978-1-4939-2694-7_38&lt;/a&gt;&lt;/span&gt;
+
+
+
+
+&lt;/span&gt;&lt;/span&gt;)&lt;/span&gt;
+.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Western Blotting Parte II: Blotting</title>
       <link>https://friveroll.github.io/posts/western-blotting-parte-ii-blotting/</link>
       <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/western-blotting-parte-ii-blotting/</guid>
-      <description>La transferencia de proteínas o ácidos nucléicos a una membrana inmovilizante, es referida como &amp;ldquo;blotting&amp;rdquo;, la transferencia puede ser realizada por difusión molecular, por un flujo de buffer inducido por la succión (microfiltración) o acción capilar, el método utilizado de manera más frecuente es la electrotransferencia.
-La difusión es un método simple pero muy ineficiente para aplicar a la mayoría de las transferencias, exepto para las transferencias de geles de agarosa.</description>
+      <description>&lt;p&gt;La transferencia de proteínas o ácidos nucléicos a una membrana inmovilizante, es referida como &amp;ldquo;&lt;em&gt;blotting&lt;/em&gt;&amp;rdquo;, la transferencia puede ser realizada por difusión molecular, por un flujo de buffer inducido por la succión (microfiltración) o acción capilar, el método utilizado de manera más frecuente es la electrotransferencia.&lt;/p&gt;
+&lt;p&gt;La &lt;em&gt;difusión&lt;/em&gt; es un método simple pero muy ineficiente para aplicar a la mayoría de las transferencias, exepto para las transferencias de geles de agarosa. Generalmente las proteínas separadas en geles de poliacrlilamida se procesan por electroblotting, que utiliza la furza motriz de un campo eléctrico para que las proteínas eluyan desde el gel para inmovilizarlos en una matriz. Este método es rápido, eficiente y mantiene una alta resolución del patrón de bandas de las proteínas separadas por electroforesis.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Western Blotting Parte I: Electroforesis</title>
       <link>https://friveroll.github.io/posts/western-blotting-parte-i-electroforesis/</link>
       <pubDate>Mon, 02 Mar 2015 00:00:00 +0000</pubDate>
-      
       <guid>https://friveroll.github.io/posts/western-blotting-parte-i-electroforesis/</guid>
-      <description>El western blott o inmunoblott es un inmunoensayo en el cuál anticuerpos específicos son utilizados como sondas marcadas. Esta técnica permite comparar la abundancia de las proteínas separadas por electroforesis en gel, utilizando carriles distintos para cada una de las muestras.
-La técnica puede dividirse en 5 pasos
-Electroforesis Blotting Inmunodetección Imagen Análisis (Cuantificación) Electroforesis Cualquier molécula cargada en solución, migrará en un campo eléctrico aplicado, un fenómeno conocido como electroforesis.</description>
+      <description>&lt;p&gt;El western blott o inmunoblott es un inmunoensayo en el cuál anticuerpos específicos son utilizados como sondas marcadas. Esta técnica permite comparar la abundancia de las proteínas separadas por electroforesis en gel, utilizando carriles distintos para cada una de las muestras.&lt;/p&gt;
+&lt;p&gt;La técnica puede dividirse en 5 pasos&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Electroforesis&lt;/li&gt;
+&lt;li&gt;Blotting&lt;/li&gt;
+&lt;li&gt;Inmunodetección&lt;/li&gt;
+&lt;li&gt;Imagen&lt;/li&gt;
+&lt;li&gt;Análisis (Cuantificación)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;electroforesis&#34;&gt;Electroforesis&lt;/h2&gt;
+&lt;p&gt;Cualquier molécula cargada en solución, migrará en un campo eléctrico aplicado, un fenómeno conocido como electroforesis. La velocidad de migración dependerá del campo eléctrico y de la densidad de carga de la molécula, esto es, la relación de masa/carga. Debido a que las proteínas disueltas tienen una carga neta, una solución que contiene una mezcla de proteínas, puede en teoría ser resuelta por una electroforesis, dado que las proteínas distintas con densidades de carga diferentes, migran hacia los electrodos apropiados a diferentes velocidades, sin embargo una separación efectiva nunca se alcanza dado que todas las proteínas están inicialmente distribuídas en la solución. La respuesta a este problema, es cargar la solución de proteínas en un amortiguador (buffer), permitiendo que las proteínas con densidades de carga distintas migren a zonas discretas.&lt;/p&gt;</description>
     </item>
     
   </channel>
