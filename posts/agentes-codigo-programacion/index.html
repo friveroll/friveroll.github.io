@@ -1,0 +1,983 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos | Felipe Riveroll Aguirre</title><meta name=keywords content="agentes de código,IA,programación,Claude Code,Cursor,Copilot,Devin"><meta name=description content="El panorama del desarrollo de software ha experimentado una transformación sin precedentes con la llegada de los agentes de código. Estos sistemas, impulsados por grandes modelos de lenguaje (LLMs), han evolucionado desde simples autocompletadores hasta agentes autónomos capaces de planificar, implementar, depurar y desplegar aplicaciones completas con mínima supervisión humana 
+
+
+
+
+(
+
+          Citation: Jin, Huang
+                  & al., 2024, p.&nbsp;lou2024agents 
+
+
+
+
+
+
+
+
+
+
+Jin, 
+    
+    H., 
+  Huang, 
+    
+    L., 
+  Cai, 
+    
+    H., 
+  Yan, 
+    
+    J., 
+  Li, 
+    
+    B. & Chen, 
+    
+    H.
+   
+    (2024).
+   From LLMs to LLM-based agents for software engineering: A survey of current, challenges and future.
+    arXiv preprint. Retrieved from 
+  https://arxiv.org/abs/2408.02479
+
+
+
+
+)
+. A diferencia de los asistentes tradicionales que respondían a prompts individuales, los agentes modernos operan en bucles de percepción-razonamiento-acción, permitiéndoles abordar tareas complejas que abarcan múltiples archivos y etapas del ciclo de vida del software 
+
+
+
+
+(
+
+          Citation: Xi, Chen
+                  & al., 2023 
+
+
+
+
+
+
+
+
+
+
+Xi, 
+    
+    Z., 
+  Chen, 
+    
+    W., 
+  Guo, 
+    
+    X., 
+  He, 
+    
+    W., 
+  Ding, 
+    
+    Y., 
+  Hong, 
+    
+    B., 
+  Zhang, 
+    
+    M., 
+  Wang, 
+    
+    J., 
+  Jin, 
+    
+    S. & Zhou, 
+    
+    E.
+   
+    (2023).
+   The rise and potential of large language model based agents: A survey.
+    arXiv preprint. Retrieved from 
+  https://arxiv.org/abs/2309.07864
+
+
+
+
+)
+."><meta name=author content><link rel=canonical href=https://friveroll.github.io/posts/agentes-codigo-programacion/><link crossorigin=anonymous href=/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.min.199271f351c4b46f0d0536b6e2eb89a4766040c0e8df57f1a695c6570d8a4e0f.js integrity="sha256-GZJx81HEtG8NBTa24uuJpHZgQMDo31fxppXGVw2KTg8=" onload=hljs.initHighlightingOnLoad()></script><link rel=icon href=https://friveroll.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://friveroll.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://friveroll.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://friveroll.github.io/apple-touch-icon.png><link rel=mask-icon href=https://friveroll.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><meta name=generator content="Hugo 0.159.2"><link rel=alternate hreflang=en href=https://friveroll.github.io/posts/agentes-codigo-programacion/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script async src="https://www.googletagmanager.com/gtag/js?id=G-0K27KDV8RY"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-0K27KDV8RY")</script><link rel=stylesheet href=/css/hugo-cite.css><script data-goatcounter=https://friveroll.goatcounter.com/count async src=//gc.zgo.at/count.js></script><meta property="og:title" content="Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos"><meta property="og:description" content="El panorama del desarrollo de software ha experimentado una transformación sin precedentes con la llegada de los agentes de código. Estos sistemas, impulsados por grandes modelos de lenguaje (LLMs), han evolucionado desde simples autocompletadores hasta agentes autónomos capaces de planificar, implementar, depurar y desplegar aplicaciones completas con mínima supervisión humana 
+
+
+
+
+(
+
+          Citation: Jin, Huang
+                  & al., 2024, p.&nbsp;lou2024agents 
+
+
+
+
+
+
+
+
+
+
+Jin, 
+    
+    H., 
+  Huang, 
+    
+    L., 
+  Cai, 
+    
+    H., 
+  Yan, 
+    
+    J., 
+  Li, 
+    
+    B. & Chen, 
+    
+    H.
+   
+    (2024).
+   From LLMs to LLM-based agents for software engineering: A survey of current, challenges and future.
+    arXiv preprint. Retrieved from 
+  https://arxiv.org/abs/2408.02479
+
+
+
+
+)
+. A diferencia de los asistentes tradicionales que respondían a prompts individuales, los agentes modernos operan en bucles de percepción-razonamiento-acción, permitiéndoles abordar tareas complejas que abarcan múltiples archivos y etapas del ciclo de vida del software 
+
+
+
+
+(
+
+          Citation: Xi, Chen
+                  & al., 2023 
+
+
+
+
+
+
+
+
+
+
+Xi, 
+    
+    Z., 
+  Chen, 
+    
+    W., 
+  Guo, 
+    
+    X., 
+  He, 
+    
+    W., 
+  Ding, 
+    
+    Y., 
+  Hong, 
+    
+    B., 
+  Zhang, 
+    
+    M., 
+  Wang, 
+    
+    J., 
+  Jin, 
+    
+    S. & Zhou, 
+    
+    E.
+   
+    (2023).
+   The rise and potential of large language model based agents: A survey.
+    arXiv preprint. Retrieved from 
+  https://arxiv.org/abs/2309.07864
+
+
+
+
+)
+."><meta property="og:type" content="article"><meta property="og:url" content="https://friveroll.github.io/posts/agentes-codigo-programacion/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-03-03T00:00:00+00:00"><meta property="article:modified_time" content="2026-03-03T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos"><meta name=twitter:description content="El panorama del desarrollo de software ha experimentado una transformación sin precedentes con la llegada de los agentes de código. Estos sistemas, impulsados por grandes modelos de lenguaje (LLMs), han evolucionado desde simples autocompletadores hasta agentes autónomos capaces de planificar, implementar, depurar y desplegar aplicaciones completas con mínima supervisión humana 
+
+
+
+
+(
+
+          Citation: Jin, Huang
+                  & al., 2024, p.&nbsp;lou2024agents 
+
+
+
+
+
+
+
+
+
+
+Jin, 
+    
+    H., 
+  Huang, 
+    
+    L., 
+  Cai, 
+    
+    H., 
+  Yan, 
+    
+    J., 
+  Li, 
+    
+    B. & Chen, 
+    
+    H.
+   
+    (2024).
+   From LLMs to LLM-based agents for software engineering: A survey of current, challenges and future.
+    arXiv preprint. Retrieved from 
+  https://arxiv.org/abs/2408.02479
+
+
+
+
+)
+. A diferencia de los asistentes tradicionales que respondían a prompts individuales, los agentes modernos operan en bucles de percepción-razonamiento-acción, permitiéndoles abordar tareas complejas que abarcan múltiples archivos y etapas del ciclo de vida del software 
+
+
+
+
+(
+
+          Citation: Xi, Chen
+                  & al., 2023 
+
+
+
+
+
+
+
+
+
+
+Xi, 
+    
+    Z., 
+  Chen, 
+    
+    W., 
+  Guo, 
+    
+    X., 
+  He, 
+    
+    W., 
+  Ding, 
+    
+    Y., 
+  Hong, 
+    
+    B., 
+  Zhang, 
+    
+    M., 
+  Wang, 
+    
+    J., 
+  Jin, 
+    
+    S. & Zhou, 
+    
+    E.
+   
+    (2023).
+   The rise and potential of large language model based agents: A survey.
+    arXiv preprint. Retrieved from 
+  https://arxiv.org/abs/2309.07864
+
+
+
+
+)
+."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://friveroll.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos","item":"https://friveroll.github.io/posts/agentes-codigo-programacion/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos","name":"Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos","description":"El panorama del desarrollo de software ha experimentado una transformación sin precedentes con la llegada de los agentes de código. Estos sistemas, impulsados por grandes modelos de lenguaje (LLMs), han evolucionado desde simples autocompletadores hasta agentes autónomos capaces de planificar, implementar, depurar y desplegar aplicaciones completas con mínima supervisión humana ( Citation: Jin,\u0026#32;Huang \u0026amp; al.,\u0026#32;2024,\u0026#32;p.\u0026nbsp;lou2024agents Jin,\u0026#32; H.,\u0026#32; Huang,\u0026#32; L.,\u0026#32; Cai,\u0026#32; H.,\u0026#32; Yan,\u0026#32; J.,\u0026#32; Li,\u0026#32; B.\u0026#32;\u0026amp;\u0026#32;Chen,\u0026#32; H. \u0026#32; (2024). \u0026#32;From LLMs to LLM-based agents for software engineering: A survey of current, challenges and future. arXiv preprint.\u0026#32;Retrieved from\u0026#32; https://arxiv.org/abs/2408.02479 ) . A diferencia de los asistentes tradicionales que respondían a prompts individuales, los agentes modernos operan en bucles de percepción-razonamiento-acción, permitiéndoles abordar tareas complejas que abarcan múltiples archivos y etapas del ciclo de vida del software ( Citation: Xi,\u0026#32;Chen \u0026amp; al.,\u0026#32;2023 Xi,\u0026#32; Z.,\u0026#32; Chen,\u0026#32; W.,\u0026#32; Guo,\u0026#32; X.,\u0026#32; He,\u0026#32; W.,\u0026#32; Ding,\u0026#32; Y.,\u0026#32; Hong,\u0026#32; B.,\u0026#32; Zhang,\u0026#32; M.,\u0026#32; Wang,\u0026#32; J.,\u0026#32; Jin,\u0026#32; S.\u0026#32;\u0026amp;\u0026#32;Zhou,\u0026#32; E. \u0026#32; (2023). \u0026#32;The rise and potential of large language model based agents: A survey. arXiv preprint.\u0026#32;Retrieved from\u0026#32; https://arxiv.org/abs/2309.07864 ) .\n","keywords":["agentes de código","IA","programación","Claude Code","Cursor","Copilot","Devin"],"articleBody":"El panorama del desarrollo de software ha experimentado una transformación sin precedentes con la llegada de los agentes de código. Estos sistemas, impulsados por grandes modelos de lenguaje (LLMs), han evolucionado desde simples autocompletadores hasta agentes autónomos capaces de planificar, implementar, depurar y desplegar aplicaciones completas con mínima supervisión humana ( Citation: Jin, Huang \u0026 al., 2024, p. lou2024agents Jin, H., Huang, L., Cai, H., Yan, J., Li, B. \u0026 Chen, H. (2024). From LLMs to LLM-based agents for software engineering: A survey of current, challenges and future. arXiv preprint. Retrieved from https://arxiv.org/abs/2408.02479 ) . A diferencia de los asistentes tradicionales que respondían a prompts individuales, los agentes modernos operan en bucles de percepción-razonamiento-acción, permitiéndoles abordar tareas complejas que abarcan múltiples archivos y etapas del ciclo de vida del software ( Citation: Xi, Chen \u0026 al., 2023 Xi, Z., Chen, W., Guo, X., He, W., Ding, Y., Hong, B., Zhang, M., Wang, J., Jin, S. \u0026 Zhou, E. (2023). The rise and potential of large language model based agents: A survey. arXiv preprint. Retrieved from https://arxiv.org/abs/2309.07864 ) .\nEl objetivo de este artículo es proporcionar una visión integral de los agentes de código disponibles en 2025, analizar sus capacidades diferenciales y ofrecer criterios para su selección según el contexto de desarrollo. Para lograr una comprensión profunda del tema, examinaremos tres elementos críticos: la arquitectura subyacente que define su autonomía, los benchmarks de evaluación que miden su efectividad real, y los protocolos de integración que expanden sus capacidades mediante herramientas externas ( Citation: Jin, Liu \u0026 al., 2025, p. yang2024multimodal Jin, Z., Liu, J., Yang, C., Jabbarvand, R. \u0026 Zhang, L. (2025). AI agentic programming: A survey of techniques, challenges, and opportunities. arXiv preprint. Retrieved from https://arxiv.org/abs/2508.11126 ) .\nFundamentos de los agentes de código ¿Qué diferencia a un agente de un asistente tradicional? Los asistentes de código tradicionales, como las primeras versiones de GitHub Copilot, operaban bajo un paradigma reactivo: el desarrollador escribía código y el asistente sugería completaciones basadas en el contexto inmediato ( Citation: Gao, Yang \u0026 al., 2024 Gao, J., Yang, J., Jimenez, C., Wettig, A., Lieret, K., Yao, S., Narasimhan, K. \u0026 Press, O. (2024). SWE-agent: Agent-computer interfaces enable automated software engineering. arXiv preprint. Retrieved from https://arxiv.org/abs/2405.15793 ) . En contraste, los agentes de código modernos exhiben características fundamentales que los distinguen claramente:\nAutonomía en la ejecución: pueden realizar múltiples pasos sin intervención humana constante, incluyendo la ejecución de comandos de terminal, pruebas y despliegues. Persistencia de estado: mantienen memoria del contexto a lo largo de sesiones prolongadas, permitiendo trabajos que duran horas o incluso días. Capacidad de auto-corrección: detectan errores en su propio trabajo y iteran para corregirlos, funcionando en bucles de prueba y error ( Citation: Deng, Zhang \u0026 al., 2024 Deng, Y., Zhang, X., Zhang, W., Yuan, Y., Ng, S. \u0026 Chua, T. (2024). AgentCoder: Multi-agent-based code generation with iterative testing and optimisation. arXiv preprint. Retrieved from https://arxiv.org/abs/2312.13010 ) . Interacción con el entorno: acceden al sistema de archivos, bases de datos, APIs y otros recursos externos mediante protocolos estandarizados. Esta diferenciación conceptual ha sido validada empíricamente: mientras que los LLMs “simples” resuelven aproximadamente el 4-5% de issues reales de GitHub, los agentes bien diseñados alcanzan tasas de resolución superiores al 65-80% en benchmarks estandarizados como SWE-bench ( Citation: Jimenez, Yang \u0026 al., 2024 Jimenez, C., Yang, J., Wettig, A., Yao, S., Press, O. \u0026 Narasimhan, K. (2024). SWE-bench: Can language models resolve real-world github issues?. arXiv preprint. Retrieved from https://arxiv.org/abs/2310.06770 ) .\nEl bucle fundamental: percepción, razonamiento y acción Los agentes de código operan mediante un patrón cíclico que les permite interactuar dinámicamente con su entorno. Este bucle, derivado de la teoría de agentes inteligentes y adaptado para ingeniería de software, consta de tres fases interconectadas ( Citation: Xi, Chen \u0026 al., 2023, p. wang2024survey Xi, Z., Chen, W., Guo, X., He, W., Ding, Y., Hong, B., Zhang, M., Wang, J., Jin, S. \u0026 Zhou, E. (2023). The rise and potential of large language model based agents: A survey. arXiv preprint. Retrieved from https://arxiv.org/abs/2309.07864 ) :\nPercepción: el agente recopila información del entorno leyendo archivos, ejecutando comandos, consultando documentación o interactuando con APIs. La calidad de esta fase depende críticamente del tamaño de la ventana de contexto del modelo subyacente.\nRazonamiento: el agente analiza la información percibida, planifica los pasos necesarios para alcanzar el objetivo y toma decisiones sobre qué acciones ejecutar. Los modelos modernos emplean técnicas como Chain-of-Thought (CoT) y ReAct (Reason + Act) para estructurar este razonamiento ( Citation: Yao, Zhao \u0026 al., 2023 Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K. \u0026 Cao, Y. (2023). ReAct: Synergizing reasoning and acting in language models. Retrieved from https://arxiv.org/abs/2210.03629 ) .\nAcción: el agente ejecuta las operaciones planificadas, que pueden incluir modificar código, crear archivos, ejecutar tests o interactuar con sistemas externos. Los resultados de estas acciones alimentan nuevamente la fase de percepción, cerrando el ciclo.\nEn la práctica, un agente puede iterar este bucle docenas de veces para completar una tarea compleja, manteniendo coherencia y contexto a lo largo de todo el proceso ( Citation: Jin, Liu \u0026 al., 2025 Jin, Z., Liu, J., Yang, C., Jabbarvand, R. \u0026 Zhang, L. (2025). AI agentic programming: A survey of techniques, challenges, and opportunities. arXiv preprint. Retrieved from https://arxiv.org/abs/2508.11126 ) .\nPrincipales agentes de código en 2025 Claude Code: Razonamiento arquitectónico desde la terminal Claude Code, desarrollado por Anthropic, representa un enfoque distintivo centrado en el razonamiento profundo sobre bases de código extensas. A diferencia de los IDE tradicionales, Claude Code opera principalmente desde la línea de comandos, lo que le permite integrarse fluidamente en flujos de trabajo existentes y pipelines de automatización ( Citation: , 2025 (2025). Retrieved from https://www.anthropic.com/research/measuring-agent-autonomy ) .\nLas capacidades diferenciales de Claude Code incluyen:\nVentana de contexto de 200K tokens: permite analizar simultáneamente cientos de archivos, comprendiendo relaciones y dependencias a nivel de sistema. Razonamiento sobre arquitectura completa: no solo sugiere cambios locales, sino que evalúa el impacto de modificaciones en todo el ecosistema del proyecto. Detección de vulnerabilidades: durante pruebas tempranas, identificó más de 500 vulnerabilidades reales en proyectos de código abierto ( Citation: , 2026 (2026, 2/26). Retrieved from https://www.testleaf.com/blog/claude-code-vs-copilot-vs-cursor-ai-agents-comparison/ ) . Modelo de precios por uso: cobra por millón de tokens procesados ($3-15/M), lo que puede resultar económico para tareas puntuales pero costoso para uso intensivo continuo. En benchmarks de rendimiento, Claude Code con el modelo Claude Sonnet 4.5 alcanza un 77.2% de resolución en SWE-bench Verified, posicionándose entre los sistemas más efectivos para tareas de ingeniería de software real ( Citation: , 2025 (2025, 12/13). Retrieved from https://www.digitalapplied.com/blog/ai-coding-tools-comparison-december-2025 ) .\nCursor: El IDE nativo para agentes Cursor ha emergido como el referente en editores de código diseñados específicamente para la IA, alcanzando una valoración de $9.9 mil millones en 2025 y más de 360,000 clientes de pago en solo 16 meses ( Citation: , 2026, p. mintmcp2026security (2026, 1/3). Retrieved from https://www.nxcode.io/es/resources/news/cursor-tutorial-beginners-2026 ) . Construido sobre VS Code, ofrece una transición sin fricción para desarrolladores familiarizados con el ecosistema de Microsoft.\nLas funcionalidades clave de Cursor incluyen:\nModo Composer: permite generar y modificar múltiples archivos simultáneamente a partir de descripciones en lenguaje natural. El agente planifica, implementa y verifica cambios de forma autónoma ( Citation: , 2025 (2025, 10/4). Retrieved from https://www.eesel.ai/es/blog/cursor-overview ) .\nIntegración multi-modelo: ofrece acceso a GPT-5, Claude, Gemini y modelos personalizados, permitiendo seleccionar el modelo más adecuado para cada tarea:\nModelo Ideal para Característica clave GPT-4o Razonamiento complejo, tareas de varios pasos Alta inteligencia, más lento Claude 3.5 Sonnet Comprensión matizada, código creativo Excelente para texto, rápido cursor-small Finalizaciones rápidas, ediciones sencillas Muy rápido, uso ilimitado Indexación semántica de código: Cursor construye un índice vectorial de toda la base de código, permitiendo búsquedas contextuales y comprensión de relaciones entre componentes distribuidos ( Citation: , 2025 (2025, 4/10). Retrieved from https://blog.openreplay.com/es/configurar-usar-cursor-ai-generacion-codigo/ ) .\nEl plan Pro cuesta $20/mes e incluye 500 solicitudes premium, mientras que el plan Business a $40/usuario/mes añade funcionalidades de equipo y seguridad avanzada ( Citation: , 2024 (2024, 9/3). Retrieved from https://www.datacamp.com/es/tutorial/cursor-ai-code-editor ) .\nGitHub Copilot: Evolución hacia el agente empresarial GitHub Copilot, pionero en asistencia de código con IA, ha evolucionado significativamente desde su lanzamiento en 2021. En 2025, con más de 26 millones de usuarios y el 90% de Fortune 100 como clientes, ha transitado de ser un autocompletador a un agente de codificación autónomo ( Citation: , 2025, p. devops2025copilot (2025, 5/19). Retrieved from https://github.com/newsroom/press-releases/coding-agent-for-github-copilot ) .\nLas innovaciones clave de 2025 incluyen:\nAgent Mode: permite a Copilot traducir ideas directamente en código, identificando subtareas necesarias y ejecutándolas a través de múltiples archivos. Alcanza un 56% de tasa de éxito en SWE-bench Verified con Claude 3.7 Sonnet ( Citation: , 2025 (2025, 5/19). Retrieved from https://thelettertwo.com/2025/05/19/the-new-github-copilot-agent-doesnt-just-help-you-code-it-codes-for-you/ ) .\nSoporte multi-modelo: además de los modelos OpenAI, ahora integra Anthropic Claude 3.5/3.7 Sonnet, Google Gemini 2.0 Flash y otros, ofreciendo flexibilidad sin precedentes ( Citation: , 2025 (2025, 5/19). Retrieved from https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/ ) .\nModel Context Protocol (MCP): mediante este protocolo estandarizado, Copilot puede conectarse a fuentes de datos externas, bases de conocimiento y herramientas empresariales, expandiendo dramáticamente su contexto operativo ( Citation: , 2025 (2025, 12). Retrieved from https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/ ) .\nLa estructura de precios incluye un nivel gratuito con 12,000 completaciones mensuales, Pro a $10/mes, y Enterprise a $39/mes con funcionalidades avanzadas de seguridad y cumplimiento ( Citation: , 2025 (2025, 12/13). Retrieved from https://www.digitalapplied.com/blog/ai-coding-tools-comparison-december-2025 ) .\nDevin: El ingeniero de software autónomo Devin, desarrollado por Cognition Labs, se posiciona como el primer “ingeniero de software autónomo” completamente funcional. A diferencia de los asistentes que operan dentro de IDEs existentes, Devin funciona como un agente independiente capaz de gestionar proyectos completos de extremo a extremo ( Citation: , 2025, p. sfstandard2026grind (2025). Retrieved from https://www.cognition.ai/ ) .\nLas capacidades diferenciales de Devin incluyen:\nConfiguración de entornos: crea y configura automáticamente entornos de desarrollo sandboxed con todas las dependencias necesarias. Planificación multi-paso: descompone proyectos complejos en subtareas manejables, priorizando y secuenciando operaciones de forma óptima. Depuración autónoma: detecta errores, reproduce bugs, implementa correcciones y verifica soluciones sin intervención humana ( Citation: , 2025 (2025, 8/4). Retrieved from https://www.ibm.com/think/news/goldman-sachs-first-ai-employee-devin ) . Paralelización masiva: múltiples instancias de Devin pueden trabajar simultáneamente en diferentes tareas o proyectos. Los datos de rendimiento de 2025 muestran mejoras significativas: es 4 veces más rápido en resolución de problemas, un 67% de sus pull requests son mergeadas (vs 34% el año anterior), y resuelve vulnerabilidades de seguridad en 1.5 minutos frente a los 30 minutos promedio de desarrolladores humanos ( Citation: , 2025 (2025, 11/14). Retrieved from https://cognition.ai/blog/devin-annual-performance-review-2025 ) .\nOpenAI Codex: Orquestación multi-agente OpenAI Codex representa la visión de OpenAI para la programación asistida por IA, evolucionando desde el motor de GitHub Copilot hasta un sistema de agentes independiente. En 2025, Codex está disponible como aplicación de escritorio para macOS, CLI, extensión de IDE y servicio en la nube ( Citation: , 2026, p. geeksroom2026codex (2026, 2/5). Retrieved from https://openai.com/es-419/index/introducing-gpt-5-3-codex/ ) .\nCaracterísticas distintivas:\nArquitectura multi-agente: la aplicación Codex permite coordinar múltiples agentes trabajando en paralelo en diferentes aspectos de un proyecto, cada uno en su propio hilo de ejecución ( Citation: , 2025 (2025, 10/6). Retrieved from https://www.eesel.ai/es/blog/openai-codex ) .\nSkills personalizables: los usuarios pueden definir “skills” —patrones reutilizables que Codex memoriza para tareas recurrentes— permitiendo automatizar flujos de trabajo específicos de la organización ( Citation: , 2026 (2026, 2/5). Retrieved from https://openai.com/es-419/index/introducing-gpt-5-3-codex/ ) .\nContenedores aislados: cada tarea se ejecuta en un sandbox seguro que garantiza consistencia, seguridad y capacidad de paralelización ( Citation: , 2025 (2025, 5/20). Retrieved from http://apertia.ai/es/blog/codex-nova-era-softwaroveho-inzenyrstvi ) .\nEn evaluaciones de OSWorld-Verified (benchmark de uso de computadoras con agentes), GPT-5.3-Codex demuestra habilidades significativamente superiores a modelos anteriores, acercándose al rendimiento humano de aproximadamente 72% ( Citation: , 2026 (2026, 2/5). Retrieved from https://openai.com/es-419/index/introducing-gpt-5-3-codex/ ) .\nWindsurf: Agente accesible con Cascade Windsurf, adquirido por Cognition AI en 2025, se ha consolidado como una opción de alto valor con su agente Cascade. Con un precio de $15/mes para el plan Pro y un tier gratuito generoso (25 créditos mensuales), ofrece capacidades agenticas a un costo significativamente menor que la competencia ( Citation: , 2025, p. deployhq2026windsurf (2025, 12/13). Retrieved from https://www.digitalapplied.com/blog/ai-coding-tools-comparison-december-2025 ) .\nCaracterísticas principales:\nCascade Flow: flujos de trabajo agenticos autónomos con memoria y capacidades de planificación. Riptide Search: sistema de búsqueda que puede escanear millones de líneas de código en segundos. Live Preview: permite hacer clic en cualquier elemento de la interfaz para editarlo con IA. Compatibilidad VS Code: al estar construido sobre VS Code, hereda extensiones, atajos y configuraciones existentes. Benchmarks y evaluación de agentes SWE-bench: El estándar de facto SWE-bench (Software Engineering Bench) se ha establecido como el benchmark más riguroso para evaluar agentes de código. Consiste en issues reales de repositorios de código abierto populares (Django, scikit-learn, matplotlib, entre otros) que los agentes deben resolver de forma autónoma ( Citation: Jimenez, Yang \u0026 al., 2024 Jimenez, C., Yang, J., Wettig, A., Yao, S., Press, O. \u0026 Narasimhan, K. (2024). SWE-bench: Can language models resolve real-world github issues?. arXiv preprint. Retrieved from https://arxiv.org/abs/2310.06770 ) .\nMétricas clave en SWE-bench Verified (subset de 500 instancias filtradas):\nModelo/Agente SWE-bench Verified Terminal-Bench Claude Opus 4.5 80.9% 57.5% Claude Sonnet 4.5 77.2% 50.0% GPT-5.2 ~75% 43.8% Devstral 2 (Open) 72.2% - GPT-4o ~55% - Estos resultados demuestran que los modelos más avanzados han alcanzado niveles de competencia cercanos a los de desarrolladores humanos en tareas específicas de ingeniería de software ( Citation: , 2026 (2026, 2/17). Retrieved from https://www.swebench.com/ ) .\nOtros benchmarks relevantes Además de SWE-bench, el ecosistema de evaluación incluye:\nSWE-bench Multimodal: 517 tareas que incluyen elementos visuales, como interfaces gráficas o diagramas. SWE-bench Multilingual: 300 tareas distribuidas en 9 lenguajes de programación diferentes. OSWorld: evalúa capacidades de uso general de computadoras mediante agentes visuales. TheAgentCompany: benchmark de tareas del mundo real con consecuencias prácticas ( Citation: Pan, Zhang \u0026 al., 2025 Pan, L., Zhang, Y., Chen, X., Wang, H. \u0026 Li, J. (2025). TheAgentCompany: Benchmarking LLM agents on consequential real world tasks. arXiv preprint. Retrieved from https://arxiv.org/abs/2412.14161 ) . Protocolos de integración: El Model Context Protocol (MCP) ¿Qué es MCP? El Model Context Protocol (MCP), introducido por Anthropic en noviembre de 2024 y donado a la Agentic AI Foundation (Linux Foundation) en diciembre de 2025, es un estándar abierto que estandariza la forma en que los sistemas de IA se integran con fuentes de datos y herramientas externas ( Citation: , 2025, p. linuxfoundation2025aaif (2025, 10). Retrieved from https://claude.com/blog/what-is-model-context-protocol ) .\nMCP opera bajo una arquitectura cliente-servidor simple:\nMCP Clients: agentes de IA (Claude, ChatGPT, aplicaciones personalizadas) que se conectan a sistemas externos. MCP Servers: exponen herramientas y datos desde aplicaciones como Notion, Slack, GitHub, bases de datos internas o sistemas propietarios. La analogía más precisa es USB-C para aplicaciones de IA: en lugar de construir conectores personalizados para cada fuente de datos, los desarrolladores implementan una sola vez contra MCP y obtienen compatibilidad universal ( Citation: , 2025 (2025, 12/23). Retrieved from https://www.pento.ai/blog/a-year-of-mcp-2025-review ) .\nAdopción y ecosistema La adopción de MCP ha sido extraordinariamente rápida:\nNoviembre 2024: Anthropic libera MCP como estándar abierto con SDKs para Python y TypeScript. Marzo 2025: OpenAI adopta MCP en Agents SDK, Responses API y ChatGPT desktop. Diciembre 2025: Más de 10,000 servidores MCP públicos activos; adoptado por ChatGPT, Cursor, Gemini, Microsoft Copilot y VS Code ( Citation: , 2025 (2025, 12/9). Retrieved from https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation ) . Esta estandarización resuelve el problema de integración M×N (M aplicaciones conectándose a N fuentes de datos), colapsándolo en M+N implementaciones, lo que acelera drásticamente el desarrollo de agentes capaces de operar en ecosistemas empresariales complejos.\nEsquema práctico: Selección de agentes según contexto La elección del agente adecuado depende críticamente del contexto de uso, el tamaño del equipo y los requisitos de seguridad. A continuación se presenta un marco de decisión:\nPara desarrolladores individuales Prioridad Herramienta recomendada Justificación Costo Windsurf (gratis/$15) Tier gratuito generoso, Pro accesible Productividad IDE Cursor ($20) Mejor experiencia de edición multi-archivo Tareas complejas Claude Code Razonamiento profundo, pago por uso Microsoft ecosystem GitHub Copilot Integración nativa con GitHub Para equipos empresariales Requisito Herramienta recomendada Justificación Seguridad y compliance GitHub Copilot Enterprise SOC 2, ISO 27001, indemnización IP Flujos agenticos avanzados Cursor Business Composer mode, orquestación multi-agente Refactorización a gran escala Claude Code + Bedrock Contexto de 200K tokens, FedRAMP High AWS-centric Amazon Q Developer Transformación de código, integración nativa Para startups y proyectos ágiles La combinación de múltiples herramientas suele ofrecer los mejores resultados:\nCursor o Windsurf para desarrollo diario en IDE. Claude Code para tareas de refactorización compleja. GitHub Copilot para integración con flujos de CI/CD y revisión de código. Problemas frecuentes y estrategias de mitigación Alucinaciones y código incorrecto Problema: los agentes pueden generar código que parece plausible pero contiene errores sutiles o viola patrones arquitectónicos establecidos. GitClear documentó un aumento de 8 veces en la duplicación de código durante 2024 atribuible a asistentes de IA ( Citation: , 2025 (2025, 9/12). Retrieved from https://www.augmentcode.com/tools/ai-code-comparison-github-copilot-vs-cursor-vs-claude-code ) .\nEstrategias:\nRevisión humana obligatoria antes de mergear código generado por agentes. Configurar pipelines de CI/CD que ejecuten tests exhaustivos automáticamente. Establecer reglas de proyecto (.cursor/rules, .claude/config) que guíen el comportamiento del agente. Usar agentes para tareas con criterios de verificación claros (tests pasando) vs. diseño arquitectónico ambiguo. Costos inesperados Problema: el modelo de precios por token puede resultar en facturas sorpresa, especialmente con agentes que iteran múltiples veces o procesan bases de código extensas.\nEstrategias:\nEstablecer límites de gasto diarios/mensuales en las configuraciones de la cuenta. Usar modelos más ligeros para tareas simples y reservar modelos premium para problemas complejos. Monitorear métricas de uso y ajustar prompts para reducir iteraciones innecesarias. Considerar herramientas de precio fijo (Cursor Pro, Copilot Pro) para uso predecible. Seguridad y filtrado de datos Problema: los agentes con acceso amplio al sistema pueden exponer datos sensibles o ejecutar código malicioso inadvertidamente. Los servidores MCP, en particular, representan vectores de ataque si no se auditan adecuadamente ( Citation: , 2025, p. equixly2025mcp (2025). Retrieved from https://www.pillar.security/blog/the-security-risks-of-model-context-protocol-mcp ) .\nEstrategias:\nEjecutar agentes en entornos sandboxed o contenedores aislados. Implementar políticas de acceso basadas en principio de mínimo privilegio. Auditar regularmente qué servidores MCP están conectados y qué permisos tienen. Usar herramientas empresariales con certificaciones de seguridad (SOC 2, ISO 27001) para código propietario. Dependencia excesiva y atrofia de habilidades Problema: un estudio de METR encontró que las herramientas de IA aumentaron el tiempo de finalización de tareas en un 19% entre desarrolladores experimentados, sugiriendo que la dependencia excesiva puede degradar el pensamiento crítico ( Citation: , 2025 (2025, 9/12). Retrieved from https://www.augmentcode.com/tools/ai-code-comparison-github-copilot-vs-cursor-vs-claude-code ) .\nEstrategias:\nReservar tiempo para “programación sin IA” regularmente. Exigir que los desarrolladores expliquen el código generado antes de aprobarlo. Usar agentes como punto de partida, no como solución final. Fomentar la comprensión profunda de patrones y algoritmos fundamentales. Tendencias emergentes y futuro próximo Sistemas multi-agente La tendencia más significativa para 2026 es la transición de agentes individuales a equipos orquestados de especialistas. Según Gartner, las consultas sobre sistemas multi-agente aumentaron un 1,445% entre Q1 2024 y Q2 2025, y se proyecta que el 40% de aplicaciones empresariales incluirán agentes específicos para tareas para finales de 2026 ( Citation: , 2026 (2026, 1/26). Retrieved from https://www.eesel.ai/es/blog/claude-code-multiple-agent-systems-complete-2026-guide ) .\nEsta arquitectura refleja el cambio de aplicaciones monolíticas a microservicios: mejor especialización, responsabilidades claras, escalado independiente y aislamiento de fallos.\nAgentes con memoria a largo plazo Los agentes de próxima generación incorporarán sistemas de memoria que persisten más allá de sesiones individuales, permitiendo:\nAprendizaje continuo de preferencias y patrones del equipo. Conocimiento acumulado sobre la evolución de la base de código. Contexto histórico para decisiones arquitectónicas. Integración con flujos de trabajo empresariales Los agentes están evolucionando desde herramientas de desarrollo aisladas hacia componentes integrados de flujos de trabajo empresariales completos:\nConexión con sistemas de tickets (Jira, Linear) para resolver issues automáticamente. Integración con documentación (Confluence, Notion) para mantenerla actualizada. Coordinación con equipos de soporte mediante Slack o Teams. Conclusiones Los agentes de código han transitado de ser curiosidades tecnológicas a herramientas esenciales en el arsenal del desarrollador moderno. La investigación reciente demuestra que, cuando se implementan adecuadamente, pueden aumentar significativamente la productividad, mejorar la calidad del código y acelerar los ciclos de desarrollo ( Citation: Jin, Huang \u0026 al., 2024, p. lou2024agents Jin, H., Huang, L., Cai, H., Yan, J., Li, B. \u0026 Chen, H. (2024). From LLMs to LLM-based agents for software engineering: A survey of current, challenges and future. arXiv preprint. Retrieved from https://arxiv.org/abs/2408.02479 ) .\nSin embargo, su adopción efectiva requiere:\nComprensión de limitaciones: los agentes excelentes en tareas bien definidas con criterios de verificación claros, pero luchan con requisitos ambiguos o diseño creativo. Supervisión humana continua: la revisión de código generado por IA sigue siendo esencial para garantizar calidad y seguridad. Selección contextual: no existe un “mejor” agente universal; la elección debe basarse en el tamaño del equipo, requisitos de seguridad, presupuesto y tipo de proyectos. Gestión de costos: los modelos de precios variables requieren monitoreo activo para evitar sorpresas. El futuro apunta hacia ecosistemas donde humanos y agentes colaboran de forma fluida, cada uno aportando sus fortalezas distintivas. Los desarrolladores que dominen la orquestación efectiva de estos agentes —sabiendo cuándo delegar, cuándo supervisar y cuándo intervenir— estarán mejor posicionados para liderar en la próxima era del desarrollo de software.\nBibliografía Jin, H., Huang, L., Cai, H., Yan, J., Li, B. \u0026 Chen, H. (2024). From LLMs to LLM-based agents for software engineering: A survey of current, challenges and future. arXiv preprint. Retrieved from https://arxiv.org/abs/2408.02479 Lou, Y., Liu, J., Wang, K., Chen, Y., Peng, X., Chen, Z. \u0026 Zhang, L. (2024). Large language model-based agents for software engineering: A survey. arXiv preprint. Retrieved from https://arxiv.org/abs/2409.02977 Xi, Z., Chen, W., Guo, X., He, W., Ding, Y., Hong, B., Zhang, M., Wang, J., Jin, S. \u0026 Zhou, E. (2023). The rise and potential of large language model based agents: A survey. arXiv preprint. Retrieved from https://arxiv.org/abs/2309.07864 Jin, Z., Liu, J., Yang, C., Jabbarvand, R. \u0026 Zhang, L. (2025). AI agentic programming: A survey of techniques, challenges, and opportunities. arXiv preprint. Retrieved from https://arxiv.org/abs/2508.11126 Yang, X., Zhang, Y., Chen, L. \u0026 Wang, H. (2024). Towards rationality in language and multimodal agents: A survey. Gao, J., Yang, J., Jimenez, C., Wettig, A., Lieret, K., Yao, S., Narasimhan, K. \u0026 Press, O. (2024). SWE-agent: Agent-computer interfaces enable automated software engineering. arXiv preprint. Retrieved from https://arxiv.org/abs/2405.15793 Deng, Y., Zhang, X., Zhang, W., Yuan, Y., Ng, S. \u0026 Chua, T. (2024). AgentCoder: Multi-agent-based code generation with iterative testing and optimisation. arXiv preprint. Retrieved from https://arxiv.org/abs/2312.13010 Jimenez, C., Yang, J., Wettig, A., Yao, S., Press, O. \u0026 Narasimhan, K. (2024). SWE-bench: Can language models resolve real-world github issues?. arXiv preprint. Retrieved from https://arxiv.org/abs/2310.06770 Wang, L., Ma, C., Feng, X., Zhang, Z., Yang, H., Zhang, J., Chen, Z., Tang, J., Chen, X. \u0026 Lin, Y. (2024). A survey on large language model based autonomous agents. arXiv preprint. Retrieved from https://arxiv.org/abs/2308.11432 Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K. \u0026 Cao, Y. (2023). ReAct: Synergizing reasoning and acting in language models. Retrieved from https://arxiv.org/abs/2210.03629 (2025). Retrieved from https://www.anthropic.com/research/measuring-agent-autonomy (2026, 2/26). Retrieved from https://www.testleaf.com/blog/claude-code-vs-copilot-vs-cursor-ai-agents-comparison/ (2025, 12/13). Retrieved from https://www.digitalapplied.com/blog/ai-coding-tools-comparison-december-2025 (2026, 1/3). Retrieved from https://www.nxcode.io/es/resources/news/cursor-tutorial-beginners-2026 (2026, 3/20). Retrieved from https://www.mintmcp.com/blog/claude-code-cursor-vs-copilot (2025, 10/4). Retrieved from https://www.eesel.ai/es/blog/cursor-overview (2025, 4/10). Retrieved from https://blog.openreplay.com/es/configurar-usar-cursor-ai-generacion-codigo/ (2024, 9/3). Retrieved from https://www.datacamp.com/es/tutorial/cursor-ai-code-editor (2025, 5/19). Retrieved from https://github.com/newsroom/press-releases/coding-agent-for-github-copilot (2025, 12/26). Retrieved from https://devops.com/github-copilot-evolves-agent-mode-and-multi-model-support-transform-devops-workflows-2/ (2025, 5/19). Retrieved from https://thelettertwo.com/2025/05/19/the-new-github-copilot-agent-doesnt-just-help-you-code-it-codes-for-you/ (2025, 5/19). Retrieved from https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/ (2025, 12). Retrieved from https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/ (2025). Retrieved from https://www.cognition.ai/ Said, C. (2026). Inside the grind: The SF startup racing to build an AI software engineer. Retrieved from https://sfstandard.com/2026/03/24/grind-sf-startup-racing-build-ai-software-engineer/ (2025, 8/4). Retrieved from https://www.ibm.com/think/news/goldman-sachs-first-ai-employee-devin (2025, 11/14). Retrieved from https://cognition.ai/blog/devin-annual-performance-review-2025 (2026, 2/5). Retrieved from https://openai.com/es-419/index/introducing-gpt-5-3-codex/ (2026, 2/3). Retrieved from https://geeksroom.com/2026/02/openai-codex-macos/143705/ (2025, 10/6). Retrieved from https://www.eesel.ai/es/blog/openai-codex (2025, 5/20). Retrieved from http://apertia.ai/es/blog/codex-nova-era-softwaroveho-inzenyrstvi (2026, 2/5). Retrieved from https://openai.com/es-419/index/introducing-gpt-5-3-codex/ (2026, 3/5). Retrieved from https://www.deployhq.com/guides/windsurf (2026, 2/17). Retrieved from https://www.swebench.com/ Pan, L., Zhang, Y., Chen, X., Wang, H. \u0026 Li, J. (2025). TheAgentCompany: Benchmarking LLM agents on consequential real world tasks. arXiv preprint. Retrieved from https://arxiv.org/abs/2412.14161 (2025, 10). Retrieved from https://claude.com/blog/what-is-model-context-protocol (2025, 12/9). Retrieved from https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation (2025, 12/23). Retrieved from https://www.pento.ai/blog/a-year-of-mcp-2025-review (2025, 12/9). Retrieved from https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation (2026, 1/26). Retrieved from https://www.eesel.ai/es/blog/claude-code-multiple-agent-systems-complete-2026-guide (2025, 9/12). Retrieved from https://www.augmentcode.com/tools/ai-code-comparison-github-copilot-vs-cursor-vs-claude-code (2025). Retrieved from https://www.pillar.security/blog/the-security-risks-of-model-context-protocol-mcp (2025, 3/29). Retrieved from https://equixly.com/blog/2025/03/29/mcp-server-new-security-nightmare/ ","wordCount":"3813","inLanguage":"en","datePublished":"2026-03-03T00:00:00Z","dateModified":"2026-03-03T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://friveroll.github.io/posts/agentes-codigo-programacion/"},"publisher":{"@type":"Organization","name":"Felipe Riveroll Aguirre","logo":{"@type":"ImageObject","url":"https://friveroll.github.io/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://friveroll.github.io/ accesskey=h title="Felipe Riveroll Aguirre (Alt + H)">Felipe Riveroll Aguirre</a>
+<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)">
+<svg id="moon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button><ul class=lang-switch><li>|</li></ul></span></div><ul id=menu><li><a href=https://friveroll.github.io/categories/ title=Categorias><span>Categorias</span></a></li><li><a href=https://friveroll.github.io/tags/ title=Etiquetas><span>Etiquetas</span></a></li><li><a href=https://friveroll.github.io/archives/ title=Archivo><span>Archivo</span></a></li><li><a href=https://friveroll.github.io/search/ title="Búsqueda (Alt + /)" accesskey=/><span>Búsqueda</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://friveroll.github.io/>Inicio</a>&nbsp;»&nbsp;<a href=https://friveroll.github.io/posts/>Posts</a></div><h1 class=post-title>Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos</h1><div class=post-meta><span title='2026-03-03 00:00:00 +0000 UTC'>March 3, 2026</span>&nbsp;·&nbsp;18 min</div></header><div class=post-content><p>El panorama del desarrollo de software ha experimentado una transformación sin precedentes con la llegada de los agentes de código. Estos sistemas, impulsados por grandes modelos de lenguaje (LLMs), han evolucionado desde simples autocompletadores hasta agentes autónomos capaces de planificar, implementar, depurar y desplegar aplicaciones completas con mínima supervisión humana
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#jin2024llms><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="H."><span itemprop=familyName>Jin</span></span>, <span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="L."><span itemprop=familyName>Huang</span></span>
+<em>& al.</em>, <span itemprop=datePublished>2024</span>, p.&nbsp;lou2024agents</a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jin</span>, 
+<meta itemprop=givenName content="H.">H.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Huang</span>, 
+<meta itemprop=givenName content="L.">L.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Cai</span>, 
+<meta itemprop=givenName content="H.">H.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yan</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Li</span>, 
+<meta itemprop=givenName content="B.">B.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chen</span>, 
+<meta itemprop=givenName content="H.">H.</span>
+ 
+(<span itemprop=datePublished>2024</span>).
+ <span itemprop=name>From LLMs to LLM-based agents for software engineering: A survey of current, challenges and future</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2408.02479 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2408.02479</a></span>
+</span></span>)</span>
+. A diferencia de los asistentes tradicionales que respondían a prompts individuales, los agentes modernos operan en bucles de percepción-razonamiento-acción, permitiéndoles abordar tareas complejas que abarcan múltiples archivos y etapas del ciclo de vida del software
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#xi2023rise><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="Z."><span itemprop=familyName>Xi</span></span>, <span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="W."><span itemprop=familyName>Chen</span></span>
+<em>& al.</em>, <span itemprop=datePublished>2023</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Xi</span>, 
+<meta itemprop=givenName content="Z.">Z.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chen</span>, 
+<meta itemprop=givenName content="W.">W.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Guo</span>, 
+<meta itemprop=givenName content="X.">X.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>He</span>, 
+<meta itemprop=givenName content="W.">W.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Ding</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Hong</span>, 
+<meta itemprop=givenName content="B.">B.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="M.">M.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Wang</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jin</span>, 
+<meta itemprop=givenName content="S.">S.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhou</span>, 
+<meta itemprop=givenName content="E.">E.</span>
+ 
+(<span itemprop=datePublished>2023</span>).
+ <span itemprop=name>The rise and potential of large language model based agents: A survey</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2309.07864 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2309.07864</a></span>
+</span></span>)</span>
+.</p><p>El objetivo de este artículo es proporcionar una visión integral de los agentes de código disponibles en 2025, analizar sus capacidades diferenciales y ofrecer criterios para su selección según el contexto de desarrollo. Para lograr una comprensión profunda del tema, examinaremos tres elementos críticos: la arquitectura subyacente que define su autonomía, los benchmarks de evaluación que miden su efectividad real, y los protocolos de integración que expanden sus capacidades mediante herramientas externas
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#jin2025agentic><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="Z."><span itemprop=familyName>Jin</span></span>, <span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="J."><span itemprop=familyName>Liu</span></span>
+<em>& al.</em>, <span itemprop=datePublished>2025</span>, p.&nbsp;yang2024multimodal</a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jin</span>, 
+<meta itemprop=givenName content="Z.">Z.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Liu</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yang</span>, 
+<meta itemprop=givenName content="C.">C.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jabbarvand</span>, 
+<meta itemprop=givenName content="R.">R.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="L.">L.</span>
+ 
+(<span itemprop=datePublished>2025</span>).
+ <span itemprop=name>AI agentic programming: A survey of techniques, challenges, and opportunities</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2508.11126 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2508.11126</a></span>
+</span></span>)</span>
+.</p><h2 id=fundamentos-de-los-agentes-de-código>Fundamentos de los agentes de código<a hidden class=anchor aria-hidden=true href=#fundamentos-de-los-agentes-de-código>#</a></h2><h3 id=qué-diferencia-a-un-agente-de-un-asistente-tradicional>¿Qué diferencia a un agente de un asistente tradicional?<a hidden class=anchor aria-hidden=true href=#qué-diferencia-a-un-agente-de-un-asistente-tradicional>#</a></h3><p>Los asistentes de código tradicionales, como las primeras versiones de GitHub Copilot, operaban bajo un paradigma reactivo: el desarrollador escribía código y el asistente sugería completaciones basadas en el contexto inmediato
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#gao2024sweagent><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="J."><span itemprop=familyName>Gao</span></span>, <span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="J."><span itemprop=familyName>Yang</span></span>
+<em>& al.</em>, <span itemprop=datePublished>2024</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Gao</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yang</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jimenez</span>, 
+<meta itemprop=givenName content="C. E.">C.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Wettig</span>, 
+<meta itemprop=givenName content="A.">A.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Lieret</span>, 
+<meta itemprop=givenName content="K.">K.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yao</span>, 
+<meta itemprop=givenName content="S.">S.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Narasimhan</span>, 
+<meta itemprop=givenName content="K.">K.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Press</span>, 
+<meta itemprop=givenName content="O.">O.</span>
+ 
+(<span itemprop=datePublished>2024</span>).
+ <span itemprop=name>SWE-agent: Agent-computer interfaces enable automated software engineering</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2405.15793 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2405.15793</a></span>
+</span></span>)</span>
+. En contraste, los agentes de código modernos exhiben características fundamentales que los distinguen claramente:</p><ul><li><strong>Autonomía en la ejecución</strong>: pueden realizar múltiples pasos sin intervención humana constante, incluyendo la ejecución de comandos de terminal, pruebas y despliegues.</li><li><strong>Persistencia de estado</strong>: mantienen memoria del contexto a lo largo de sesiones prolongadas, permitiendo trabajos que duran horas o incluso días.</li><li><strong>Capacidad de auto-corrección</strong>: detectan errores en su propio trabajo y iteran para corregirlos, funcionando en bucles de prueba y error
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#deng2024agentcoder><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="Y."><span itemprop=familyName>Deng</span></span>, <span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="X."><span itemprop=familyName>Zhang</span></span>
+<em>& al.</em>, <span itemprop=datePublished>2024</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Deng</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="X.">X.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="W.">W.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yuan</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Ng</span>, 
+<meta itemprop=givenName content="S. K.">S.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chua</span>, 
+<meta itemprop=givenName content="T. S.">T.</span>
+ 
+(<span itemprop=datePublished>2024</span>).
+ <span itemprop=name>AgentCoder: Multi-agent-based code generation with iterative testing and optimisation</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2312.13010 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2312.13010</a></span>
+</span></span>)</span>
+.</li><li><strong>Interacción con el entorno</strong>: acceden al sistema de archivos, bases de datos, APIs y otros recursos externos mediante protocolos estandarizados.</li></ul><p>Esta diferenciación conceptual ha sido validada empíricamente: mientras que los LLMs &ldquo;simples&rdquo; resuelven aproximadamente el 4-5% de issues reales de GitHub, los agentes bien diseñados alcanzan tasas de resolución superiores al 65-80% en benchmarks estandarizados como SWE-bench
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#jimenez2024swebench><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="C. E."><span itemprop=familyName>Jimenez</span></span>, <span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="J."><span itemprop=familyName>Yang</span></span>
+<em>& al.</em>, <span itemprop=datePublished>2024</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jimenez</span>, 
+<meta itemprop=givenName content="C. E.">C.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yang</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Wettig</span>, 
+<meta itemprop=givenName content="A.">A.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yao</span>, 
+<meta itemprop=givenName content="S.">S.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Press</span>, 
+<meta itemprop=givenName content="O.">O.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Narasimhan</span>, 
+<meta itemprop=givenName content="K.">K.</span>
+ 
+(<span itemprop=datePublished>2024</span>).
+ <span itemprop=name>SWE-bench: Can language models resolve real-world github issues?</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2310.06770 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2310.06770</a></span>
+</span></span>)</span>
+.</p><h3 id=el-bucle-fundamental-percepción-razonamiento-y-acción>El bucle fundamental: percepción, razonamiento y acción<a hidden class=anchor aria-hidden=true href=#el-bucle-fundamental-percepción-razonamiento-y-acción>#</a></h3><p>Los agentes de código operan mediante un patrón cíclico que les permite interactuar dinámicamente con su entorno. Este bucle, derivado de la teoría de agentes inteligentes y adaptado para ingeniería de software, consta de tres fases interconectadas
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#xi2023rise><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="Z."><span itemprop=familyName>Xi</span></span>, <span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="W."><span itemprop=familyName>Chen</span></span>
+<em>& al.</em>, <span itemprop=datePublished>2023</span>, p.&nbsp;wang2024survey</a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Xi</span>, 
+<meta itemprop=givenName content="Z.">Z.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chen</span>, 
+<meta itemprop=givenName content="W.">W.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Guo</span>, 
+<meta itemprop=givenName content="X.">X.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>He</span>, 
+<meta itemprop=givenName content="W.">W.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Ding</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Hong</span>, 
+<meta itemprop=givenName content="B.">B.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="M.">M.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Wang</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jin</span>, 
+<meta itemprop=givenName content="S.">S.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhou</span>, 
+<meta itemprop=givenName content="E.">E.</span>
+ 
+(<span itemprop=datePublished>2023</span>).
+ <span itemprop=name>The rise and potential of large language model based agents: A survey</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2309.07864 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2309.07864</a></span>
+</span></span>)</span>
+:</p><p><strong>Percepción</strong>: el agente recopila información del entorno leyendo archivos, ejecutando comandos, consultando documentación o interactuando con APIs. La calidad de esta fase depende críticamente del tamaño de la ventana de contexto del modelo subyacente.</p><p><strong>Razonamiento</strong>: el agente analiza la información percibida, planifica los pasos necesarios para alcanzar el objetivo y toma decisiones sobre qué acciones ejecutar. Los modelos modernos emplean técnicas como Chain-of-Thought (CoT) y ReAct (Reason + Act) para estructurar este razonamiento
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#yao2023react><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="S."><span itemprop=familyName>Yao</span></span>, <span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="J."><span itemprop=familyName>Zhao</span></span>
+<em>& al.</em>, <span itemprop=datePublished>2023</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/CreativeWork data-type=paper-conference><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yao</span>, 
+<meta itemprop=givenName content="S.">S.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhao</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yu</span>, 
+<meta itemprop=givenName content="D.">D.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Du</span>, 
+<meta itemprop=givenName content="N.">N.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Shafran</span>, 
+<meta itemprop=givenName content="I.">I.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Narasimhan</span>, 
+<meta itemprop=givenName content="K.">K.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Cao</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>
+ 
+(<span itemprop=datePublished>2023</span>).
+ <span itemprop=name><i>ReAct: Synergizing reasoning and acting in language models</i></span>.
+ Retrieved from 
+<a href=https://arxiv.org/abs/2210.03629 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2210.03629</a></span>
+</span></span>)</span>
+.</p><p><strong>Acción</strong>: el agente ejecuta las operaciones planificadas, que pueden incluir modificar código, crear archivos, ejecutar tests o interactuar con sistemas externos. Los resultados de estas acciones alimentan nuevamente la fase de percepción, cerrando el ciclo.</p><p>En la práctica, un agente puede iterar este bucle docenas de veces para completar una tarea compleja, manteniendo coherencia y contexto a lo largo de todo el proceso
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#jin2025agentic><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="Z."><span itemprop=familyName>Jin</span></span>, <span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="J."><span itemprop=familyName>Liu</span></span>
+<em>& al.</em>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jin</span>, 
+<meta itemprop=givenName content="Z.">Z.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Liu</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yang</span>, 
+<meta itemprop=givenName content="C.">C.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jabbarvand</span>, 
+<meta itemprop=givenName content="R.">R.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="L.">L.</span>
+ 
+(<span itemprop=datePublished>2025</span>).
+ <span itemprop=name>AI agentic programming: A survey of techniques, challenges, and opportunities</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2508.11126 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2508.11126</a></span>
+</span></span>)</span>
+.</p><h2 id=principales-agentes-de-código-en-2025>Principales agentes de código en 2025<a hidden class=anchor aria-hidden=true href=#principales-agentes-de-código-en-2025>#</a></h2><h3 id=claude-code-razonamiento-arquitectónico-desde-la-terminal>Claude Code: Razonamiento arquitectónico desde la terminal<a hidden class=anchor aria-hidden=true href=#claude-code-razonamiento-arquitectónico-desde-la-terminal>#</a></h3><p>Claude Code, desarrollado por Anthropic, representa un enfoque distintivo centrado en el razonamiento profundo sobre bases de código extensas. A diferencia de los IDE tradicionales, Claude Code opera principalmente desde la línea de comandos, lo que le permite integrarse fluidamente en flujos de trabajo existentes y pipelines de automatización
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#anthropic2025measuring><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025</span>). Retrieved from 
+<a href=https://www.anthropic.com/research/measuring-agent-autonomy itemprop=identifier itemtype=https://schema.org/URL>https://www.anthropic.com/research/measuring-agent-autonomy</a></span>
+</span></span>)</span>
+.</p><p>Las capacidades diferenciales de Claude Code incluyen:</p><ul><li><strong>Ventana de contexto de 200K tokens</strong>: permite analizar simultáneamente cientos de archivos, comprendiendo relaciones y dependencias a nivel de sistema.</li><li><strong>Razonamiento sobre arquitectura completa</strong>: no solo sugiere cambios locales, sino que evalúa el impacto de modificaciones en todo el ecosistema del proyecto.</li><li><strong>Detección de vulnerabilidades</strong>: durante pruebas tempranas, identificó más de 500 vulnerabilidades reales en proyectos de código abierto
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#testleaf2026comparison><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2026</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 2/26</span>). Retrieved from 
+<a href=https://www.testleaf.com/blog/claude-code-vs-copilot-vs-cursor-ai-agents-comparison/ itemprop=identifier itemtype=https://schema.org/URL>https://www.testleaf.com/blog/claude-code-vs-copilot-vs-cursor-ai-agents-comparison/</a></span>
+</span></span>)</span>
+.</li><li><strong>Modelo de precios por uso</strong>: cobra por millón de tokens procesados ($3-15/M), lo que puede resultar económico para tareas puntuales pero costoso para uso intensivo continuo.</li></ul><p>En benchmarks de rendimiento, Claude Code con el modelo Claude Sonnet 4.5 alcanza un 77.2% de resolución en SWE-bench Verified, posicionándose entre los sistemas más efectivos para tareas de ingeniería de software real
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#digitalapplied2025comparison><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 12/13</span>). Retrieved from 
+<a href=https://www.digitalapplied.com/blog/ai-coding-tools-comparison-december-2025 itemprop=identifier itemtype=https://schema.org/URL>https://www.digitalapplied.com/blog/ai-coding-tools-comparison-december-2025</a></span>
+</span></span>)</span>
+.</p><h3 id=cursor-el-ide-nativo-para-agentes>Cursor: El IDE nativo para agentes<a hidden class=anchor aria-hidden=true href=#cursor-el-ide-nativo-para-agentes>#</a></h3><p>Cursor ha emergido como el referente en editores de código diseñados específicamente para la IA, alcanzando una valoración de $9.9 mil millones en 2025 y más de 360,000 clientes de pago en solo 16 meses
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#nxcode2026tutorial><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2026</span>, p.&nbsp;mintmcp2026security</a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 1/3</span>). Retrieved from 
+<a href=https://www.nxcode.io/es/resources/news/cursor-tutorial-beginners-2026 itemprop=identifier itemtype=https://schema.org/URL>https://www.nxcode.io/es/resources/news/cursor-tutorial-beginners-2026</a></span>
+</span></span>)</span>
+. Construido sobre VS Code, ofrece una transición sin fricción para desarrolladores familiarizados con el ecosistema de Microsoft.</p><p>Las funcionalidades clave de Cursor incluyen:</p><p><strong>Modo Composer</strong>: permite generar y modificar múltiples archivos simultáneamente a partir de descripciones en lenguaje natural. El agente planifica, implementa y verifica cambios de forma autónoma
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#eesel2025cursor><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 10/4</span>). Retrieved from 
+<a href=https://www.eesel.ai/es/blog/cursor-overview itemprop=identifier itemtype=https://schema.org/URL>https://www.eesel.ai/es/blog/cursor-overview</a></span>
+</span></span>)</span>
+.</p><p><strong>Integración multi-modelo</strong>: ofrece acceso a GPT-5, Claude, Gemini y modelos personalizados, permitiendo seleccionar el modelo más adecuado para cada tarea:</p><table><thead><tr><th>Modelo</th><th>Ideal para</th><th>Característica clave</th></tr></thead><tbody><tr><td>GPT-4o</td><td>Razonamiento complejo, tareas de varios pasos</td><td>Alta inteligencia, más lento</td></tr><tr><td>Claude 3.5 Sonnet</td><td>Comprensión matizada, código creativo</td><td>Excelente para texto, rápido</td></tr><tr><td>cursor-small</td><td>Finalizaciones rápidas, ediciones sencillas</td><td>Muy rápido, uso ilimitado</td></tr></tbody></table><p><strong>Indexación semántica de código</strong>: Cursor construye un índice vectorial de toda la base de código, permitiendo búsquedas contextuales y comprensión de relaciones entre componentes distribuidos
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#openreplay2025cursor><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 4/10</span>). Retrieved from 
+<a href=https://blog.openreplay.com/es/configurar-usar-cursor-ai-generacion-codigo/ itemprop=identifier itemtype=https://schema.org/URL>https://blog.openreplay.com/es/configurar-usar-cursor-ai-generacion-codigo/</a></span>
+</span></span>)</span>
+.</p><p>El plan Pro cuesta $20/mes e incluye 500 solicitudes premium, mientras que el plan Business a $40/usuario/mes añade funcionalidades de equipo y seguridad avanzada
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#datacamp2024cursor><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2024</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2024, 9/3</span>). Retrieved from 
+<a href=https://www.datacamp.com/es/tutorial/cursor-ai-code-editor itemprop=identifier itemtype=https://schema.org/URL>https://www.datacamp.com/es/tutorial/cursor-ai-code-editor</a></span>
+</span></span>)</span>
+.</p><h3 id=github-copilot-evolución-hacia-el-agente-empresarial>GitHub Copilot: Evolución hacia el agente empresarial<a hidden class=anchor aria-hidden=true href=#github-copilot-evolución-hacia-el-agente-empresarial>#</a></h3><p>GitHub Copilot, pionero en asistencia de código con IA, ha evolucionado significativamente desde su lanzamiento en 2021. En 2025, con más de 26 millones de usuarios y el 90% de Fortune 100 como clientes, ha transitado de ser un autocompletador a un agente de codificación autónomo
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#github2025codingagent><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span>, p.&nbsp;devops2025copilot</a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 5/19</span>). Retrieved from 
+<a href=https://github.com/newsroom/press-releases/coding-agent-for-github-copilot itemprop=identifier itemtype=https://schema.org/URL>https://github.com/newsroom/press-releases/coding-agent-for-github-copilot</a></span>
+</span></span>)</span>
+.</p><p>Las innovaciones clave de 2025 incluyen:</p><p><strong>Agent Mode</strong>: permite a Copilot traducir ideas directamente en código, identificando subtareas necesarias y ejecutándolas a través de múltiples archivos. Alcanza un 56% de tasa de éxito en SWE-bench Verified con Claude 3.7 Sonnet
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#lettertwo2025copilot><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 5/19</span>). Retrieved from 
+<a href=https://thelettertwo.com/2025/05/19/the-new-github-copilot-agent-doesnt-just-help-you-code-it-codes-for-you/ itemprop=identifier itemtype=https://schema.org/URL>https://thelettertwo.com/2025/05/19/the-new-github-copilot-agent-doesnt-just-help-you-code-it-codes-for-you/</a></span>
+</span></span>)</span>
+.</p><p><strong>Soporte multi-modelo</strong>: además de los modelos OpenAI, ahora integra Anthropic Claude 3.5/3.7 Sonnet, Google Gemini 2.0 Flash y otros, ofreciendo flexibilidad sin precedentes
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#github2025agentmode><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 5/19</span>). Retrieved from 
+<a href=https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/ itemprop=identifier itemtype=https://schema.org/URL>https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/</a></span>
+</span></span>)</span>
+.</p><p><strong>Model Context Protocol (MCP)</strong>: mediante este protocolo estandarizado, Copilot puede conectarse a fuentes de datos externas, bases de conocimiento y herramientas empresariales, expandiendo dramáticamente su contexto operativo
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#githubblog2025mcp><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 12</span>). Retrieved from 
+<a href=https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/ itemprop=identifier itemtype=https://schema.org/URL>https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/</a></span>
+</span></span>)</span>
+.</p><p>La estructura de precios incluye un nivel gratuito con 12,000 completaciones mensuales, Pro a $10/mes, y Enterprise a $39/mes con funcionalidades avanzadas de seguridad y cumplimiento
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#digitalapplied2025comparison><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 12/13</span>). Retrieved from 
+<a href=https://www.digitalapplied.com/blog/ai-coding-tools-comparison-december-2025 itemprop=identifier itemtype=https://schema.org/URL>https://www.digitalapplied.com/blog/ai-coding-tools-comparison-december-2025</a></span>
+</span></span>)</span>
+.</p><h3 id=devin-el-ingeniero-de-software-autónomo>Devin: El ingeniero de software autónomo<a hidden class=anchor aria-hidden=true href=#devin-el-ingeniero-de-software-autónomo>#</a></h3><p>Devin, desarrollado por Cognition Labs, se posiciona como el primer &ldquo;ingeniero de software autónomo&rdquo; completamente funcional. A diferencia de los asistentes que operan dentro de IDEs existentes, Devin funciona como un agente independiente capaz de gestionar proyectos completos de extremo a extremo
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#cognition2025devin><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span>, p.&nbsp;sfstandard2026grind</a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025</span>). Retrieved from 
+<a href=https://www.cognition.ai/ itemprop=identifier itemtype=https://schema.org/URL>https://www.cognition.ai/</a></span>
+</span></span>)</span>
+.</p><p>Las capacidades diferenciales de Devin incluyen:</p><ul><li><strong>Configuración de entornos</strong>: crea y configura automáticamente entornos de desarrollo sandboxed con todas las dependencias necesarias.</li><li><strong>Planificación multi-paso</strong>: descompone proyectos complejos en subtareas manejables, priorizando y secuenciando operaciones de forma óptima.</li><li><strong>Depuración autónoma</strong>: detecta errores, reproduce bugs, implementa correcciones y verifica soluciones sin intervención humana
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#ibm2025devin><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 8/4</span>). Retrieved from 
+<a href=https://www.ibm.com/think/news/goldman-sachs-first-ai-employee-devin itemprop=identifier itemtype=https://schema.org/URL>https://www.ibm.com/think/news/goldman-sachs-first-ai-employee-devin</a></span>
+</span></span>)</span>
+.</li><li><strong>Paralelización masiva</strong>: múltiples instancias de Devin pueden trabajar simultáneamente en diferentes tareas o proyectos.</li></ul><p>Los datos de rendimiento de 2025 muestran mejoras significativas: es 4 veces más rápido en resolución de problemas, un 67% de sus pull requests son mergeadas (vs 34% el año anterior), y resuelve vulnerabilidades de seguridad en 1.5 minutos frente a los 30 minutos promedio de desarrolladores humanos
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#cognition2025performance><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 11/14</span>). Retrieved from 
+<a href=https://cognition.ai/blog/devin-annual-performance-review-2025 itemprop=identifier itemtype=https://schema.org/URL>https://cognition.ai/blog/devin-annual-performance-review-2025</a></span>
+</span></span>)</span>
+.</p><h3 id=openai-codex-orquestación-multi-agente>OpenAI Codex: Orquestación multi-agente<a hidden class=anchor aria-hidden=true href=#openai-codex-orquestación-multi-agente>#</a></h3><p>OpenAI Codex representa la visión de OpenAI para la programación asistida por IA, evolucionando desde el motor de GitHub Copilot hasta un sistema de agentes independiente. En 2025, Codex está disponible como aplicación de escritorio para macOS, CLI, extensión de IDE y servicio en la nube
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#openai2026codex><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2026</span>, p.&nbsp;geeksroom2026codex</a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 2/5</span>). Retrieved from 
+<a href=https://openai.com/es-419/index/introducing-gpt-5-3-codex/ itemprop=identifier itemtype=https://schema.org/URL>https://openai.com/es-419/index/introducing-gpt-5-3-codex/</a></span>
+</span></span>)</span>
+.</p><p>Características distintivas:</p><p><strong>Arquitectura multi-agente</strong>: la aplicación Codex permite coordinar múltiples agentes trabajando en paralelo en diferentes aspectos de un proyecto, cada uno en su propio hilo de ejecución
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#eesel2026codex><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 10/6</span>). Retrieved from 
+<a href=https://www.eesel.ai/es/blog/openai-codex itemprop=identifier itemtype=https://schema.org/URL>https://www.eesel.ai/es/blog/openai-codex</a></span>
+</span></span>)</span>
+.</p><p><strong>Skills personalizables</strong>: los usuarios pueden definir &ldquo;skills&rdquo; —patrones reutilizables que Codex memoriza para tareas recurrentes— permitiendo automatizar flujos de trabajo específicos de la organización
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#openai2026gpt53><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2026</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 2/5</span>). Retrieved from 
+<a href=https://openai.com/es-419/index/introducing-gpt-5-3-codex/ itemprop=identifier itemtype=https://schema.org/URL>https://openai.com/es-419/index/introducing-gpt-5-3-codex/</a></span>
+</span></span>)</span>
+.</p><p><strong>Contenedores aislados</strong>: cada tarea se ejecuta en un sandbox seguro que garantiza consistencia, seguridad y capacidad de paralelización
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#apertia2025codex><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 5/20</span>). Retrieved from 
+<a href=http://apertia.ai/es/blog/codex-nova-era-softwaroveho-inzenyrstvi itemprop=identifier itemtype=https://schema.org/URL>http://apertia.ai/es/blog/codex-nova-era-softwaroveho-inzenyrstvi</a></span>
+</span></span>)</span>
+.</p><p>En evaluaciones de OSWorld-Verified (benchmark de uso de computadoras con agentes), GPT-5.3-Codex demuestra habilidades significativamente superiores a modelos anteriores, acercándose al rendimiento humano de aproximadamente 72%
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#openai2026gpt53><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2026</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 2/5</span>). Retrieved from 
+<a href=https://openai.com/es-419/index/introducing-gpt-5-3-codex/ itemprop=identifier itemtype=https://schema.org/URL>https://openai.com/es-419/index/introducing-gpt-5-3-codex/</a></span>
+</span></span>)</span>
+.</p><h3 id=windsurf-agente-accesible-con-cascade>Windsurf: Agente accesible con Cascade<a hidden class=anchor aria-hidden=true href=#windsurf-agente-accesible-con-cascade>#</a></h3><p>Windsurf, adquirido por Cognition AI en 2025, se ha consolidado como una opción de alto valor con su agente Cascade. Con un precio de $15/mes para el plan Pro y un tier gratuito generoso (25 créditos mensuales), ofrece capacidades agenticas a un costo significativamente menor que la competencia
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#digitalapplied2025comparison><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span>, p.&nbsp;deployhq2026windsurf</a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 12/13</span>). Retrieved from 
+<a href=https://www.digitalapplied.com/blog/ai-coding-tools-comparison-december-2025 itemprop=identifier itemtype=https://schema.org/URL>https://www.digitalapplied.com/blog/ai-coding-tools-comparison-december-2025</a></span>
+</span></span>)</span>
+.</p><p>Características principales:</p><ul><li><strong>Cascade Flow</strong>: flujos de trabajo agenticos autónomos con memoria y capacidades de planificación.</li><li><strong>Riptide Search</strong>: sistema de búsqueda que puede escanear millones de líneas de código en segundos.</li><li><strong>Live Preview</strong>: permite hacer clic en cualquier elemento de la interfaz para editarlo con IA.</li><li><strong>Compatibilidad VS Code</strong>: al estar construido sobre VS Code, hereda extensiones, atajos y configuraciones existentes.</li></ul><h2 id=benchmarks-y-evaluación-de-agentes>Benchmarks y evaluación de agentes<a hidden class=anchor aria-hidden=true href=#benchmarks-y-evaluación-de-agentes>#</a></h2><h3 id=swe-bench-el-estándar-de-facto>SWE-bench: El estándar de facto<a hidden class=anchor aria-hidden=true href=#swe-bench-el-estándar-de-facto>#</a></h3><p>SWE-bench (Software Engineering Bench) se ha establecido como el benchmark más riguroso para evaluar agentes de código. Consiste en issues reales de repositorios de código abierto populares (Django, scikit-learn, matplotlib, entre otros) que los agentes deben resolver de forma autónoma
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#jimenez2024swebench><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="C. E."><span itemprop=familyName>Jimenez</span></span>, <span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="J."><span itemprop=familyName>Yang</span></span>
+<em>& al.</em>, <span itemprop=datePublished>2024</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jimenez</span>, 
+<meta itemprop=givenName content="C. E.">C.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yang</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Wettig</span>, 
+<meta itemprop=givenName content="A.">A.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yao</span>, 
+<meta itemprop=givenName content="S.">S.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Press</span>, 
+<meta itemprop=givenName content="O.">O.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Narasimhan</span>, 
+<meta itemprop=givenName content="K.">K.</span>
+ 
+(<span itemprop=datePublished>2024</span>).
+ <span itemprop=name>SWE-bench: Can language models resolve real-world github issues?</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2310.06770 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2310.06770</a></span>
+</span></span>)</span>
+.</p><p>Métricas clave en SWE-bench Verified (subset de 500 instancias filtradas):</p><table><thead><tr><th>Modelo/Agente</th><th>SWE-bench Verified</th><th>Terminal-Bench</th></tr></thead><tbody><tr><td>Claude Opus 4.5</td><td>80.9%</td><td>57.5%</td></tr><tr><td>Claude Sonnet 4.5</td><td>77.2%</td><td>50.0%</td></tr><tr><td>GPT-5.2</td><td>~75%</td><td>43.8%</td></tr><tr><td>Devstral 2 (Open)</td><td>72.2%</td><td>-</td></tr><tr><td>GPT-4o</td><td>~55%</td><td>-</td></tr></tbody></table><p>Estos resultados demuestran que los modelos más avanzados han alcanzado niveles de competencia cercanos a los de desarrolladores humanos en tareas específicas de ingeniería de software
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#swebench2026leaderboard><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2026</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 2/17</span>). Retrieved from 
+<a href=https://www.swebench.com/ itemprop=identifier itemtype=https://schema.org/URL>https://www.swebench.com/</a></span>
+</span></span>)</span>
+.</p><h3 id=otros-benchmarks-relevantes>Otros benchmarks relevantes<a hidden class=anchor aria-hidden=true href=#otros-benchmarks-relevantes>#</a></h3><p>Además de SWE-bench, el ecosistema de evaluación incluye:</p><ul><li><strong>SWE-bench Multimodal</strong>: 517 tareas que incluyen elementos visuales, como interfaces gráficas o diagramas.</li><li><strong>SWE-bench Multilingual</strong>: 300 tareas distribuidas en 9 lenguajes de programación diferentes.</li><li><strong>OSWorld</strong>: evalúa capacidades de uso general de computadoras mediante agentes visuales.</li><li><strong>TheAgentCompany</strong>: benchmark de tareas del mundo real con consecuencias prácticas
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#pan2025agentcompany><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="L."><span itemprop=familyName>Pan</span></span>, <span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="Y."><span itemprop=familyName>Zhang</span></span>
+<em>& al.</em>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Pan</span>, 
+<meta itemprop=givenName content="L.">L.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chen</span>, 
+<meta itemprop=givenName content="X.">X.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Wang</span>, 
+<meta itemprop=givenName content="H.">H.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Li</span>, 
+<meta itemprop=givenName content="J.">J.</span>
+ 
+(<span itemprop=datePublished>2025</span>).
+ <span itemprop=name>TheAgentCompany: Benchmarking LLM agents on consequential real world tasks</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2412.14161 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2412.14161</a></span>
+</span></span>)</span>
+.</li></ul><h2 id=protocolos-de-integración-el-model-context-protocol-mcp>Protocolos de integración: El Model Context Protocol (MCP)<a hidden class=anchor aria-hidden=true href=#protocolos-de-integración-el-model-context-protocol-mcp>#</a></h2><h3 id=qué-es-mcp>¿Qué es MCP?<a hidden class=anchor aria-hidden=true href=#qué-es-mcp>#</a></h3><p>El Model Context Protocol (MCP), introducido por Anthropic en noviembre de 2024 y donado a la Agentic AI Foundation (Linux Foundation) en diciembre de 2025, es un estándar abierto que estandariza la forma en que los sistemas de IA se integran con fuentes de datos y herramientas externas
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#anthropic2025mcp><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span>, p.&nbsp;linuxfoundation2025aaif</a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 10</span>). Retrieved from 
+<a href=https://claude.com/blog/what-is-model-context-protocol itemprop=identifier itemtype=https://schema.org/URL>https://claude.com/blog/what-is-model-context-protocol</a></span>
+</span></span>)</span>
+.</p><p>MCP opera bajo una arquitectura cliente-servidor simple:</p><ul><li><strong>MCP Clients</strong>: agentes de IA (Claude, ChatGPT, aplicaciones personalizadas) que se conectan a sistemas externos.</li><li><strong>MCP Servers</strong>: exponen herramientas y datos desde aplicaciones como Notion, Slack, GitHub, bases de datos internas o sistemas propietarios.</li></ul><p>La analogía más precisa es USB-C para aplicaciones de IA: en lugar de construir conectores personalizados para cada fuente de datos, los desarrolladores implementan una sola vez contra MCP y obtienen compatibilidad universal
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#pento2025mcp><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 12/23</span>). Retrieved from 
+<a href=https://www.pento.ai/blog/a-year-of-mcp-2025-review itemprop=identifier itemtype=https://schema.org/URL>https://www.pento.ai/blog/a-year-of-mcp-2025-review</a></span>
+</span></span>)</span>
+.</p><h3 id=adopción-y-ecosistema>Adopción y ecosistema<a hidden class=anchor aria-hidden=true href=#adopción-y-ecosistema>#</a></h3><p>La adopción de MCP ha sido extraordinariamente rápida:</p><ul><li><strong>Noviembre 2024</strong>: Anthropic libera MCP como estándar abierto con SDKs para Python y TypeScript.</li><li><strong>Marzo 2025</strong>: OpenAI adopta MCP en Agents SDK, Responses API y ChatGPT desktop.</li><li><strong>Diciembre 2025</strong>: Más de 10,000 servidores MCP públicos activos; adoptado por ChatGPT, Cursor, Gemini, Microsoft Copilot y VS Code
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#anthropic2025donating><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 12/9</span>). Retrieved from 
+<a href=https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation itemprop=identifier itemtype=https://schema.org/URL>https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation</a></span>
+</span></span>)</span>
+.</li></ul><p>Esta estandarización resuelve el problema de integración M×N (M aplicaciones conectándose a N fuentes de datos), colapsándolo en M+N implementaciones, lo que acelera drásticamente el desarrollo de agentes capaces de operar en ecosistemas empresariales complejos.</p><h2 id=esquema-práctico-selección-de-agentes-según-contexto>Esquema práctico: Selección de agentes según contexto<a hidden class=anchor aria-hidden=true href=#esquema-práctico-selección-de-agentes-según-contexto>#</a></h2><p>La elección del agente adecuado depende críticamente del contexto de uso, el tamaño del equipo y los requisitos de seguridad. A continuación se presenta un marco de decisión:</p><h3 id=para-desarrolladores-individuales>Para desarrolladores individuales<a hidden class=anchor aria-hidden=true href=#para-desarrolladores-individuales>#</a></h3><table><thead><tr><th>Prioridad</th><th>Herramienta recomendada</th><th>Justificación</th></tr></thead><tbody><tr><td>Costo</td><td>Windsurf (gratis/$15)</td><td>Tier gratuito generoso, Pro accesible</td></tr><tr><td>Productividad IDE</td><td>Cursor ($20)</td><td>Mejor experiencia de edición multi-archivo</td></tr><tr><td>Tareas complejas</td><td>Claude Code</td><td>Razonamiento profundo, pago por uso</td></tr><tr><td>Microsoft ecosystem</td><td>GitHub Copilot</td><td>Integración nativa con GitHub</td></tr></tbody></table><h3 id=para-equipos-empresariales>Para equipos empresariales<a hidden class=anchor aria-hidden=true href=#para-equipos-empresariales>#</a></h3><table><thead><tr><th>Requisito</th><th>Herramienta recomendada</th><th>Justificación</th></tr></thead><tbody><tr><td>Seguridad y compliance</td><td>GitHub Copilot Enterprise</td><td>SOC 2, ISO 27001, indemnización IP</td></tr><tr><td>Flujos agenticos avanzados</td><td>Cursor Business</td><td>Composer mode, orquestación multi-agente</td></tr><tr><td>Refactorización a gran escala</td><td>Claude Code + Bedrock</td><td>Contexto de 200K tokens, FedRAMP High</td></tr><tr><td>AWS-centric</td><td>Amazon Q Developer</td><td>Transformación de código, integración nativa</td></tr></tbody></table><h3 id=para-startups-y-proyectos-ágiles>Para startups y proyectos ágiles<a hidden class=anchor aria-hidden=true href=#para-startups-y-proyectos-ágiles>#</a></h3><p>La combinación de múltiples herramientas suele ofrecer los mejores resultados:</p><ol><li><strong>Cursor o Windsurf</strong> para desarrollo diario en IDE.</li><li><strong>Claude Code</strong> para tareas de refactorización compleja.</li><li><strong>GitHub Copilot</strong> para integración con flujos de CI/CD y revisión de código.</li></ol><h2 id=problemas-frecuentes-y-estrategias-de-mitigación>Problemas frecuentes y estrategias de mitigación<a hidden class=anchor aria-hidden=true href=#problemas-frecuentes-y-estrategias-de-mitigación>#</a></h2><h3 id=alucinaciones-y-código-incorrecto>Alucinaciones y código incorrecto<a hidden class=anchor aria-hidden=true href=#alucinaciones-y-código-incorrecto>#</a></h3><p><strong>Problema</strong>: los agentes pueden generar código que parece plausible pero contiene errores sutiles o viola patrones arquitectónicos establecidos. GitClear documentó un aumento de 8 veces en la duplicación de código durante 2024 atribuible a asistentes de IA
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#augmentcode2025comparison><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 9/12</span>). Retrieved from 
+<a href=https://www.augmentcode.com/tools/ai-code-comparison-github-copilot-vs-cursor-vs-claude-code itemprop=identifier itemtype=https://schema.org/URL>https://www.augmentcode.com/tools/ai-code-comparison-github-copilot-vs-cursor-vs-claude-code</a></span>
+</span></span>)</span>
+.</p><p><strong>Estrategias</strong>:</p><ul><li>Revisión humana obligatoria antes de mergear código generado por agentes.</li><li>Configurar pipelines de CI/CD que ejecuten tests exhaustivos automáticamente.</li><li>Establecer reglas de proyecto (<code>.cursor/rules</code>, <code>.claude/config</code>) que guíen el comportamiento del agente.</li><li>Usar agentes para tareas con criterios de verificación claros (tests pasando) vs. diseño arquitectónico ambiguo.</li></ul><h3 id=costos-inesperados>Costos inesperados<a hidden class=anchor aria-hidden=true href=#costos-inesperados>#</a></h3><p><strong>Problema</strong>: el modelo de precios por token puede resultar en facturas sorpresa, especialmente con agentes que iteran múltiples veces o procesan bases de código extensas.</p><p><strong>Estrategias</strong>:</p><ul><li>Establecer límites de gasto diarios/mensuales en las configuraciones de la cuenta.</li><li>Usar modelos más ligeros para tareas simples y reservar modelos premium para problemas complejos.</li><li>Monitorear métricas de uso y ajustar prompts para reducir iteraciones innecesarias.</li><li>Considerar herramientas de precio fijo (Cursor Pro, Copilot Pro) para uso predecible.</li></ul><h3 id=seguridad-y-filtrado-de-datos>Seguridad y filtrado de datos<a hidden class=anchor aria-hidden=true href=#seguridad-y-filtrado-de-datos>#</a></h3><p><strong>Problema</strong>: los agentes con acceso amplio al sistema pueden exponer datos sensibles o ejecutar código malicioso inadvertidamente. Los servidores MCP, en particular, representan vectores de ataque si no se auditan adecuadamente
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#pillar2025security><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span>, p.&nbsp;equixly2025mcp</a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025</span>). Retrieved from 
+<a href=https://www.pillar.security/blog/the-security-risks-of-model-context-protocol-mcp itemprop=identifier itemtype=https://schema.org/URL>https://www.pillar.security/blog/the-security-risks-of-model-context-protocol-mcp</a></span>
+</span></span>)</span>
+.</p><p><strong>Estrategias</strong>:</p><ul><li>Ejecutar agentes en entornos sandboxed o contenedores aislados.</li><li>Implementar políticas de acceso basadas en principio de mínimo privilegio.</li><li>Auditar regularmente qué servidores MCP están conectados y qué permisos tienen.</li><li>Usar herramientas empresariales con certificaciones de seguridad (SOC 2, ISO 27001) para código propietario.</li></ul><h3 id=dependencia-excesiva-y-atrofia-de-habilidades>Dependencia excesiva y atrofia de habilidades<a hidden class=anchor aria-hidden=true href=#dependencia-excesiva-y-atrofia-de-habilidades>#</a></h3><p><strong>Problema</strong>: un estudio de METR encontró que las herramientas de IA aumentaron el tiempo de finalización de tareas en un 19% entre desarrolladores experimentados, sugiriendo que la dependencia excesiva puede degradar el pensamiento crítico
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#augmentcode2025comparison><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2025</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 9/12</span>). Retrieved from 
+<a href=https://www.augmentcode.com/tools/ai-code-comparison-github-copilot-vs-cursor-vs-claude-code itemprop=identifier itemtype=https://schema.org/URL>https://www.augmentcode.com/tools/ai-code-comparison-github-copilot-vs-cursor-vs-claude-code</a></span>
+</span></span>)</span>
+.</p><p><strong>Estrategias</strong>:</p><ul><li>Reservar tiempo para &ldquo;programación sin IA&rdquo; regularmente.</li><li>Exigir que los desarrolladores expliquen el código generado antes de aprobarlo.</li><li>Usar agentes como punto de partida, no como solución final.</li><li>Fomentar la comprensión profunda de patrones y algoritmos fundamentales.</li></ul><h2 id=tendencias-emergentes-y-futuro-próximo>Tendencias emergentes y futuro próximo<a hidden class=anchor aria-hidden=true href=#tendencias-emergentes-y-futuro-próximo>#</a></h2><h3 id=sistemas-multi-agente>Sistemas multi-agente<a hidden class=anchor aria-hidden=true href=#sistemas-multi-agente>#</a></h3><p>La tendencia más significativa para 2026 es la transición de agentes individuales a equipos orquestados de especialistas. Según Gartner, las consultas sobre sistemas multi-agente aumentaron un 1,445% entre Q1 2024 y Q2 2025, y se proyecta que el 40% de aplicaciones empresariales incluirán agentes específicos para tareas para finales de 2026
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#eesel2026claude><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person></span>, <span itemprop=datePublished>2026</span></a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 1/26</span>). Retrieved from 
+<a href=https://www.eesel.ai/es/blog/claude-code-multiple-agent-systems-complete-2026-guide itemprop=identifier itemtype=https://schema.org/URL>https://www.eesel.ai/es/blog/claude-code-multiple-agent-systems-complete-2026-guide</a></span>
+</span></span>)</span>
+.</p><p>Esta arquitectura refleja el cambio de aplicaciones monolíticas a microservicios: mejor especialización, responsabilidades claras, escalado independiente y aislamiento de fallos.</p><h3 id=agentes-con-memoria-a-largo-plazo>Agentes con memoria a largo plazo<a hidden class=anchor aria-hidden=true href=#agentes-con-memoria-a-largo-plazo>#</a></h3><p>Los agentes de próxima generación incorporarán sistemas de memoria que persisten más allá de sesiones individuales, permitiendo:</p><ul><li>Aprendizaje continuo de preferencias y patrones del equipo.</li><li>Conocimiento acumulado sobre la evolución de la base de código.</li><li>Contexto histórico para decisiones arquitectónicas.</li></ul><h3 id=integración-con-flujos-de-trabajo-empresariales>Integración con flujos de trabajo empresariales<a hidden class=anchor aria-hidden=true href=#integración-con-flujos-de-trabajo-empresariales>#</a></h3><p>Los agentes están evolucionando desde herramientas de desarrollo aisladas hacia componentes integrados de flujos de trabajo empresariales completos:</p><ul><li>Conexión con sistemas de tickets (Jira, Linear) para resolver issues automáticamente.</li><li>Integración con documentación (Confluence, Notion) para mantenerla actualizada.</li><li>Coordinación con equipos de soporte mediante Slack o Teams.</li></ul><h2 id=conclusiones>Conclusiones<a hidden class=anchor aria-hidden=true href=#conclusiones>#</a></h2><p>Los agentes de código han transitado de ser curiosidades tecnológicas a herramientas esenciales en el arsenal del desarrollador moderno. La investigación reciente demuestra que, cuando se implementan adecuadamente, pueden aumentar significativamente la productividad, mejorar la calidad del código y acelerar los ciclos de desarrollo
+<span class=hugo-cite-intext itemprop=citation>(<span class=hugo-cite-group>
+<a href=#jin2024llms><span class=visually-hidden>Citation: </span><span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="H."><span itemprop=familyName>Jin</span></span>, <span itemprop=author itemscope itemtype=https://schema.org/Person><meta itemprop=givenName content="L."><span itemprop=familyName>Huang</span></span>
+<em>& al.</em>, <span itemprop=datePublished>2024</span>, p.&nbsp;lou2024agents</a><span class=hugo-cite-citation>
+<span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jin</span>, 
+<meta itemprop=givenName content="H.">H.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Huang</span>, 
+<meta itemprop=givenName content="L.">L.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Cai</span>, 
+<meta itemprop=givenName content="H.">H.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yan</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Li</span>, 
+<meta itemprop=givenName content="B.">B.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chen</span>, 
+<meta itemprop=givenName content="H.">H.</span>
+ 
+(<span itemprop=datePublished>2024</span>).
+ <span itemprop=name>From LLMs to LLM-based agents for software engineering: A survey of current, challenges and future</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2408.02479 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2408.02479</a></span>
+</span></span>)</span>
+.</p><p>Sin embargo, su adopción efectiva requiere:</p><ol><li><strong>Comprensión de limitaciones</strong>: los agentes excelentes en tareas bien definidas con criterios de verificación claros, pero luchan con requisitos ambiguos o diseño creativo.</li><li><strong>Supervisión humana continua</strong>: la revisión de código generado por IA sigue siendo esencial para garantizar calidad y seguridad.</li><li><strong>Selección contextual</strong>: no existe un &ldquo;mejor&rdquo; agente universal; la elección debe basarse en el tamaño del equipo, requisitos de seguridad, presupuesto y tipo de proyectos.</li><li><strong>Gestión de costos</strong>: los modelos de precios variables requieren monitoreo activo para evitar sorpresas.</li></ol><p>El futuro apunta hacia ecosistemas donde humanos y agentes colaboran de forma fluida, cada uno aportando sus fortalezas distintivas. Los desarrolladores que dominen la orquestación efectiva de estos agentes —sabiendo cuándo delegar, cuándo supervisar y cuándo intervenir— estarán mejor posicionados para liderar en la próxima era del desarrollo de software.</p><section class=hugo-cite-bibliography><h3>Bibliografía</h3><ol><div id=jin2024llms><li><span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jin</span>, 
+<meta itemprop=givenName content="H.">H.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Huang</span>, 
+<meta itemprop=givenName content="L.">L.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Cai</span>, 
+<meta itemprop=givenName content="H.">H.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yan</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Li</span>, 
+<meta itemprop=givenName content="B.">B.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chen</span>, 
+<meta itemprop=givenName content="H.">H.</span>
+ 
+(<span itemprop=datePublished>2024</span>).
+ <span itemprop=name>From LLMs to LLM-based agents for software engineering: A survey of current, challenges and future</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2408.02479 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2408.02479</a></span></li><br></div><div id=lou2024agents><li><span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Lou</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Liu</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Wang</span>, 
+<meta itemprop=givenName content="K.">K.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chen</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Peng</span>, 
+<meta itemprop=givenName content="X.">X.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chen</span>, 
+<meta itemprop=givenName content="Z.">Z.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="L.">L.</span>
+ 
+(<span itemprop=datePublished>2024</span>).
+ <span itemprop=name>Large language model-based agents for software engineering: A survey</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2409.02977 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2409.02977</a></span></li><br></div><div id=xi2023rise><li><span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Xi</span>, 
+<meta itemprop=givenName content="Z.">Z.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chen</span>, 
+<meta itemprop=givenName content="W.">W.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Guo</span>, 
+<meta itemprop=givenName content="X.">X.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>He</span>, 
+<meta itemprop=givenName content="W.">W.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Ding</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Hong</span>, 
+<meta itemprop=givenName content="B.">B.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="M.">M.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Wang</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jin</span>, 
+<meta itemprop=givenName content="S.">S.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhou</span>, 
+<meta itemprop=givenName content="E.">E.</span>
+ 
+(<span itemprop=datePublished>2023</span>).
+ <span itemprop=name>The rise and potential of large language model based agents: A survey</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2309.07864 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2309.07864</a></span></li><br></div><div id=jin2025agentic><li><span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jin</span>, 
+<meta itemprop=givenName content="Z.">Z.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Liu</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yang</span>, 
+<meta itemprop=givenName content="C.">C.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jabbarvand</span>, 
+<meta itemprop=givenName content="R.">R.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="L.">L.</span>
+ 
+(<span itemprop=datePublished>2025</span>).
+ <span itemprop=name>AI agentic programming: A survey of techniques, challenges, and opportunities</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2508.11126 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2508.11126</a></span></li><br></div><div id=yang2024multimodal><li><span itemscope itemtype=https://schema.org/CreativeWork data-type=paper-conference><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yang</span>, 
+<meta itemprop=givenName content="X.">X.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chen</span>, 
+<meta itemprop=givenName content="L.">L.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Wang</span>, 
+<meta itemprop=givenName content="H.">H.</span>
+ 
+(<span itemprop=datePublished>2024</span>).
+ <span itemprop=name><i>Towards rationality in language and multimodal agents: A survey</i></span>.</span></li><br></div><div id=gao2024sweagent><li><span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Gao</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yang</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jimenez</span>, 
+<meta itemprop=givenName content="C. E.">C.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Wettig</span>, 
+<meta itemprop=givenName content="A.">A.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Lieret</span>, 
+<meta itemprop=givenName content="K.">K.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yao</span>, 
+<meta itemprop=givenName content="S.">S.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Narasimhan</span>, 
+<meta itemprop=givenName content="K.">K.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Press</span>, 
+<meta itemprop=givenName content="O.">O.</span>
+ 
+(<span itemprop=datePublished>2024</span>).
+ <span itemprop=name>SWE-agent: Agent-computer interfaces enable automated software engineering</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2405.15793 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2405.15793</a></span></li><br></div><div id=deng2024agentcoder><li><span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Deng</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="X.">X.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="W.">W.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yuan</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Ng</span>, 
+<meta itemprop=givenName content="S. K.">S.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chua</span>, 
+<meta itemprop=givenName content="T. S.">T.</span>
+ 
+(<span itemprop=datePublished>2024</span>).
+ <span itemprop=name>AgentCoder: Multi-agent-based code generation with iterative testing and optimisation</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2312.13010 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2312.13010</a></span></li><br></div><div id=jimenez2024swebench><li><span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Jimenez</span>, 
+<meta itemprop=givenName content="C. E.">C.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yang</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Wettig</span>, 
+<meta itemprop=givenName content="A.">A.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yao</span>, 
+<meta itemprop=givenName content="S.">S.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Press</span>, 
+<meta itemprop=givenName content="O.">O.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Narasimhan</span>, 
+<meta itemprop=givenName content="K.">K.</span>
+ 
+(<span itemprop=datePublished>2024</span>).
+ <span itemprop=name>SWE-bench: Can language models resolve real-world github issues?</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2310.06770 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2310.06770</a></span></li><br></div><div id=wang2024survey><li><span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Wang</span>, 
+<meta itemprop=givenName content="L.">L.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Ma</span>, 
+<meta itemprop=givenName content="C.">C.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Feng</span>, 
+<meta itemprop=givenName content="X.">X.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="Z.">Z.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yang</span>, 
+<meta itemprop=givenName content="H.">H.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chen</span>, 
+<meta itemprop=givenName content="Z.">Z.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Tang</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chen</span>, 
+<meta itemprop=givenName content="X.">X.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Lin</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>
+ 
+(<span itemprop=datePublished>2024</span>).
+ <span itemprop=name>A survey on large language model based autonomous agents</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2308.11432 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2308.11432</a></span></li><br></div><div id=yao2023react><li><span itemscope itemtype=https://schema.org/CreativeWork data-type=paper-conference><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yao</span>, 
+<meta itemprop=givenName content="S.">S.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhao</span>, 
+<meta itemprop=givenName content="J.">J.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Yu</span>, 
+<meta itemprop=givenName content="D.">D.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Du</span>, 
+<meta itemprop=givenName content="N.">N.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Shafran</span>, 
+<meta itemprop=givenName content="I.">I.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Narasimhan</span>, 
+<meta itemprop=givenName content="K.">K.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Cao</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>
+ 
+(<span itemprop=datePublished>2023</span>).
+ <span itemprop=name><i>ReAct: Synergizing reasoning and acting in language models</i></span>.
+ Retrieved from 
+<a href=https://arxiv.org/abs/2210.03629 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2210.03629</a></span></li><br></div><div id=anthropic2025measuring><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025</span>). Retrieved from 
+<a href=https://www.anthropic.com/research/measuring-agent-autonomy itemprop=identifier itemtype=https://schema.org/URL>https://www.anthropic.com/research/measuring-agent-autonomy</a></span></li><br></div><div id=testleaf2026comparison><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 2/26</span>). Retrieved from 
+<a href=https://www.testleaf.com/blog/claude-code-vs-copilot-vs-cursor-ai-agents-comparison/ itemprop=identifier itemtype=https://schema.org/URL>https://www.testleaf.com/blog/claude-code-vs-copilot-vs-cursor-ai-agents-comparison/</a></span></li><br></div><div id=digitalapplied2025comparison><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 12/13</span>). Retrieved from 
+<a href=https://www.digitalapplied.com/blog/ai-coding-tools-comparison-december-2025 itemprop=identifier itemtype=https://schema.org/URL>https://www.digitalapplied.com/blog/ai-coding-tools-comparison-december-2025</a></span></li><br></div><div id=nxcode2026tutorial><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 1/3</span>). Retrieved from 
+<a href=https://www.nxcode.io/es/resources/news/cursor-tutorial-beginners-2026 itemprop=identifier itemtype=https://schema.org/URL>https://www.nxcode.io/es/resources/news/cursor-tutorial-beginners-2026</a></span></li><br></div><div id=mintmcp2026security><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 3/20</span>). Retrieved from 
+<a href=https://www.mintmcp.com/blog/claude-code-cursor-vs-copilot itemprop=identifier itemtype=https://schema.org/URL>https://www.mintmcp.com/blog/claude-code-cursor-vs-copilot</a></span></li><br></div><div id=eesel2025cursor><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 10/4</span>). Retrieved from 
+<a href=https://www.eesel.ai/es/blog/cursor-overview itemprop=identifier itemtype=https://schema.org/URL>https://www.eesel.ai/es/blog/cursor-overview</a></span></li><br></div><div id=openreplay2025cursor><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 4/10</span>). Retrieved from 
+<a href=https://blog.openreplay.com/es/configurar-usar-cursor-ai-generacion-codigo/ itemprop=identifier itemtype=https://schema.org/URL>https://blog.openreplay.com/es/configurar-usar-cursor-ai-generacion-codigo/</a></span></li><br></div><div id=datacamp2024cursor><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2024, 9/3</span>). Retrieved from 
+<a href=https://www.datacamp.com/es/tutorial/cursor-ai-code-editor itemprop=identifier itemtype=https://schema.org/URL>https://www.datacamp.com/es/tutorial/cursor-ai-code-editor</a></span></li><br></div><div id=github2025codingagent><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 5/19</span>). Retrieved from 
+<a href=https://github.com/newsroom/press-releases/coding-agent-for-github-copilot itemprop=identifier itemtype=https://schema.org/URL>https://github.com/newsroom/press-releases/coding-agent-for-github-copilot</a></span></li><br></div><div id=devops2025copilot><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 12/26</span>). Retrieved from 
+<a href=https://devops.com/github-copilot-evolves-agent-mode-and-multi-model-support-transform-devops-workflows-2/ itemprop=identifier itemtype=https://schema.org/URL>https://devops.com/github-copilot-evolves-agent-mode-and-multi-model-support-transform-devops-workflows-2/</a></span></li><br></div><div id=lettertwo2025copilot><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 5/19</span>). Retrieved from 
+<a href=https://thelettertwo.com/2025/05/19/the-new-github-copilot-agent-doesnt-just-help-you-code-it-codes-for-you/ itemprop=identifier itemtype=https://schema.org/URL>https://thelettertwo.com/2025/05/19/the-new-github-copilot-agent-doesnt-just-help-you-code-it-codes-for-you/</a></span></li><br></div><div id=github2025agentmode><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 5/19</span>). Retrieved from 
+<a href=https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/ itemprop=identifier itemtype=https://schema.org/URL>https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/</a></span></li><br></div><div id=githubblog2025mcp><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 12</span>). Retrieved from 
+<a href=https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/ itemprop=identifier itemtype=https://schema.org/URL>https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/</a></span></li><br></div><div id=cognition2025devin><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025</span>). Retrieved from 
+<a href=https://www.cognition.ai/ itemprop=identifier itemtype=https://schema.org/URL>https://www.cognition.ai/</a></span></li><br></div><div id=sfstandard2026grind><li><span itemscope itemtype=https://schema.org/CreativeWork data-type=article-newspaper><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Said</span>, 
+<meta itemprop=givenName content="C.">C.</span>
+ 
+(<span itemprop=datePublished>2026</span>).
+ <span itemprop=name><i>Inside the grind: The SF startup racing to build an AI software engineer</i></span>.
+ Retrieved from 
+<a href=https://sfstandard.com/2026/03/24/grind-sf-startup-racing-build-ai-software-engineer/ itemprop=identifier itemtype=https://schema.org/URL>https://sfstandard.com/2026/03/24/grind-sf-startup-racing-build-ai-software-engineer/</a></span></li><br></div><div id=ibm2025devin><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 8/4</span>). Retrieved from 
+<a href=https://www.ibm.com/think/news/goldman-sachs-first-ai-employee-devin itemprop=identifier itemtype=https://schema.org/URL>https://www.ibm.com/think/news/goldman-sachs-first-ai-employee-devin</a></span></li><br></div><div id=cognition2025performance><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 11/14</span>). Retrieved from 
+<a href=https://cognition.ai/blog/devin-annual-performance-review-2025 itemprop=identifier itemtype=https://schema.org/URL>https://cognition.ai/blog/devin-annual-performance-review-2025</a></span></li><br></div><div id=openai2026codex><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 2/5</span>). Retrieved from 
+<a href=https://openai.com/es-419/index/introducing-gpt-5-3-codex/ itemprop=identifier itemtype=https://schema.org/URL>https://openai.com/es-419/index/introducing-gpt-5-3-codex/</a></span></li><br></div><div id=geeksroom2026codex><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 2/3</span>). Retrieved from 
+<a href=https://geeksroom.com/2026/02/openai-codex-macos/143705/ itemprop=identifier itemtype=https://schema.org/URL>https://geeksroom.com/2026/02/openai-codex-macos/143705/</a></span></li><br></div><div id=eesel2026codex><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 10/6</span>). Retrieved from 
+<a href=https://www.eesel.ai/es/blog/openai-codex itemprop=identifier itemtype=https://schema.org/URL>https://www.eesel.ai/es/blog/openai-codex</a></span></li><br></div><div id=apertia2025codex><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 5/20</span>). Retrieved from 
+<a href=http://apertia.ai/es/blog/codex-nova-era-softwaroveho-inzenyrstvi itemprop=identifier itemtype=https://schema.org/URL>http://apertia.ai/es/blog/codex-nova-era-softwaroveho-inzenyrstvi</a></span></li><br></div><div id=openai2026gpt53><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 2/5</span>). Retrieved from 
+<a href=https://openai.com/es-419/index/introducing-gpt-5-3-codex/ itemprop=identifier itemtype=https://schema.org/URL>https://openai.com/es-419/index/introducing-gpt-5-3-codex/</a></span></li><br></div><div id=deployhq2026windsurf><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 3/5</span>). Retrieved from 
+<a href=https://www.deployhq.com/guides/windsurf itemprop=identifier itemtype=https://schema.org/URL>https://www.deployhq.com/guides/windsurf</a></span></li><br></div><div id=swebench2026leaderboard><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 2/17</span>). Retrieved from 
+<a href=https://www.swebench.com/ itemprop=identifier itemtype=https://schema.org/URL>https://www.swebench.com/</a></span></li><br></div><div id=pan2025agentcompany><li><span itemscope itemtype=https://schema.org/Article data-type=article><span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Pan</span>, 
+<meta itemprop=givenName content="L.">L.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Zhang</span>, 
+<meta itemprop=givenName content="Y.">Y.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Chen</span>, 
+<meta itemprop=givenName content="X.">X.</span>, 
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Wang</span>, 
+<meta itemprop=givenName content="H.">H.</span> & <span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=familyName>Li</span>, 
+<meta itemprop=givenName content="J.">J.</span>
+ 
+(<span itemprop=datePublished>2025</span>).
+ <span itemprop=name>TheAgentCompany: Benchmarking LLM agents on consequential real world tasks</span>.<i>
+<span itemprop=about>arXiv preprint</span></i>. Retrieved from 
+<a href=https://arxiv.org/abs/2412.14161 itemprop=identifier itemtype=https://schema.org/URL>https://arxiv.org/abs/2412.14161</a></span></li><br></div><div id=anthropic2025mcp><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 10</span>). Retrieved from 
+<a href=https://claude.com/blog/what-is-model-context-protocol itemprop=identifier itemtype=https://schema.org/URL>https://claude.com/blog/what-is-model-context-protocol</a></span></li><br></div><div id=linuxfoundation2025aaif><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 12/9</span>). Retrieved from 
+<a href=https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation itemprop=identifier itemtype=https://schema.org/URL>https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation</a></span></li><br></div><div id=pento2025mcp><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 12/23</span>). Retrieved from 
+<a href=https://www.pento.ai/blog/a-year-of-mcp-2025-review itemprop=identifier itemtype=https://schema.org/URL>https://www.pento.ai/blog/a-year-of-mcp-2025-review</a></span></li><br></div><div id=anthropic2025donating><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 12/9</span>). Retrieved from 
+<a href=https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation itemprop=identifier itemtype=https://schema.org/URL>https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation</a></span></li><br></div><div id=eesel2026claude><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2026, 1/26</span>). Retrieved from 
+<a href=https://www.eesel.ai/es/blog/claude-code-multiple-agent-systems-complete-2026-guide itemprop=identifier itemtype=https://schema.org/URL>https://www.eesel.ai/es/blog/claude-code-multiple-agent-systems-complete-2026-guide</a></span></li><br></div><div id=augmentcode2025comparison><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 9/12</span>). Retrieved from 
+<a href=https://www.augmentcode.com/tools/ai-code-comparison-github-copilot-vs-cursor-vs-claude-code itemprop=identifier itemtype=https://schema.org/URL>https://www.augmentcode.com/tools/ai-code-comparison-github-copilot-vs-cursor-vs-claude-code</a></span></li><br></div><div id=pillar2025security><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025</span>). Retrieved from 
+<a href=https://www.pillar.security/blog/the-security-risks-of-model-context-protocol-mcp itemprop=identifier itemtype=https://schema.org/URL>https://www.pillar.security/blog/the-security-risks-of-model-context-protocol-mcp</a></span></li><br></div><div id=equixly2025mcp><li><span itemscope itemtype=https://schema.org/WebPage data-type=webpage><span itemprop=author itemscope itemtype=https://schema.org/Person></span>(<span itemprop=datePublished>2025, 3/29</span>). Retrieved from 
+<a href=https://equixly.com/blog/2025/03/29/mcp-server-new-security-nightmare/ itemprop=identifier itemtype=https://schema.org/URL>https://equixly.com/blog/2025/03/29/mcp-server-new-security-nightmare/</a></span></li><br></div></ol></section></div><footer class=post-footer><ul class=post-tags><li><a href=https://friveroll.github.io/tags/agentes-de-c%C3%B3digo/>Agentes De Código</a></li><li><a href=https://friveroll.github.io/tags/ia/>IA</a></li><li><a href=https://friveroll.github.io/tags/programaci%C3%B3n/>Programación</a></li><li><a href=https://friveroll.github.io/tags/claude-code/>Claude Code</a></li><li><a href=https://friveroll.github.io/tags/cursor/>Cursor</a></li><li><a href=https://friveroll.github.io/tags/copilot/>Copilot</a></li><li><a href=https://friveroll.github.io/tags/devin/>Devin</a></li></ul><nav class=paginav><a class=next href=https://friveroll.github.io/posts/western-blotting-parte-iii-inmunodeteccion/><span class=title>Página siguiente »</span><br><span>Western Blotting Parte III: Inmunodetección</span></a></nav><div class=share-buttons><a target=_blank rel="noopener noreferrer" aria-label="share Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos on twitter" href="https://twitter.com/intent/tweet/?text=Agentes%20de%20C%c3%b3digo%20en%20la%20Programaci%c3%b3n%3a%20De%20Asistentes%20a%20Ingenieros%20Aut%c3%b3nomos&amp;url=https%3a%2f%2ffriveroll.github.io%2fposts%2fagentes-codigo-programacion%2f&amp;hashtags=agentesdec%c3%b3digo%2cIA%2cprogramaci%c3%b3n%2cClaudeCode%2cCursor%2cCopilot%2cDevin"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM195.519 424.544c135.939.0 210.268-112.643 210.268-210.268.0-3.218.0-6.437-.153-9.502 14.406-10.421 26.973-23.448 36.935-38.314-13.18 5.824-27.433 9.809-42.452 11.648 15.326-9.196 26.973-23.602 32.49-40.92-14.252 8.429-30.038 14.56-46.896 17.931-13.487-14.406-32.644-23.295-53.946-23.295-40.767.0-73.87 33.104-73.87 73.87.0 5.824.613 11.494 1.992 16.858-61.456-3.065-115.862-32.49-152.337-77.241-6.284 10.881-9.962 23.601-9.962 37.088.0 25.594 13.027 48.276 32.95 61.456-12.107-.307-23.448-3.678-33.41-9.196v.92c0 35.862 25.441 65.594 59.311 72.49-6.13 1.686-12.72 2.606-19.464 2.606-4.751.0-9.348-.46-13.946-1.38 9.349 29.426 36.628 50.728 68.965 51.341-25.287 19.771-57.164 31.571-91.8 31.571-5.977.0-11.801-.306-17.625-1.073 32.337 21.15 71.264 33.41 112.95 33.41z"/></svg>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2ffriveroll.github.io%2fposts%2fagentes-codigo-programacion%2f&amp;title=Agentes%20de%20C%c3%b3digo%20en%20la%20Programaci%c3%b3n%3a%20De%20Asistentes%20a%20Ingenieros%20Aut%c3%b3nomos&amp;summary=Agentes%20de%20C%c3%b3digo%20en%20la%20Programaci%c3%b3n%3a%20De%20Asistentes%20a%20Ingenieros%20Aut%c3%b3nomos&amp;source=https%3a%2f%2ffriveroll.github.io%2fposts%2fagentes-codigo-programacion%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos on reddit" href="https://reddit.com/submit?url=https%3a%2f%2ffriveroll.github.io%2fposts%2fagentes-codigo-programacion%2f&title=Agentes%20de%20C%c3%b3digo%20en%20la%20Programaci%c3%b3n%3a%20De%20Asistentes%20a%20Ingenieros%20Aut%c3%b3nomos"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2ffriveroll.github.io%2fposts%2fagentes-codigo-programacion%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos on whatsapp" href="https://api.whatsapp.com/send?text=Agentes%20de%20C%c3%b3digo%20en%20la%20Programaci%c3%b3n%3a%20De%20Asistentes%20a%20Ingenieros%20Aut%c3%b3nomos%20-%20https%3a%2f%2ffriveroll.github.io%2fposts%2fagentes-codigo-programacion%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos on telegram" href="https://telegram.me/share/url?text=Agentes%20de%20C%c3%b3digo%20en%20la%20Programaci%c3%b3n%3a%20De%20Asistentes%20a%20Ingenieros%20Aut%c3%b3nomos&amp;url=https%3a%2f%2ffriveroll.github.io%2fposts%2fagentes-codigo-programacion%2f"><svg viewBox="2 2 28 28"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></div></footer></article></main><footer class=footer><span>&copy; 2026 <a href=https://friveroll.github.io/>Felipe Riveroll Aguirre</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

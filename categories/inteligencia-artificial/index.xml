@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Inteligencia Artificial on Felipe Riveroll Aguirre</title>
+    <link>https://friveroll.github.io/categories/inteligencia-artificial/</link>
+    <description>Recent content in Inteligencia Artificial on Felipe Riveroll Aguirre</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/categories/inteligencia-artificial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agentes de Código en la Programación: De Asistentes a Ingenieros Autónomos</title>
+      <link>https://friveroll.github.io/posts/agentes-codigo-programacion/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://friveroll.github.io/posts/agentes-codigo-programacion/</guid>
+      <description>&lt;p&gt;El panorama del desarrollo de software ha experimentado una transformación sin precedentes con la llegada de los agentes de código. Estos sistemas, impulsados por grandes modelos de lenguaje (LLMs), han evolucionado desde simples autocompletadores hasta agentes autónomos capaces de planificar, implementar, depurar y desplegar aplicaciones completas con mínima supervisión humana 
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;span class=&#34;hugo-cite-group&#34;&gt;
+
+          &lt;a href=&#34;#jin2024llms&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;H.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Jin&lt;/span&gt;&lt;/span&gt;,&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;L.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Huang&lt;/span&gt;&lt;/span&gt;
+                  &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;&lt;span itemprop=&#34;datePublished&#34;&gt;2024&lt;/span&gt;,&amp;#32;p.&amp;nbsp;lou2024agents&lt;/a&gt;&lt;span class=&#34;hugo-cite-citation&#34;&gt; 
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Jin&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;H.&#34; /&gt;
+    H.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Huang&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;L.&#34; /&gt;
+    L.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Cai&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;H.&#34; /&gt;
+    H.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Yan&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;J.&#34; /&gt;
+    J.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Li&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;B.&#34; /&gt;
+    B.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Chen&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;H.&#34; /&gt;
+    H.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2024&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;From LLMs to LLM-based agents for software engineering: A survey of current, challenges and future&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;arXiv preprint&lt;/span&gt;&lt;/i&gt;.&amp;#32;Retrieved from&amp;#32;
+  &lt;a href=&#34;https://arxiv.org/abs/2408.02479&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://arxiv.org/abs/2408.02479&lt;/a&gt;&lt;/span&gt;
+
+
+
+
+&lt;/span&gt;&lt;/span&gt;)&lt;/span&gt;
+. A diferencia de los asistentes tradicionales que respondían a prompts individuales, los agentes modernos operan en bucles de percepción-razonamiento-acción, permitiéndoles abordar tareas complejas que abarcan múltiples archivos y etapas del ciclo de vida del software 
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;span class=&#34;hugo-cite-group&#34;&gt;
+
+          &lt;a href=&#34;#xi2023rise&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;Z.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Xi&lt;/span&gt;&lt;/span&gt;,&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;meta itemprop=&#34;givenName&#34; content=&#34;W.&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Chen&lt;/span&gt;&lt;/span&gt;
+                  &lt;em&gt;&amp;amp; al.&lt;/em&gt;,&amp;#32;&lt;span itemprop=&#34;datePublished&#34;&gt;2023&lt;/span&gt;&lt;/a&gt;&lt;span class=&#34;hugo-cite-citation&#34;&gt; 
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/Article&#34;
+      data-type=&#34;article&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Xi&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Z.&#34; /&gt;
+    Z.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Chen&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;W.&#34; /&gt;
+    W.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Guo&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;X.&#34; /&gt;
+    X.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;He&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;W.&#34; /&gt;
+    W.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Ding&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;Y.&#34; /&gt;
+    Y.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Hong&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;B.&#34; /&gt;
+    B.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zhang&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;M.&#34; /&gt;
+    M.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Wang&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;J.&#34; /&gt;
+    J.&lt;/span&gt;,&amp;#32;
+  &lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Jin&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;S.&#34; /&gt;
+    S.&lt;/span&gt;&amp;#32;&amp;amp;&amp;#32;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;span itemprop=&#34;familyName&#34;&gt;Zhou&lt;/span&gt;,&amp;#32;
+    &lt;meta itemprop=&#34;givenName&#34; content=&#34;E.&#34; /&gt;
+    E.&lt;/span&gt;
+  &amp;#32;
+    (&lt;span itemprop=&#34;datePublished&#34;&gt;2023&lt;/span&gt;).
+  &amp;#32;&lt;span itemprop=&#34;name&#34;&gt;The rise and potential of large language model based agents: A survey&lt;/span&gt;.&lt;i&gt;
+    &lt;span itemprop=&#34;about&#34;&gt;arXiv preprint&lt;/span&gt;&lt;/i&gt;.&amp;#32;Retrieved from&amp;#32;
+  &lt;a href=&#34;https://arxiv.org/abs/2309.07864&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://arxiv.org/abs/2309.07864&lt;/a&gt;&lt;/span&gt;
+
+
+
+
+&lt;/span&gt;&lt;/span&gt;)&lt;/span&gt;
+.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
