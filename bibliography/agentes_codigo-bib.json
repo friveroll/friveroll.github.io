@@ -1,0 +1,487 @@
+[
+  {
+    "id": "jin2024llms",
+    "author": [
+      {"family": "Jin", "given": "H."},
+      {"family": "Huang", "given": "L."},
+      {"family": "Cai", "given": "H."},
+      {"family": "Yan", "given": "J."},
+      {"family": "Li", "given": "B."},
+      {"family": "Chen", "given": "H."}
+    ],
+    "citation-key": "jin2024llms",
+    "container-title": "arXiv preprint",
+    "issued": {"date-parts": [[2024, 8, 5]]},
+    "title": "From LLMs to LLM-based agents for software engineering: A survey of current, challenges and future",
+    "type": "article",
+    "URL": "https://arxiv.org/abs/2408.02479"
+  },
+  {
+    "id": "lou2024agents",
+    "author": [
+      {"family": "Lou", "given": "Y."},
+      {"family": "Liu", "given": "J."},
+      {"family": "Wang", "given": "K."},
+      {"family": "Chen", "given": "Y."},
+      {"family": "Peng", "given": "X."},
+      {"family": "Chen", "given": "Z."},
+      {"family": "Zhang", "given": "L."}
+    ],
+    "citation-key": "lou2024agents",
+    "container-title": "arXiv preprint",
+    "issued": {"date-parts": [[2024, 9, 4]]},
+    "title": "Large language model-based agents for software engineering: A survey",
+    "type": "article",
+    "URL": "https://arxiv.org/abs/2409.02977"
+  },
+  {
+    "id": "xi2023rise",
+    "author": [
+      {"family": "Xi", "given": "Z."},
+      {"family": "Chen", "given": "W."},
+      {"family": "Guo", "given": "X."},
+      {"family": "He", "given": "W."},
+      {"family": "Ding", "given": "Y."},
+      {"family": "Hong", "given": "B."},
+      {"family": "Zhang", "given": "M."},
+      {"family": "Wang", "given": "J."},
+      {"family": "Jin", "given": "S."},
+      {"family": "Zhou", "given": "E."}
+    ],
+    "citation-key": "xi2023rise",
+    "container-title": "arXiv preprint",
+    "issued": {"date-parts": [[2023, 9, 19]]},
+    "title": "The rise and potential of large language model based agents: A survey",
+    "type": "article",
+    "URL": "https://arxiv.org/abs/2309.07864"
+  },
+  {
+    "id": "jin2025agentic",
+    "author": [
+      {"family": "Jin", "given": "Z."},
+      {"family": "Liu", "given": "J."},
+      {"family": "Yang", "given": "C."},
+      {"family": "Jabbarvand", "given": "R."},
+      {"family": "Zhang", "given": "L."}
+    ],
+    "citation-key": "jin2025agentic",
+    "container-title": "arXiv preprint",
+    "issued": {"date-parts": [[2025, 8, 11]]},
+    "title": "AI agentic programming: A survey of techniques, challenges, and opportunities",
+    "type": "article",
+    "URL": "https://arxiv.org/abs/2508.11126"
+  },
+  {
+    "id": "yang2024multimodal",
+    "author": [
+      {"family": "Yang", "given": "X."},
+      {"family": "Zhang", "given": "Y."},
+      {"family": "Chen", "given": "L."},
+      {"family": "Wang", "given": "H."}
+    ],
+    "citation-key": "yang2024multimodal",
+    "container-title": "Proceedings of NAACL 2024",
+    "issued": {"date-parts": [[2024]]},
+    "title": "Towards rationality in language and multimodal agents: A survey",
+    "type": "paper-conference"
+  },
+  {
+    "id": "gao2024sweagent",
+    "author": [
+      {"family": "Gao", "given": "J."},
+      {"family": "Yang", "given": "J."},
+      {"family": "Jimenez", "given": "C. E."},
+      {"family": "Wettig", "given": "A."},
+      {"family": "Lieret", "given": "K."},
+      {"family": "Yao", "given": "S."},
+      {"family": "Narasimhan", "given": "K."},
+      {"family": "Press", "given": "O."}
+    ],
+    "citation-key": "gao2024sweagent",
+    "container-title": "arXiv preprint",
+    "issued": {"date-parts": [[2024, 5, 24]]},
+    "title": "SWE-agent: Agent-computer interfaces enable automated software engineering",
+    "type": "article",
+    "URL": "https://arxiv.org/abs/2405.15793"
+  },
+  {
+    "id": "deng2024agentcoder",
+    "author": [
+      {"family": "Deng", "given": "Y."},
+      {"family": "Zhang", "given": "X."},
+      {"family": "Zhang", "given": "W."},
+      {"family": "Yuan", "given": "Y."},
+      {"family": "Ng", "given": "S. K."},
+      {"family": "Chua", "given": "T. S."}
+    ],
+    "citation-key": "deng2024agentcoder",
+    "container-title": "arXiv preprint",
+    "issued": {"date-parts": [[2024, 12, 20]]},
+    "title": "AgentCoder: Multi-agent-based code generation with iterative testing and optimisation",
+    "type": "article",
+    "URL": "https://arxiv.org/abs/2312.13010"
+  },
+  {
+    "id": "jimenez2024swebench",
+    "author": [
+      {"family": "Jimenez", "given": "C. E."},
+      {"family": "Yang", "given": "J."},
+      {"family": "Wettig", "given": "A."},
+      {"family": "Yao", "given": "S."},
+      {"family": "Press", "given": "O."},
+      {"family": "Narasimhan", "given": "K."}
+    ],
+    "citation-key": "jimenez2024swebench",
+    "container-title": "arXiv preprint",
+    "issued": {"date-parts": [[2024, 10, 10]]},
+    "title": "SWE-bench: Can language models resolve real-world github issues?",
+    "type": "article",
+    "URL": "https://arxiv.org/abs/2310.06770"
+  },
+  {
+    "id": "wang2024survey",
+    "author": [
+      {"family": "Wang", "given": "L."},
+      {"family": "Ma", "given": "C."},
+      {"family": "Feng", "given": "X."},
+      {"family": "Zhang", "given": "Z."},
+      {"family": "Yang", "given": "H."},
+      {"family": "Zhang", "given": "J."},
+      {"family": "Chen", "given": "Z."},
+      {"family": "Tang", "given": "J."},
+      {"family": "Chen", "given": "X."},
+      {"family": "Lin", "given": "Y."}
+    ],
+    "citation-key": "wang2024survey",
+    "container-title": "arXiv preprint",
+    "issued": {"date-parts": [[2024, 1, 9]]},
+    "title": "A survey on large language model based autonomous agents",
+    "type": "article",
+    "URL": "https://arxiv.org/abs/2308.11432"
+  },
+  {
+    "id": "yao2023react",
+    "author": [
+      {"family": "Yao", "given": "S."},
+      {"family": "Zhao", "given": "J."},
+      {"family": "Yu", "given": "D."},
+      {"family": "Du", "given": "N."},
+      {"family": "Shafran", "given": "I."},
+      {"family": "Narasimhan", "given": "K."},
+      {"family": "Cao", "given": "Y."}
+    ],
+    "citation-key": "yao2023react",
+    "container-title": "ICLR 2023",
+    "issued": {"date-parts": [[2023]]},
+    "title": "ReAct: Synergizing reasoning and acting in language models",
+    "type": "paper-conference",
+    "URL": "https://arxiv.org/abs/2210.03629"
+  },
+  {
+    "id": "anthropic2025measuring",
+    "author": [{"literal": "Anthropic"}],
+    "citation-key": "anthropic2025measuring",
+    "issued": {"date-parts": [[2025]]},
+    "publisher": "Anthropic Research Blog",
+    "title": "Measuring AI agent autonomy in practice: Claude Code field study",
+    "type": "webpage",
+    "URL": "https://www.anthropic.com/research/measuring-agent-autonomy"
+  },
+  {
+    "id": "testleaf2026comparison",
+    "author": [{"literal": "TestLeaf"}],
+    "citation-key": "testleaf2026comparison",
+    "issued": {"date-parts": [[2026, 2, 26]]},
+    "title": "Claude Code vs Copilot vs Cursor: Key differences",
+    "type": "webpage",
+    "URL": "https://www.testleaf.com/blog/claude-code-vs-copilot-vs-cursor-ai-agents-comparison/"
+  },
+  {
+    "id": "digitalapplied2025comparison",
+    "author": [{"literal": "Digital Applied"}],
+    "citation-key": "digitalapplied2025comparison",
+    "issued": {"date-parts": [[2025, 12, 13]]},
+    "title": "AI coding tools comparison: December 2025 rankings",
+    "type": "webpage",
+    "URL": "https://www.digitalapplied.com/blog/ai-coding-tools-comparison-december-2025"
+  },
+  {
+    "id": "nxcode2026tutorial",
+    "author": [{"literal": "NxCode"}],
+    "citation-key": "nxcode2026tutorial",
+    "issued": {"date-parts": [[2026, 1, 3]]},
+    "title": "Cursor AI tutorial for beginners: Complete guide 2026",
+    "type": "webpage",
+    "URL": "https://www.nxcode.io/es/resources/news/cursor-tutorial-beginners-2026"
+  },
+  {
+    "id": "mintmcp2026security",
+    "author": [{"literal": "MintMCP"}],
+    "citation-key": "mintmcp2026security",
+    "issued": {"date-parts": [[2026, 3, 20]]},
+    "title": "Claude Code vs Cursor vs Copilot: 2026 security comparison",
+    "type": "webpage",
+    "URL": "https://www.mintmcp.com/blog/claude-code-cursor-vs-copilot"
+  },
+  {
+    "id": "eesel2025cursor",
+    "author": [{"literal": "Eesel AI"}],
+    "citation-key": "eesel2025cursor",
+    "issued": {"date-parts": [[2025, 10, 4]]},
+    "title": "A complete overview of Cursor: Features, pricing and alternatives (2025)",
+    "type": "webpage",
+    "URL": "https://www.eesel.ai/es/blog/cursor-overview"
+  },
+  {
+    "id": "openreplay2025cursor",
+    "author": [{"literal": "OpenReplay"}],
+    "citation-key": "openreplay2025cursor",
+    "issued": {"date-parts": [[2025, 4, 10]]},
+    "title": "How to configure and use Cursor for AI-assisted code generation",
+    "type": "webpage",
+    "URL": "https://blog.openreplay.com/es/configurar-usar-cursor-ai-generacion-codigo/"
+  },
+  {
+    "id": "datacamp2024cursor",
+    "author": [{"literal": "DataCamp"}],
+    "citation-key": "datacamp2024cursor",
+    "issued": {"date-parts": [[2024, 9, 3]]},
+    "title": "Cursor AI: A guide with 10 practical examples",
+    "type": "webpage",
+    "URL": "https://www.datacamp.com/es/tutorial/cursor-ai-code-editor"
+  },
+  {
+    "id": "github2025codingagent",
+    "author": [{"literal": "GitHub"}],
+    "citation-key": "github2025codingagent",
+    "issued": {"date-parts": [[2025, 5, 19]]},
+    "publisher": "GitHub Newsroom",
+    "title": "GitHub introduces coding agent for GitHub Copilot",
+    "type": "webpage",
+    "URL": "https://github.com/newsroom/press-releases/coding-agent-for-github-copilot"
+  },
+  {
+    "id": "devops2025copilot",
+    "author": [{"literal": "DevOps.com"}],
+    "citation-key": "devops2025copilot",
+    "issued": {"date-parts": [[2025, 12, 26]]},
+    "title": "Best of 2025: GitHub Copilot evolves: Agent mode and multi-model support transform DevOps workflows",
+    "type": "webpage",
+    "URL": "https://devops.com/github-copilot-evolves-agent-mode-and-multi-model-support-transform-devops-workflows-2/"
+  },
+  {
+    "id": "lettertwo2025copilot",
+    "author": [{"literal": "The Letter Two"}],
+    "citation-key": "lettertwo2025copilot",
+    "issued": {"date-parts": [[2025, 5, 19]]},
+    "title": "GitHub Copilot evolves into autonomous coding agent",
+    "type": "webpage",
+    "URL": "https://thelettertwo.com/2025/05/19/the-new-github-copilot-agent-doesnt-just-help-you-code-it-codes-for-you/"
+  },
+  {
+    "id": "github2025agentmode",
+    "author": [{"literal": "GitHub Blog"}],
+    "citation-key": "github2025agentmode",
+    "issued": {"date-parts": [[2025, 5, 19]]},
+    "title": "GitHub Copilot: Meet the new coding agent",
+    "type": "webpage",
+    "URL": "https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/"
+  },
+  {
+    "id": "githubblog2025mcp",
+    "author": [{"literal": "GitHub Blog"}],
+    "citation-key": "githubblog2025mcp",
+    "issued": {"date-parts": [[2025, 12]]},
+    "title": "MCP joins the Linux Foundation: What this means for developers building the next era of AI tools and agents",
+    "type": "webpage",
+    "URL": "https://github.blog/open-source/maintainers/mcp-joins-the-linux-foundation-what-this-means-for-developers-building-the-next-era-of-ai-tools-and-agents/"
+  },
+  {
+    "id": "cognition2025devin",
+    "author": [{"literal": "Cognition Labs"}],
+    "citation-key": "cognition2025devin",
+    "issued": {"date-parts": [[2025]]},
+    "title": "Devin: The first AI software engineer",
+    "type": "webpage",
+    "URL": "https://www.cognition.ai/"
+  },
+  {
+    "id": "sfstandard2026grind",
+    "author": [{"family": "Said", "given": "C."}],
+    "citation-key": "sfstandard2026grind",
+    "container-title": "The San Francisco Standard",
+    "issued": {"date-parts": [[2026, 3, 24]]},
+    "title": "Inside the grind: The SF startup racing to build an AI software engineer",
+    "type": "article-newspaper",
+    "URL": "https://sfstandard.com/2026/03/24/grind-sf-startup-racing-build-ai-software-engineer/"
+  },
+  {
+    "id": "ibm2025devin",
+    "author": [{"literal": "IBM"}],
+    "citation-key": "ibm2025devin",
+    "issued": {"date-parts": [[2025, 8, 4]]},
+    "title": "Meet Devin the AI software engineer, employee #1 in Goldman Sachs' hybrid workforce",
+    "type": "webpage",
+    "URL": "https://www.ibm.com/think/news/goldman-sachs-first-ai-employee-devin"
+  },
+  {
+    "id": "cognition2025performance",
+    "author": [{"literal": "Cognition Labs"}],
+    "citation-key": "cognition2025performance",
+    "issued": {"date-parts": [[2025, 11, 14]]},
+    "title": "Devin's 2025 performance review: Learnings from 18 months of agents at work",
+    "type": "webpage",
+    "URL": "https://cognition.ai/blog/devin-annual-performance-review-2025"
+  },
+  {
+    "id": "openai2026codex",
+    "author": [{"literal": "OpenAI"}],
+    "citation-key": "openai2026codex",
+    "issued": {"date-parts": [[2026, 2, 5]]},
+    "title": "Introducing GPT-5.3-Codex",
+    "type": "webpage",
+    "URL": "https://openai.com/es-419/index/introducing-gpt-5-3-codex/"
+  },
+  {
+    "id": "geeksroom2026codex",
+    "author": [{"literal": "GeeksRoom"}],
+    "citation-key": "geeksroom2026codex",
+    "issued": {"date-parts": [[2026, 2, 3]]},
+    "title": "OpenAI launches Codex on macOS: Agents, skills and security",
+    "type": "webpage",
+    "URL": "https://geeksroom.com/2026/02/openai-codex-macos/143705/"
+  },
+  {
+    "id": "eesel2026codex",
+    "author": [{"literal": "Eesel AI"}],
+    "citation-key": "eesel2026codex",
+    "issued": {"date-parts": [[2025, 10, 6]]},
+    "title": "OpenAI Codex: What it does and how to use it (2026)",
+    "type": "webpage",
+    "URL": "https://www.eesel.ai/es/blog/openai-codex"
+  },
+  {
+    "id": "apertia2025codex",
+    "author": [{"literal": "Apertia AI"}],
+    "citation-key": "apertia2025codex",
+    "issued": {"date-parts": [[2025, 5, 20]]},
+    "title": "A new era of AI-driven software engineering",
+    "type": "webpage",
+    "URL": "http://apertia.ai/es/blog/codex-nova-era-softwaroveho-inzenyrstvi"
+  },
+  {
+    "id": "openai2026gpt53",
+    "author": [{"literal": "OpenAI"}],
+    "citation-key": "openai2026gpt53",
+    "issued": {"date-parts": [[2026, 2, 5]]},
+    "title": "GPT-5.3-Codex technical report",
+    "type": "webpage",
+    "URL": "https://openai.com/es-419/index/introducing-gpt-5-3-codex/"
+  },
+  {
+    "id": "deployhq2026windsurf",
+    "author": [{"literal": "DeployHQ"}],
+    "citation-key": "deployhq2026windsurf",
+    "issued": {"date-parts": [[2026, 3, 5]]},
+    "title": "Windsurf IDE guide: Cascade agent, setup & deployment",
+    "type": "webpage",
+    "URL": "https://www.deployhq.com/guides/windsurf"
+  },
+  {
+    "id": "swebench2026leaderboard",
+    "author": [{"literal": "SWE-bench"}],
+    "citation-key": "swebench2026leaderboard",
+    "issued": {"date-parts": [[2026, 2, 17]]},
+    "title": "SWE-bench leaderboards",
+    "type": "webpage",
+    "URL": "https://www.swebench.com/"
+  },
+  {
+    "id": "pan2025agentcompany",
+    "author": [
+      {"family": "Pan", "given": "L."},
+      {"family": "Zhang", "given": "Y."},
+      {"family": "Chen", "given": "X."},
+      {"family": "Wang", "given": "H."},
+      {"family": "Li", "given": "J."}
+    ],
+    "citation-key": "pan2025agentcompany",
+    "container-title": "arXiv preprint",
+    "issued": {"date-parts": [[2025]]},
+    "title": "TheAgentCompany: Benchmarking LLM agents on consequential real world tasks",
+    "type": "article",
+    "URL": "https://arxiv.org/abs/2412.14161"
+  },
+  {
+    "id": "anthropic2025mcp",
+    "author": [{"literal": "Anthropic"}],
+    "citation-key": "anthropic2025mcp",
+    "issued": {"date-parts": [[2025, 10]]},
+    "title": "What is Model Context Protocol? Connect AI to your world",
+    "type": "webpage",
+    "URL": "https://claude.com/blog/what-is-model-context-protocol"
+  },
+  {
+    "id": "linuxfoundation2025aaif",
+    "author": [{"literal": "Linux Foundation"}],
+    "citation-key": "linuxfoundation2025aaif",
+    "issued": {"date-parts": [[2025, 12, 9]]},
+    "title": "Linux Foundation announces the formation of the Agentic AI Foundation (AAIF)",
+    "type": "webpage",
+    "URL": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation"
+  },
+  {
+    "id": "pento2025mcp",
+    "author": [{"literal": "Pento"}],
+    "citation-key": "pento2025mcp",
+    "issued": {"date-parts": [[2025, 12, 23]]},
+    "title": "A year of MCP: From internal experiment to industry standard",
+    "type": "webpage",
+    "URL": "https://www.pento.ai/blog/a-year-of-mcp-2025-review"
+  },
+  {
+    "id": "anthropic2025donating",
+    "author": [{"literal": "Anthropic"}],
+    "citation-key": "anthropic2025donating",
+    "issued": {"date-parts": [[2025, 12, 9]]},
+    "title": "Donating the Model Context Protocol and establishing the Agentic AI Foundation",
+    "type": "webpage",
+    "URL": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation"
+  },
+  {
+    "id": "eesel2026claude",
+    "author": [{"literal": "Eesel AI"}],
+    "citation-key": "eesel2026claude",
+    "issued": {"date-parts": [[2026, 1, 26]]},
+    "title": "Claude Code multi-agent systems: Complete 2026 guide",
+    "type": "webpage",
+    "URL": "https://www.eesel.ai/es/blog/claude-code-multiple-agent-systems-complete-2026-guide"
+  },
+  {
+    "id": "augmentcode2025comparison",
+    "author": [{"literal": "Augment Code"}],
+    "citation-key": "augmentcode2025comparison",
+    "issued": {"date-parts": [[2025, 9, 12]]},
+    "title": "AI code comparison: GitHub Copilot vs Cursor vs Claude Code",
+    "type": "webpage",
+    "URL": "https://www.augmentcode.com/tools/ai-code-comparison-github-copilot-vs-cursor-vs-claude-code"
+  },
+  {
+    "id": "pillar2025security",
+    "author": [{"literal": "Pillar Security"}],
+    "citation-key": "pillar2025security",
+    "issued": {"date-parts": [[2025]]},
+    "title": "The security risks of Model Context Protocol (MCP)",
+    "type": "webpage",
+    "URL": "https://www.pillar.security/blog/the-security-risks-of-model-context-protocol-mcp"
+  },
+  {
+    "id": "equixly2025mcp",
+    "author": [{"literal": "Equixly"}],
+    "citation-key": "equixly2025mcp",
+    "issued": {"date-parts": [[2025, 3, 29]]},
+    "title": "MCP servers: The new security nightmare",
+    "type": "webpage",
+    "URL": "https://equixly.com/blog/2025/03/29/mcp-server-new-security-nightmare/"
+  }
+]
