@@ -1,0 +1,47 @@
+{{/*
+
+  This shortcode renders entries from a CSL-JSON file.
+  Override of hugo-cite shortcode to fix getJSON issues in Hugo 0.159+
+
+*/}}
+
+{{- $src := "" }}
+{{- $citedOnly := false }}
+{{- $references := false }}
+
+{{- if .IsNamedParams }}
+  {{- with .Get "src" }}{{ $src = . }}{{ end }}
+  {{- if .Get "cited" }}{{ $citedOnly = true }}{{ end }}
+{{- else }}
+  {{- with .Get 0 }}
+    {{- if eq . "cited" }}
+      {{- $citedOnly = true }}
+    {{- else }}
+      {{- $src = . }}
+    {{ end }}
+  {{ end }}
+  {{- if eq (.Get 1) "cited" }}{{- $citedOnly = true }}{{ end }}
+{{- end }}
+
+{{- if $citedOnly }}
+  {{ $references = $.Page.Scratch.Get "citedBib" }}
+{{- else }}
+  {{- $bibliographyPath := "" }}
+  {{- $pageResource := $.Page.Resources.GetMatch "*bib*.json" -}}
+
+  {{- if gt (len $src) 1 }}
+    {{- $bibliographyPath = $src }}
+  {{- else if $.Page.Params.bibFile }}
+    {{- $bibliographyPath = $.Page.Params.bibFile }}
+  {{- else if $pageResource }}
+    {{- $bibliographyPath = $pageResource.RelPermalink }}
+  {{- end }}
+
+  {{- with $bibliographyPath }}
+    {{- $file := os.ReadFile . }}
+    {{- $references = $file | transform.Unmarshal }}
+  {{- end }}
+{{- end }}
+
+{{- $bibParams := dict "references" $references }}
+{{- partial "bibliography/bibliography-list.html" $bibParams }}
