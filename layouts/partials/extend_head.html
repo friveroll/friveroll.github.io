@@ -4,5 +4,8 @@
 {{ if and (hugo.IsProduction) (.Site.Params.googleAnalyticsID) }}
 {{ partial "analytics-gtag.html" . }}
 {{ end }}
+{{ if .Params.bibFile }}
+<link rel="stylesheet" href="{{ "css/hugo-cite.css" | relURL }}">
+{{ end }}
 <script data-goatcounter="https://friveroll.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
