@@ -6,12 +6,20 @@
     <description>Recent content in Categories on Felipe Riveroll Aguirre</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bioquímica</title>
       <link>https://friveroll.github.io/categories/bioqu%C3%ADmica/</link>
-      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://friveroll.github.io/categories/bioqu%C3%ADmica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laboratorio</title>
+      <link>https://friveroll.github.io/categories/laboratorio/</link>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://friveroll.github.io/categories/laboratorio/</guid>
       <description></description>
     </item>
     
@@ -28,14 +36,6 @@
       <link>https://friveroll.github.io/categories/inteligencia-artificial/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://friveroll.github.io/categories/inteligencia-artificial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Laboratorio</title>
-      <link>https://friveroll.github.io/categories/laboratorio/</link>
-      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://friveroll.github.io/categories/laboratorio/</guid>
       <description></description>
     </item>
     

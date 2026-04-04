@@ -6,7 +6,45 @@
     <description>Recent content in Proteínas on Felipe Riveroll Aguirre</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/tags/prote%C3%ADnas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://friveroll.github.io/tags/prote%C3%ADnas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Western Blotting Parte IV: Detección e imagen</title>
+      <link>https://friveroll.github.io/posts/western-blotting-parte-iv-deteccion-imagen/</link>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://friveroll.github.io/posts/western-blotting-parte-iv-deteccion-imagen/</guid>
+      <description>&lt;p&gt;Tras completar la inmunodetección con anticuerpos primario y secundario, el siguiente paso crítico en el western blot es la detección e imagen de la señal. Esta etapa transforma la unión anticuerpo–antígeno en una señal cuantificable, y la elección del método de detección, del sustrato, del sistema de revelado y de los parámetros de adquisición condiciona directamente la posibilidad de interpretar cuantitativamente los datos 
+
+
+
+
+&lt;span class=&#34;hugo-cite-intext&#34;
+        itemprop=&#34;citation&#34;&gt;(&lt;span class=&#34;hugo-cite-group&#34;&gt;
+
+          &lt;a href=&#34;#thermo2024quantitative&#34;&gt;&lt;span class=&#34;visually-hidden&#34;&gt;Citation: &lt;/span&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;/span&gt;,&amp;#32;&lt;span itemprop=&#34;datePublished&#34;&gt;2024&lt;/span&gt;,&amp;#32;p.&amp;nbsp;taylor2013simple&lt;/a&gt;&lt;span class=&#34;hugo-cite-citation&#34;&gt; 
+
+
+
+
+
+
+
+
+
+
+&lt;span itemscope
+      itemtype=&#34;https://schema.org/WebPage&#34;
+      data-type=&#34;webpage&#34;&gt;&lt;span itemprop=&#34;author&#34; itemscope itemtype=&#34;https://schema.org/Person&#34;&gt;&lt;/span&gt;(&lt;span itemprop=&#34;datePublished&#34;&gt;2024&lt;/span&gt;).&amp;#32;Retrieved from&amp;#32;
+  &lt;a href=&#34;https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/quantitative-western-blot-analysis.html&#34;
+     itemprop=&#34;identifier&#34;
+     itemtype=&#34;https://schema.org/URL&#34;&gt;https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/quantitative-western-blot-analysis.html&lt;/a&gt;&lt;/span&gt;
+
+
+
+
+&lt;/span&gt;&lt;/span&gt;)&lt;/span&gt;
+.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Western Blotting Parte III: Inmunodetección</title>
       <link>https://friveroll.github.io/posts/western-blotting-parte-iii-inmunodeteccion/</link>
