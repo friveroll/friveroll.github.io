@@ -104,7 +104,7 @@
     "id": "abcam2024blocking",
     "author": [
       {
-        "literal": "Abcam"
+        "family": "Abcam"
       }
     ],
     "citation-key": "abcam2024blocking",
@@ -191,7 +191,7 @@
     "id": "licor2023optimization",
     "author": [
       {
-        "literal": "LI-COR Biosciences"
+        "family": "LI-COR Biosciences"
       }
     ],
     "citation-key": "licor2023optimization",
@@ -225,7 +225,7 @@
     ],
     "citation-key": "ghosh2014validating",
     "container-title": "Journal of Biological Chemistry",
-    "DOI": "10.1074/jbc.R114.560045",
+    "DOI": "10.1586/14789450.2014.939635",
     "ISSN": "0021-9258",
     "issue": "18",
     "issued": {
@@ -246,7 +246,7 @@
     "id": "jackson2024western",
     "author": [
       {
-        "literal": "Jackson ImmunoResearch Laboratories"
+        "family": "Jackson ImmunoResearch Laboratories"
       }
     ],
     "citation-key": "jackson2024western",
@@ -266,7 +266,7 @@
     "id": "nordic2023tips",
     "author": [
       {
-        "literal": "Nordic Biosite"
+        "family": "Nordic Biosite"
       }
     ],
     "citation-key": "nordic2023tips",
@@ -286,7 +286,7 @@
     "id": "abcam2024quantification",
     "author": [
       {
-        "literal": "Abcam"
+        "family": "Abcam"
       }
     ],
     "citation-key": "abcam2024quantification",
@@ -306,7 +306,7 @@
     "id": "azure2021handbook",
     "author": [
       {
-        "literal": "Azure Biosystems"
+        "family": "Azure Biosystems"
       }
     ],
     "citation-key": "azure2021handbook",
@@ -326,7 +326,7 @@
     "id": "cytiva2025protocols",
     "author": [
       {
-        "literal": "Cytiva"
+        "family": "Cytiva"
       }
     ],
     "citation-key": "cytiva2025protocols",
@@ -346,7 +346,7 @@
     "id": "fredhutch2024odyssey",
     "author": [
       {
-        "literal": "Fred Hutchinson Cancer Center"
+        "family": "Fred Hutchinson Cancer Center"
       }
     ],
     "citation-key": "fredhutch2024odyssey",
@@ -366,7 +366,7 @@
     "id": "abcam2024protocol",
     "author": [
       {
-        "literal": "Abcam"
+        "family": "Abcam"
       }
     ],
     "citation-key": "abcam2024protocol",
@@ -386,7 +386,7 @@
     "id": "merck2024western",
     "author": [
       {
-        "literal": "Merck"
+        "family": "Merck"
       }
     ],
     "citation-key": "merck2024western",
@@ -441,7 +441,7 @@
     "id": "thermo2024quantitative",
     "author": [
       {
-        "literal": "Thermo Fisher Scientific"
+        "family": "Thermo Fisher Scientific"
       }
     ],
     "citation-key": "thermo2024quantitative",
@@ -501,7 +501,7 @@
     "id": "biorad2024fluorescent",
     "author": [
       {
-        "literal": "Bio-Rad Laboratories"
+        "family": "Bio-Rad Laboratories"
       }
     ],
     "citation-key": "biorad2024fluorescent",
@@ -627,7 +627,7 @@
     "id": "biolegend2024western",
     "author": [
       {
-        "literal": "BioLegend"
+        "family": "BioLegend"
       }
     ],
     "citation-key": "biolegend2024western",
@@ -647,7 +647,7 @@
     "id": "jackson2024chemiluminescent",
     "author": [
       {
-        "literal": "Jackson ImmunoResearch Laboratories"
+        "family": "Jackson ImmunoResearch Laboratories"
       }
     ],
     "citation-key": "jackson2024chemiluminescent",
@@ -694,7 +694,7 @@
     "id": "bioss2024ponceau",
     "author": [
       {
-        "literal": "Bioss Antibodies"
+        "family": "Bioss Antibodies"
       }
     ],
     "citation-key": "bioss2024ponceau",
